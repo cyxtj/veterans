@@ -3,7 +3,7 @@
 import json
 import unittest
 from flask.ext.testing import TestCase
-from app.app import app
+from app import app
 
 sizheninfo_json = '''
 [
