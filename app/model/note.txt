@@ -1,0 +1,3 @@
+table:symptom里的kind在数据库里没有对应的值（可能需要重新建表）
+删去了kind
+d_template 表里的takeWay在数据库的值''不对
