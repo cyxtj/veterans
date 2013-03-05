@@ -1,5 +1,6 @@
 #coding=utf8
-
+from model import models
+#can't understand from what app??
 from app import app
 from flask import render_template
 import json
@@ -15,15 +16,14 @@ def sizheninfo():
     sizheninfoList = []
     sizheninfoList.append({})
     sizheninfoList.append({})
-
-    sizheninfoList[0]["patientID"] = "s000001"
-    sizheninfoList[0]["patientName"] = "1号病人"
-    sizheninfoList[0]["connectedState"] = False
-    sizheninfoList[0]["connectedAddinfoID"] = None
-
-    sizheninfoList[1]["patientID"] = "s000002"
-    sizheninfoList[1]["patientName"] = "2号病人"
-    sizheninfoList[1]["connectedState"] = True
-    sizheninfoList[1]["connectedAddinfoID"] = "a000002"
-
+    
+    data = models.ChineseDisease.data()
+    for (i, sizheninfo) in enumerate(data):
+        print i, sizheninfo
+        sizheninfoList[i]["patientID"] = sizheninfo.code
+        print sizheninfoList[i]["patientID"]
+        sizheninfoList[i]["patientName"] = sizheninfo.name
+        sizheninfoList[i]["connectedState"] = True
+        sizheninfoList[i]["connectedAddinfoID"] = None
+        print sizheninfoList[i]
     return json.dumps(sizheninfoList)

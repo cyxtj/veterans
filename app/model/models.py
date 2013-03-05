@@ -13,15 +13,15 @@ class ChineseDisease(db.Model):
     code = db.Column(db.String(20), nullable=False)
     name = db.Column(db.String(100), nullable=False)
     parentcode = db.Column(db.String(20), nullable=False) #comment '无父节点,用-1代表'
-    level = db.Column(db.Boolean, nullable=False) #comment '从1开始'
+    level = db.Column(db.SMALLINT, nullable=False) #comment '从1开始'
     isClassical = db.Column(db.Boolean, nullable=False, default=1) #comment '1:是标准的;0:非标准的'
     SPETid = db.Column(db.String(36), nullable=False, default=' ')
     illustration = db.Column(db.Text, nullable=False, default=' ')
     createDay = db.Column(db.DateTime, nullable=False, default='1900-1-1')
     optrid = db.Column(db.String(36), nullable=False, default=' ')
-    state = db.Column(db.Boolean, nullable=False, default=0) #comment '0:正常;1:锁定'
+    state = db.Column(db.SMALLINT, nullable=False, default=0) #comment '0:正常;1:锁定'
 
-    def __init__(self, CDISid, code, name, parentcode, level, classical, SPETid, illustration, createDay, optrid, state):
+    def __init__(self, CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state):
         self.CDISid = CDISid
         self.code = code
         self.name = name
@@ -33,6 +33,17 @@ class ChineseDisease(db.Model):
         self.createDay = createDay
         self.optrid = optrid
         self.state = state
+
+    def __repr__(self):
+        return self.CDISid
+
+    @classmethod
+    def data(self, CDISid=None):
+        if CDISid:
+            print CDISid
+            return ChineseDisease.query.filter_by(CDISid=CDISid).first()
+        else:
+            return ChineseDisease.query.all()
 
 
 class dCase(db.Model):
@@ -552,3 +563,5 @@ class WestenDisease(db.Model):
         self.createDay = createDay
         self.optrid = optrid
         self.state = state
+
+
