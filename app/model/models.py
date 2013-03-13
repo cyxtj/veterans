@@ -1,5 +1,6 @@
 ﻿#coding=utf-8
 
+import json
 from flask import Flask
 from flask.ext.sqlalchemy import SQLAlchemy
 
@@ -33,17 +34,50 @@ class ChineseDisease(db.Model):
         self.createDay = createDay
         self.optrid = optrid
         self.state = state
+        db.session.add(self)
+        db.session.commit()
 
     def __repr__(self):
-        return self.CDISid
+        return self.name
 
     @classmethod
-    def data(self, CDISid=None):
-        if CDISid:
-            print CDISid
-            return ChineseDisease.query.filter_by(CDISid=CDISid).first()
-        else:
-            return ChineseDisease.query.all()
+    def get_by_id(self, CDISid=None):
+        print '_________________________'
+        temp = ChineseDisease.query.filter_by(CDISid=CDISid).first()
+        tempList = []
+        tempList.append({})
+        tempList[0]["CDISid"]=temp.CDISid
+        tempList[0]["code"]=temp.code
+        tempList[0]["name"]=temp.name
+        tempList[0]["parentcode"]=temp.parentcode
+        tempList[0]["level"]=temp.level
+        tempList[0]["isClassical"]=temp.isClassical
+        tempList[0]["SPETid"]=temp.SPETid
+        tempList[0]["illustration"]=temp.illustration
+        tempList[0]["createDay"]=temp.createDay
+        tempList[0]["optrid"]=temp.optrid
+        tempList[0]["state"]=temp.state
+        return json.dumps(tempList)
+
+    @classmethod
+    def get_all(self):
+        data = ChineseDisease.query.all()
+        tempList = []
+        print '_________________________'
+        for (i, temp) in enumerate(data):
+            tempList.append({})
+            tempList[i]["CDISid"]=temp.CDISid
+            tempList[i]["code"]=temp.code
+            tempList[i]["name"]=temp.name
+            tempList[i]["parentcode"]=temp.parentcode
+            tempList[i]["level"]=temp.level
+            tempList[i]["isClassical"]=temp.isClassical
+            tempList[i]["SPETid"]=temp.SPETid
+            tempList[i]["illustration"]=temp.illustration
+            tempList[i]["createDay"]=temp.createDay
+            tempList[i]["optrid"]=temp.optrid
+            tempList[i]["state"]=temp.state
+        return json.dumps(tempList)
 
 
 class dCase(db.Model):
@@ -117,6 +151,96 @@ class dCase(db.Model):
         self.optrid = optrid
         self.hasFile = hasFile
         self.preState = preState
+        db.session.add(self)
+        db.session.commit()
+
+    def __repr__(self):
+        return self.name
+
+    @classmethod 
+    def get_by_id(selt, CASEid):
+        print '_________________________'
+        temp = dCase.query.filter_by(CASEid=CASEid).first()
+        tempList = []
+        tempList.append({})
+        tempList[0]["CASEid"]=temp.CASEid
+        tempList[0]["SPETid"]=temp.SPETid
+        tempList[0]["DTMPid"]=temp.DTMPid
+        tempList[0]["code"]=temp.code
+        tempList[0]["outpatientCode"]=temp.outpatientCode
+        tempList[0]["caseKind"]=temp.caseKind
+        tempList[0]["name"]=temp.name
+        tempList[0]["age"]=temp.age
+        tempList[0]["month"]=temp.month
+        tempList[0]["gender"]=temp.gender
+        tempList[0]["nationality"]=temp.nationality
+        tempList[0]["personSort"]=temp.personSort
+        tempList[0]["afflication"]=temp.afflication
+        tempList[0]["job"]=temp.job
+        tempList[0]["tel"]=temp.tel
+        tempList[0]["address"]=temp.address
+        tempList[0]["birthplace"]=temp.birthplace
+        tempList[0]["liveplace"]=temp.liveplace
+        tempList[0]["education"]=temp.education
+        tempList[0]["marriage"]=temp.marriage
+        tempList[0]["ohistory"]=temp.ohistory
+        tempList[0]["phistory"]=temp.phistory
+        tempList[0]["fhistory"]=temp.fhistory
+        tempList[0]["allergy"]=temp.allergy
+        tempList[0]["extraMed"]=temp.extraMed
+        tempList[0]["nhistory"]=temp.nhistory
+        tempList[0]["mresult"]=temp.mresult
+        tempList[0]["vresult"]=temp.vresult
+        tempList[0]["illustration"]=temp.illustration
+        tempList[0]["state"]=temp.state
+        tempList[0]["createDay"]=temp.createDay
+        tempList[0]["optrid"]=temp.optrid
+        tempList[0]["hasFile"]=temp.hasFile
+        tempList[0]["preState"]=temp.preState
+        return json.dumps(tempList)
+
+    @classmethod
+    def get_all(self):
+        data = dCase.query.all()
+        tempList = []
+        print '_________________________'
+        for (i, temp) in enumerate(data):
+            tempList.append({})
+            tempList[i]["CASEid"]=temp.CASEid
+            tempList[i]["SPETid"]=temp.SPETid
+            tempList[i]["DTMPid"]=temp.DTMPid
+            tempList[i]["code"]=temp.code
+            tempList[i]["outpatientCode"]=temp.outpatientCode
+            tempList[i]["caseKind"]=temp.caseKind
+            tempList[i]["name"]=temp.name
+            tempList[i]["age"]=temp.age
+            tempList[i]["month"]=temp.month
+            tempList[i]["gender"]=temp.gender
+            tempList[i]["nationality"]=temp.nationality
+            tempList[i]["personSort"]=temp.personSort
+            tempList[i]["afflication"]=temp.afflication
+            tempList[i]["job"]=temp.job
+            tempList[i]["tel"]=temp.tel
+            tempList[i]["address"]=temp.address
+            tempList[i]["birthplace"]=temp.birthplace
+            tempList[i]["liveplace"]=temp.liveplace
+            tempList[i]["education"]=temp.education
+            tempList[i]["marriage"]=temp.marriage
+            tempList[i]["ohistory"]=temp.ohistory
+            tempList[i]["phistory"]=temp.phistory
+            tempList[i]["fhistory"]=temp.fhistory
+            tempList[i]["allergy"]=temp.allergy
+            tempList[i]["extraMed"]=temp.extraMed
+            tempList[i]["nhistory"]=temp.nhistory
+            tempList[i]["mresult"]=temp.mresult
+            tempList[i]["vresult"]=temp.vresult
+            tempList[i]["illustration"]=temp.illustration
+            tempList[i]["state"]=temp.state
+            tempList[i]["createDay"]=temp.createDay
+            tempList[i]["optrid"]=temp.optrid
+            tempList[i]["hasFile"]=temp.hasFile
+            tempList[i]["preState"]=temp.preState
+        return json.dumps(tempList)
 
 
 class dMethod(db.Model):
@@ -144,6 +268,50 @@ class dMethod(db.Model):
         self.createDay = createDay
         self.optrid = optrid
         self.state = state
+        db.session.add(self)
+        db.session.commit()
+
+    def __repr__(self):
+        return self.name
+
+    @classmethod
+    def get_by_id(self, DMETid):
+        print '_________________________'
+        temp = dMethod.query.filter_by(DMETid=DMETid)
+        tempList = []
+        tempList.append({})
+        tempList[0]["DMETid"] = temp.DMETid
+        tempList[0]["code"] = temp.code
+        tempList[0]["name"] = temp.name
+        tempList[0]["parentcode"] = temp.parentcode
+        tempList[0]["level"] = temp.level
+        tempList[0]["isClassical"] = temp.isClassical
+        tempList[0]["SPETid"] = temp.SPETid
+        tempList[0]["illustration"] = temp.illustration
+        tempList[0]["createDay"] = temp.createDay
+        tempList[0]["optrid"] = temp.optrid
+        tempList[0]["state"] = temp.state
+        return json.dumps(tempList)
+
+    @classmethod
+    def get_all(self):
+        data = dMethod.query.all()
+        tempList = []
+        print '_________________________'
+        for (i, temp) in enumerate(data):
+            tempList.append({})
+            tempList[i]["DMETid"] = temp.DMETid
+            tempList[i]["code"] = temp.code
+            tempList[i]["name"] = temp.name
+            tempList[i]["parentcode"] = temp.parentcode
+            tempList[i]["level"] = temp.level
+            tempList[i]["isClassical"] = temp.isClassical
+            tempList[i]["SPETid"] = temp.SPETid
+            tempList[i]["illustration"] = temp.illustration
+            tempList[i]["createDay"] = temp.createDay
+            tempList[i]["optrid"] = temp.optrid
+            tempList[i]["state"] = temp.state
+        return json.dumps(tempList)
 
 
 class dTemplate(db.Model):
@@ -181,144 +349,59 @@ class dTemplate(db.Model):
         self.createDay = createDay
         self.optrid = optrid
         self.state = state
+        db.session.add(self)
+        db.session.commit()
+
+    @classmethod
+    def get_by_id(self,DTMPid):
+        print '_________________________'
+        temp = dTemplate.query.filter_by(DTMPid=DTMPid)
+        tempList = []
+        tempList.append({})
+        tempList[0]["DTMPid"] = temp.DTMPid
+        tempList[0]["code"] = temp.code
+        tempList[0]["name"] = temp.name
+        tempList[0]["useClassCdis"] = temp.useClassCdis
+        tempList[0]["useClassDmet"] = temp.useClassDmet
+        tempList[0]["CDISid"] = temp.CDISid
+        tempList[0]["WDISid"] = temp.WDISid
+        tempList[0]["SEMCid"] = temp.SEMCid
+        tempList[0]["DMETid"] = temp.DMETid
+        tempList[0]["takeWay"] = temp.takeWay
+        tempList[0]["drugForm"] = temp.drugForm
+        tempList[0]["SPETid"] = temp.SPETid
+        tempList[0]["illustration"] = temp.illustration
+        tempList[0]["createDay"] = temp.createDay
+        tempList[0]["optrid"] = temp.optrid
+        tempList[0]["state"] = temp.state
+        return json.dumps(tempList)
+
+    @classmethod
+    def get_all(self):
+        data = dTemplate.query.all()
+        tempList = []
+        print '_________________________'
+        for (i, temp) in enumerate(data):
+            tempList.append({})
+            tempList[i]["DTMPid"] = temp.DTMPid
+            tempList[i]["code"] = temp.code
+            tempList[i]["name"] = temp.name
+            tempList[i]["useClassCdis"] = temp.useClassCdis
+            tempList[i]["useClassDmet"] = temp.useClassDmet
+            tempList[i]["CDISid"] = temp.CDISid
+            tempList[i]["WDISid"] = temp.WDISid
+            tempList[i]["SEMCid"] = temp.SEMCid
+            tempList[i]["DMETid"] = temp.DMETid
+            tempList[i]["takeWay"] = temp.takeWay
+            tempList[i]["drugForm"] = temp.drugForm
+            tempList[i]["SPETid"] = temp.SPETid
+            tempList[i]["illustration"] = temp.illustration
+            tempList[i]["createDay"] = temp.createDay
+            tempList[i]["optrid"] = temp.optrid
+            tempList[i]["state"] = temp.state
+        return json.dumps(tempList)
 
 
-class diagExam(db.Model):
-    DIEXid = db.Column(db.String(36), nullable=False, primary_key=True)
-    DIAGid = db.Column(db.String(36), db.ForeignKey('diagnose.DIAGid'))
-    EXAMid = db.Column(db.String(36), db.ForeignKey('examination.EXAMid'))
-    value = db.Column(db.String(200), nullable=False, default=' ')
-    date = db.Column(db.DateTime)
-    address = db.Column(db.String(100))
-    illustration = db.Column(db.Text, nullable=False, default=' ')
-    sequence = db.Column(db.INT, nullable=False, default=0)
-
-    def __init__(self, DIEXid, DIAGid, EXAMid, value, date, address, illustration, sequence):
-        self.DIEXid = DIEXid
-        self.DIAGid = DIAGid
-        self.EXAMid = EXAMid
-        self.value = value
-        self.date = date
-        self.address = address
-        self.illustration = illustration
-        self.sequence = sequence
-
-class diagItem(db.Model):
-    DIITid = db.Column(db.String(36), nullable=False, primary_key=True)
-    DIREid = db.Column(db.String(36), db.ForeignKey('diag_recipe.DIREid'))
-    dru_DRUGid = db.Column(db.String(36), db.ForeignKey('drug.DRUGid'))
-    DRUGid = db.Column(db.String(36))
-    quality = db.Column(db.DECIMAL(18,4), nullable=False, default=0)
-    sequence = db.Column(db.INT, nullable=False, default=0)
-    illustration = db.Column(db.Text, nullable=False, default=' ')
-
-    def __init__(self, DIITid, DIREid, dru_DRUGid, DRUGid, quality, sequence, illustration):
-        self.DIITid = DIITid
-        self.DIREid = DIREid
-        self.dru_DRUGid = dru_DRUGid
-        self.DRUGid = DRUGid
-        self.quality = quality
-        self.sequence = sequence
-        self.illustration = illustration
-
-
-class diagRecipe(db.Model):
-    DIREid = db.Column(db.String(36), nullable=False, primary_key=True)
-    DIAGid = db.Column(db.String(36), db.ForeignKey('diagnose.DIAGid'))
-    FREPid = db.Column(db.String(36), db.ForeignKey('fixedrecipe.FREPid'))
-    isCustomed = db.Column(db.Boolean, nullable=False, default=0)
-    name = db.Column(db.String(36), nullable=False, default=' ')
-    doctorAdvice = db.Column(db.Text, nullable=False, default=' ')
-    drugForm = db.Column(db.Boolean, nullable=False)
-    takeWay = db.Column(db.Boolean, nullable=False)
-    quality = db.Column(db.SMALLINT, nullable=False)
-    produceMethod = db.Column(db.String(100), nullable=False)
-    usage = db.Column(db.String(100), nullable=False)
-
-    def __init__(self, DIREid, DIAGid, FREPid, isCustomed, name, doctorAdvice, drugForm, takeWay, quality, produceMethod, usage):
-        self.DIREid = DIREid
-        self.DIAGid = DIAGid
-        self.FREPid = FREPid
-        self.isCustomed = isCustomed
-        self.name = name
-        self.doctorAdvice = doctorAdvice
-        self.drugForm = drugForm
-        self.takeWay = takeWay
-        self.quality = quality
-        self.produceMethod = produceMethod
-        self.usage = usage
-
-
-class diagSymptom(db.Model):
-    DISYid = db.Column(db.String(36), nullable=False, primary_key=True)
-    SYPMid = db.Column(db.String(36), db.ForeignKey('symptom.SYPMid'))
-    DIAGid = db.Column(db.String(36), db.ForeignKey('diagnose.DIAGid'))
-    value = db.Column(db.String(200), nullable=False, default=' ')
-    illustration = db.Column(db.Text, nullable=False, default=' ')
-    sequence = db.Column(db.INT, nullable=False, default=0)
-
-    def __init__(self, DISYid, SYPMid, DIAGid, value, illustration, sequence):
-        self.DISYid = DISYid
-        self.SYPMid = SYPMid
-        self.DIAGid = DIAGid
-        self.value = value
-        self.illustration = illustration
-        self.sequence = sequence
-
-
-class diagnose(db.Model):
-    DIAGid = db.Column(db.String(36), nullable=False, primary_key=True)
-    CASEid = db.Column(db.String(36), db.ForeignKey('d_case.CASEid'))
-    CDISid = db.Column(db.String(36), nullable=False, default=' ')
-    CDISid2 = db.Column(db.String(36), nullable=False, default=' ')
-    WDISid = db.Column(db.String(36), nullable=False, default=' ')
-    WDISid2 = db.Column(db.String(36), nullable=False, default=' ')
-    SEMCid = db.Column(db.String(36), nullable=False)
-    SEMCid2 = db.Column(db.String(36), nullable=False)
-    SEMCid3 = db.Column(db.String(36), nullable=False)
-    DMETid = db.Column(db.String(36), nullable=False)
-    DMETid2 = db.Column(db.String(36), nullable=False)
-    DMETid3 = db.Column(db.String(36), nullable=False)
-    DIAGno = db.Column(db.Boolean, nullable=False, default=1)
-    DIAGnum = db.Column(db.Boolean, nullable=False)
-    DIAGday = db.Column(db.DateTime, nullable=False)
-    lunarDay = db.Column(db.String(50), nullable=False, default=' ')
-    solarTerm = db.Column(db.Boolean, nullable=False, default=0)
-    DIAway = db.Column(db.Boolean, nullable=False, default=0)
-    majorSue = db.Column(db.Text, nullable=False)
-    illustration = db.Column(db.Text, nullable=False, default=' ')
-    optrid = db.Column(db.String(36), nullable=False, default=' ')
-    createDay = db.Column(db.DateTime, nullable=False, default='1900-1-1')
-    westernMed = db.Column(db.Text, nullable=False, default=' ')
-    other = db.Column(db.Text, nullable=False, default=' ')
-    preSEMCid = db.Column(db.String(36), nullable=False)
-
-    def __init__(self, DIAGid, CASEid, CDISid, CDISid2, WDISid, WDISid2, SEMCid, SEMCid2, SEMCid3, DMETid, DMETid2, DMETid3, DIAGno, DIAGnum, DIAGday, lunarDay, solarTerm, DIAway, majorSue, illustration, optrid, createDay, westernMed, other, preSEMCid):
-        self.DIAGid = DIAGid
-        self.CASEid = CASEid
-        self.CDISid = CDISid
-        self.CDISid2 = CDISid2
-        self.WDISid = WDISid
-        self.WDISid2 = WDISid2
-        self.SEMCid = SEMCid
-        self.SEMCid2 = SEMCid2
-        self.SEMCid3 = SEMCid3
-        self.DMETid = DMETid
-        self.DMETid2 = DMETid2
-        self.DMETid3 = DMETid3
-        self.DIAGno = DIAGno
-        self.DIAGnum = DIAGnum
-        self.DIAGday = DIAGday
-        self.lunarDay = lunarDay
-        self.solarTerm = solarTerm
-        self.DIAway = DIAway
-        self.majorSue = majorSue
-        self.illustration = illustration
-        self.optrid = optrid
-        self.createDay = createDay
-        self.westernMed = westernMed
-        self.other = other
-        self.preSEMCid = preSEMCid
 
 
 class drug(db.Model):
@@ -347,72 +430,47 @@ class drug(db.Model):
         self.isClassical = isClassical
         self.SPETid = SPETid
         self.illustration = illustration
-        self.createDay = createDay
         self.optrid = optrid
         self.state = state
+        db.session.add(self)
+        db.session.commit()
 
+    @classmethod
+    def get_by_id(self, DRUGid):
+        print '_________________________'
+        temp = drug.query.filter_by(DRUGid=DRUGid).first()
+        tempList = []
+        tempList.append({})
+        tempList[0]["code"] = temp.code
+        tempList[0]["name"] = temp.name
+        tempList[0]["unit"] = temp.unit
+        tempList[0]["alias"] = temp.alias
+        tempList[0]["py"] = temp.py
+        tempList[0]["wb"] = temp.wb
+        tempList[0]["isClassical"] = temp.isClassical
+        tempList[0]["SPETid"] = temp.SPETid
+        tempList[0]["state"] = temp.state
+        return json.dumps(tempList)
 
-class dtmpExamination(db.Model):
-    DTEXid = db.Column(db.String(36), nullable=False, primary_key=True)
-    DTMPid = db.Column(db.String(36), db.ForeignKey('d_template.DTMPid'))
-    EXAMid = db.Column(db.String(36), db.ForeignKey('examination.EXAMid'))
-    sequence = db.Column(db.INT, nullable=False)
-    illustration = db.Column(db.Text, nullable=False)
+    @classmethod
+    def get_all(self):
+        data = drug.query.all()
+        tempList = []
+        print '____________________________________'
+        for (i, temp) in enumerate(data):
+            tempList.append({})
+            tempList[i]["code"] = temp.code
+            tempList[i]["name"] = temp.name
+            tempList[i]["unit"] = temp.unit
+            tempList[i]["alias"] = temp.alias
+            tempList[i]["py"] = temp.py
+            tempList[i]["wb"] = temp.wb
+            tempList[i]["isClassical"] = temp.isClassical
+            tempList[i]["SPETid"] = temp.SPETid
+            tempList[i]["illustration"] = temp.illustration
+            tempList[i]["state"] = temp.state
+        return json.dumps(tempList)
 
-    def __init__(self, DTEXid, DTMPid, EXAMid, sequence, illustration):
-        self.DTEXid = DTEXid
-        self.DTMPid = DTMPid
-        self.EXAMid = EXAMid
-        self.sequence = sequence
-        self.illustration = illustration
-
-
-class dtmpSymptom(db.Model):
-    DTSYid = db.Column(db.String(36), nullable=False, primary_key=True)
-    DTMPid = db.Column(db.String(36), db.ForeignKey('d_template.DTMPid'))
-    SYPMid = db.Column(db.String(36), db.ForeignKey('symptom.SYPMid'))
-    isFirst = db.Column(db.Boolean, nullable=False, default=1)
-    sequence = db.Column(db.INT, nullable=False, default=0)
-    illustration = db.Column(db.Text, nullable=False, default=' ')
-
-    def __init__(self, DTSYid, DTMPid, SYPMid, isFirst, sequence, illustration):
-        self.DTSYid = DTSYid
-        self.DTMPid = DTMPid
-        self.SYPMid = SYPMid
-        self.isFirst = isFirst
-        self.sequence = sequence
-        self.illustration = illustration
-
-
-class examination(db.Model):
-    EXAMid = db.Column(db.String(36), nullable=False, primary_key=True)
-    code = db.Column(db.String(20), nullable=False)
-    name = db.Column(db.String(100), nullable=False)
-    abbreviation = db.Column(db.String(50), nullable=False, default=' ')
-    kind = db.Column(db.Boolean, nullable=False, default=0)
-    normalValue = db.Column(db.String(200), nullable=False, default=' ')
-    hasFile = db.Column(db.Boolean, nullable=False, default=0) #comment '0:没有;1:有'
-    isClassical = db.Column(db.Boolean, nullable=False, default=1) #comment '1:是标准的;0:非标准的'
-    SPETid = db.Column(db.String(36), nullable=False, default=' ')
-    illustration = db.Column(db.Text, nullable=False, default=' ')
-    createDay = db.Column(db.DateTime, nullable=False, default='1900-1-1')
-    optrid = db.Column(db.String(36), nullable=False, default=' ')
-    state = db.Column(db.Boolean, nullable=False, default=0) #comment '0:正常;1:锁定'
-
-    def __init__(self, EXAMid, code, name, abbreviation, kind, normalValue, hasFile, classical, SPETid, illustration, createDay, optrid, state):
-        self.EXAMid = EXAMid
-        self.code = code
-        self.name = name
-        self.abbreviation = abbreviation
-        self.kind = kind
-        self.normalValue = normalValue
-        self.hasFile = hasFile
-        self.isClassical = isClassical
-        self.SPETid = SPETid
-        self.illustration = illustration
-        self.createDay = createDay
-        self.optrid = optrid
-        self.state = state
 
 
 class fixedrecipe(db.Model):
@@ -442,38 +500,42 @@ class fixedrecipe(db.Model):
         self.createDay = createDay
         self.optrid = optrid
         self.state = state
+        db.session.add(self)
+        db.session.commit()
 
+    @classmethod
+    def get_by_id(self, FREPid):
+        print '____________________________________'
+        temp = fixedrecipe.query.filter_by(FREPid=FREPid).first()
+        tempList = []
+        tempList.append({})
+        tempList[0]["code"] = temp.code
+        tempList[0]["name"] = temp.name
+        tempList[0]["effect"] = temp.effect
+        tempList[0]["py"] = temp.py
+        tempList[0]["wb"] = temp.wb
+        tempList[0]["isClassical"] = temp.isClassical
+        tempList[0]["SPETid"] = temp.SPETid
+        tempList[0]["state"] = temp.state
+        return json.dumps(tempList)
 
-class fixedrecipeItem(db.Model):
-    FRITid = db.Column(db.String(36), nullable=False, primary_key=True)
-    DRUGid = db.Column(db.String(36), db.ForeignKey('drug.DRUGid'))
-    FREPid = db.Column(db.String(36), db.ForeignKey('fixedrecipe.FREPid'))
-    quality = db.Column(db.DECIMAL(18,4), nullable=False, default=0)
-    sequence = db.Column(db.INT, nullable=False, default=0)
-    illustration = db.Column(db.Text, nullable=False, default=' ')
+    @classmethod
+    def get_all(self):
+        data = fixedrecipe.query.all()
+        tempList = []
+        print '____________________________________'
+        for (i, temp) in enumerate(data):
+            tempList.append({})
+            tempList[i]["code"] = temp.code
+            tempList[i]["name"] = temp.name
+            tempList[i]["effect"] = temp.effect
+            tempList[i]["py"] = temp.py
+            tempList[i]["wb"] = temp.wb
+            tempList[i]["isClassical"] = temp.isClassical
+            tempList[i]["SPETid"] = temp.SPETid
+            tempList[i]["state"] = temp.state
+        return json.dumps(tempList)
 
-    def __init__(self, FRITid, DRUGid, FREPid, quality, sequence, illustration):
-        self.FRITid = FRITid
-        self.DRUGid = DRUGid
-        self.FREPid = FREPid
-        self.quality = quality
-        self.sequence = sequence
-        self.illustration = illustration
-
-
-class integratedSym(db.Model):
-    INSYid = db.Column(db.String(36), nullable=False, primary_key=True)
-    SYPMid = db.Column(db.String(36), db.ForeignKey('symptom.SYPMid'))
-    name = db.Column(db.String(50), nullable=False)
-    valSort = db.Column(db.INT, nullable=False)
-    sequence = db.Column(db.INT, nullable=False)
-
-    def __init__(self, INSYid, SYPMid, name, valSort, sequence):
-        self.INSYid = INSYid
-        self.SYPMid = SYPMid
-        self.name = name
-        self.valSort = valSort
-        self.sequence = sequence
 
 
 class semiotic(db.Model):
@@ -501,6 +563,47 @@ class semiotic(db.Model):
         self.createDay = createDay
         self.optrid = optrid
         self.state = state
+        db.session.add(self)
+        db.session.commit()
+
+    @classmethod
+    def get_by_id(self, FREPid):
+        print '____________________________________'
+        temp = semiotic.query.filter_by(FREPid=FREPid).first()
+        tempList = []
+        tempList.append({})
+        tempList[0]["SEMCid"] = temp.SEMCid
+        tempList[0]["CDISid"] = temp.CDISid
+        tempList[0]["code"] = temp.code
+        tempList[0]["groupCode"] = temp.groupCode
+        tempList[0]["name"] = temp.name
+        tempList[0]["isClassical"] = temp.isClassical
+        tempList[0]["SPETid"] = temp.SPETid
+        tempList[0]["illustration"] = temp.illustration
+        tempList[0]["createDay"] = temp.createDay
+        tempList[0]["optrid"] = temp.optrid
+        tempList[0]["state"] = temp.state
+        return json.dumps(tempList)
+
+    @classmethod
+    def get_all(self):
+        data = semiotic.query.all()
+        tempList = []
+        for (i, temp) in enumerate(data):
+            print '____________________________________'
+            tempList.append({})
+            tempList[i]["SEMCid"] = temp.SEMCid
+            tempList[i]["CDISid"] = temp.CDISid
+            tempList[i]["code"] = temp.code
+            tempList[i]["groupCode"] = temp.groupCode
+            tempList[i]["name"] = temp.name
+            tempList[i]["isClassical"] = temp.isClassical
+            tempList[i]["SPETid"] = temp.SPETid
+            tempList[i]["illustration"] = temp.illustration
+            tempList[i]["createDay"] = temp.createDay
+            tempList[i]["optrid"] = temp.optrid
+            tempList[i]["state"] = temp.state
+        return json.dumps(tempList)
 
 
 class symptom(db.Model):
@@ -536,9 +639,58 @@ class symptom(db.Model):
         self.createDay = createDay
         self.optrid = optrid
         self.state = state
+        db.session.add(self)
+        db.session.commit()
+
+    @classmethod
+    def get_by_id(self,SYPMid):
+        print '____________________________________'
+        temp = symptom.query.filter_by(SYPMid=SYPMid)
+        tempList = []
+        tempList.append({})
+        tempList[0]["SYPMid"] = temp.SYPMid
+        tempList[0]["code"] = temp.code
+        tempList[0]["name"] = temp.name
+        tempList[0]["parentcode"] = temp.parentcode
+        tempList[0]["level"] = temp.level
+        tempList[0]["kind"] = temp.kind
+        tempList[0]["sort"] = temp.sort
+        tempList[0]["valSort"] = temp.valSort
+        tempList[0]["hasFile"] = temp.hasFile
+        tempList[0]["isClassical"] = temp.isClassical
+        tempList[0]["SPETid"] = temp.SPETid
+        tempList[0]["illustration"] = temp.illustration
+        tempList[0]["createDay"] = temp.createDay
+        tempList[0]["optrid"] = temp.optrid
+        tempList[0]["state"] = temp.state
+        return json.dumps(tempList)
+
+    @classmethod
+    def get_all(self):
+        data = temp.symptom.query.all()
+        tempList = []
+        print '____________________________________'
+        for (i, temp) in enumerate(data):
+            tempList.append({})
+            tempList[i]["SYPMid"] = temp.SYPMid
+            tempList[i]["code"] = temp.code
+            tempList[i]["name"] = temp.name
+            tempList[i]["parentcode"] = temp.parentcode
+            tempList[i]["level"] = temp.level
+            tempList[i]["kind"] = temp.kind
+            tempList[i]["sort"] = temp.sort
+            tempList[i]["valSort"] = temp.valSort
+            tempList[i]["hasFile"] = temp.hasFile
+            tempList[i]["isClassical"] = temp.isClassical
+            tempList[i]["SPETid"] = temp.SPETid
+            tempList[i]["illustration"] = temp.illustration
+            tempList[i]["createDay"] = temp.createDay
+            tempList[i]["optrid"] = temp.optrid
+            tempList[i]["state"] = temp.state
+        return json.dumps(tempList)
 
 
-class WestenDisease(db.Model):
+class WesternDisease(db.Model):
     WDISid = db.Column(db.String(36), nullable=False, primary_key=True)
     code = db.Column(db.String(20), nullable=False)
     name = db.Column(db.String(100), nullable=False)
@@ -563,5 +715,43 @@ class WestenDisease(db.Model):
         self.createDay = createDay
         self.optrid = optrid
         self.state = state
+        db.session.add(self)
+        db.session.commit()
+    
+    @classmethod
+    def get_by_id(self,WDISid):
+        temp = WesternDisease.query.filter_by(WDISid=WDISid)
+        tempList = []
+        tempList.append({})
+        tempList[0]["WDISid"] = temp.WDISid
+        tempList[0]["code"] = temp.code
+        tempList[0]["name"] = temp.name
+        tempList[0]["parentcode"] = temp.parentcode
+        tempList[0]["level"] = temp.level
+        tempList[0]["isClassical"] = temp.isClassical
+        tempList[0]["SPETid"] = temp.SPETid
+        tempList[0]["illustration"] = temp.illustration
+        tempList[0]["createDay"] = temp.createDay
+        tempList[0]["optrid"] = temp.optrid
+        tempList[0]["state"] = temp.state
+        return json.dumps(tempList)
 
-
+    @classmethod
+    def get_all(self):
+        data = WesternDisease.query.all()
+        tempList = []
+        print '____________________________________'
+        for (i, temp) in enumerate(data):
+            tempList.append({})
+            tempList[i]["WDISid"] = temp.WDISid
+            tempList[i]["code"] = temp.code
+            tempList[i]["name"] = temp.name
+            tempList[i]["parentcode"] = temp.parentcode
+            tempList[i]["level"] = temp.level
+            tempList[i]["isClassical"] = temp.isClassical
+            tempList[i]["SPETid"] = temp.SPETid
+            tempList[i]["illustration"] = temp.illustration
+            tempList[i]["createDay"] = temp.createDay
+            tempList[i]["optrid"] = temp.optrid
+            tempList[i]["state"] = temp.state
+        return json.dumps(tempList)

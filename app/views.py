@@ -12,18 +12,5 @@ def index():
 
 
 @app.route('/api/sizheninfo')
-def sizheninfo():
-    sizheninfoList = []
-    sizheninfoList.append({})
-    sizheninfoList.append({})
-    
-    data = models.ChineseDisease.data()
-    for (i, sizheninfo) in enumerate(data):
-        print i, sizheninfo
-        sizheninfoList[i]["patientID"] = sizheninfo.code
-        print sizheninfoList[i]["patientID"]
-        sizheninfoList[i]["patientName"] = sizheninfo.name
-        sizheninfoList[i]["connectedState"] = True
-        sizheninfoList[i]["connectedAddinfoID"] = None
-        print sizheninfoList[i]
-    return json.dumps(sizheninfoList)
+def sizheninfo(): 
+    return models.drug.get_all()
