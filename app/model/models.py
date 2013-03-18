@@ -31,12 +31,10 @@ class ChineseDisease(db.Model):
         self.isClassical = isClassical
         self.SPETid = SPETid
         self.illustration = illustration
-        self.createDay = createDay
+        self.createDay = datetime.datetime.now()
         self.optrid = optrid
         self.state = state
-        db.session.add(self)
-        db.session.commit()
-
+                
     def __repr__(self):
         return self.name
 
@@ -54,7 +52,6 @@ class ChineseDisease(db.Model):
         tempList[0]["isClassical"]=temp.isClassical
         tempList[0]["SPETid"]=temp.SPETid
         tempList[0]["illustration"]=temp.illustration
-        tempList[0]["createDay"]=temp.createDay
         tempList[0]["optrid"]=temp.optrid
         tempList[0]["state"]=temp.state
         return json.dumps(tempList)
@@ -74,7 +71,6 @@ class ChineseDisease(db.Model):
             tempList[i]["isClassical"]=temp.isClassical
             tempList[i]["SPETid"]=temp.SPETid
             tempList[i]["illustration"]=temp.illustration
-            tempList[i]["createDay"]=temp.createDay
             tempList[i]["optrid"]=temp.optrid
             tempList[i]["state"]=temp.state
         return json.dumps(tempList)
@@ -147,13 +143,11 @@ class dCase(db.Model):
         self.vresult = vresult
         self.illustration = illustration
         self.state = state
-        self.createDay = createDay
+        self.createDay = datetime.datetime.now()
         self.optrid = optrid
         self.hasFile = hasFile
         self.preState = preState
-        db.session.add(self)
-        db.session.commit()
-
+                
     def __repr__(self):
         return self.name
 
@@ -193,7 +187,6 @@ class dCase(db.Model):
         tempList[0]["vresult"]=temp.vresult
         tempList[0]["illustration"]=temp.illustration
         tempList[0]["state"]=temp.state
-        tempList[0]["createDay"]=temp.createDay
         tempList[0]["optrid"]=temp.optrid
         tempList[0]["hasFile"]=temp.hasFile
         tempList[0]["preState"]=temp.preState
@@ -236,7 +229,6 @@ class dCase(db.Model):
             tempList[i]["vresult"]=temp.vresult
             tempList[i]["illustration"]=temp.illustration
             tempList[i]["state"]=temp.state
-            tempList[i]["createDay"]=temp.createDay
             tempList[i]["optrid"]=temp.optrid
             tempList[i]["hasFile"]=temp.hasFile
             tempList[i]["preState"]=temp.preState
@@ -265,12 +257,10 @@ class dMethod(db.Model):
         self.isClassical = isClassical
         self.SPETid = SPETid
         self.illustration = illustration
-        self.createDay = createDay
+        self.createDay = datetime.datetime.now()
         self.optrid = optrid
         self.state = state
-        db.session.add(self)
-        db.session.commit()
-
+                
     def __repr__(self):
         return self.name
 
@@ -288,7 +278,6 @@ class dMethod(db.Model):
         tempList[0]["isClassical"] = temp.isClassical
         tempList[0]["SPETid"] = temp.SPETid
         tempList[0]["illustration"] = temp.illustration
-        tempList[0]["createDay"] = temp.createDay
         tempList[0]["optrid"] = temp.optrid
         tempList[0]["state"] = temp.state
         return json.dumps(tempList)
@@ -308,7 +297,6 @@ class dMethod(db.Model):
             tempList[i]["isClassical"] = temp.isClassical
             tempList[i]["SPETid"] = temp.SPETid
             tempList[i]["illustration"] = temp.illustration
-            tempList[i]["createDay"] = temp.createDay
             tempList[i]["optrid"] = temp.optrid
             tempList[i]["state"] = temp.state
         return json.dumps(tempList)
@@ -346,12 +334,10 @@ class dTemplate(db.Model):
         self.drugForm = drugForm
         self.SPETid = SPETid
         self.illustration = illustration
-        self.createDay = createDay
+        self.createDay = datetime.datetime.now()
         self.optrid = optrid
         self.state = state
-        db.session.add(self)
-        db.session.commit()
-
+                
     @classmethod
     def get_by_id(self,DTMPid):
         print '_________________________'
@@ -371,7 +357,6 @@ class dTemplate(db.Model):
         tempList[0]["drugForm"] = temp.drugForm
         tempList[0]["SPETid"] = temp.SPETid
         tempList[0]["illustration"] = temp.illustration
-        tempList[0]["createDay"] = temp.createDay
         tempList[0]["optrid"] = temp.optrid
         tempList[0]["state"] = temp.state
         return json.dumps(tempList)
@@ -396,7 +381,6 @@ class dTemplate(db.Model):
             tempList[i]["drugForm"] = temp.drugForm
             tempList[i]["SPETid"] = temp.SPETid
             tempList[i]["illustration"] = temp.illustration
-            tempList[i]["createDay"] = temp.createDay
             tempList[i]["optrid"] = temp.optrid
             tempList[i]["state"] = temp.state
         return json.dumps(tempList)
@@ -432,9 +416,7 @@ class drug(db.Model):
         self.illustration = illustration
         self.optrid = optrid
         self.state = state
-        db.session.add(self)
-        db.session.commit()
-
+                
     @classmethod
     def get_by_id(self, DRUGid):
         print '_________________________'
@@ -497,12 +479,10 @@ class fixedrecipe(db.Model):
         self.isClassical = isClassical
         self.SPETid = SPETid
         self.illustration = illustration
-        self.createDay = createDay
+        self.createDay = datetime.datetime.now()
         self.optrid = optrid
         self.state = state
-        db.session.add(self)
-        db.session.commit()
-
+                
     @classmethod
     def get_by_id(self, FREPid):
         print '____________________________________'
@@ -560,12 +540,10 @@ class semiotic(db.Model):
         self.isClassical = isClassical
         self.SPETid = SPETid
         self.illustration = illustration
-        self.createDay = createDay
+        self.createDay = datetime.datetime.now()
         self.optrid = optrid
         self.state = state
-        db.session.add(self)
-        db.session.commit()
-
+                
     @classmethod
     def get_by_id(self, FREPid):
         print '____________________________________'
@@ -580,7 +558,6 @@ class semiotic(db.Model):
         tempList[0]["isClassical"] = temp.isClassical
         tempList[0]["SPETid"] = temp.SPETid
         tempList[0]["illustration"] = temp.illustration
-        tempList[0]["createDay"] = temp.createDay
         tempList[0]["optrid"] = temp.optrid
         tempList[0]["state"] = temp.state
         return json.dumps(tempList)
@@ -600,7 +577,6 @@ class semiotic(db.Model):
             tempList[i]["isClassical"] = temp.isClassical
             tempList[i]["SPETid"] = temp.SPETid
             tempList[i]["illustration"] = temp.illustration
-            tempList[i]["createDay"] = temp.createDay
             tempList[i]["optrid"] = temp.optrid
             tempList[i]["state"] = temp.state
         return json.dumps(tempList)
@@ -636,12 +612,10 @@ class symptom(db.Model):
         self.isClassical = isClassical
         self.SPETid = SPETid
         self.illustration = illustration
-        self.createDay = createDay
+        self.createDay = datetime.datetime.now()
         self.optrid = optrid
         self.state = state
-        db.session.add(self)
-        db.session.commit()
-
+                
     @classmethod
     def get_by_id(self,SYPMid):
         print '____________________________________'
@@ -660,7 +634,6 @@ class symptom(db.Model):
         tempList[0]["isClassical"] = temp.isClassical
         tempList[0]["SPETid"] = temp.SPETid
         tempList[0]["illustration"] = temp.illustration
-        tempList[0]["createDay"] = temp.createDay
         tempList[0]["optrid"] = temp.optrid
         tempList[0]["state"] = temp.state
         return json.dumps(tempList)
@@ -684,7 +657,6 @@ class symptom(db.Model):
             tempList[i]["isClassical"] = temp.isClassical
             tempList[i]["SPETid"] = temp.SPETid
             tempList[i]["illustration"] = temp.illustration
-            tempList[i]["createDay"] = temp.createDay
             tempList[i]["optrid"] = temp.optrid
             tempList[i]["state"] = temp.state
         return json.dumps(tempList)
@@ -712,12 +684,10 @@ class WesternDisease(db.Model):
         self.isClassical = isClassical
         self.SPETid = SPETid
         self.illustration = illustration
-        self.createDay = createDay
+        self.createDay = datetime.datetime.now()
         self.optrid = optrid
         self.state = state
-        db.session.add(self)
-        db.session.commit()
-    
+                    
     @classmethod
     def get_by_id(self,WDISid):
         temp = WesternDisease.query.filter_by(WDISid=WDISid)
@@ -731,7 +701,6 @@ class WesternDisease(db.Model):
         tempList[0]["isClassical"] = temp.isClassical
         tempList[0]["SPETid"] = temp.SPETid
         tempList[0]["illustration"] = temp.illustration
-        tempList[0]["createDay"] = temp.createDay
         tempList[0]["optrid"] = temp.optrid
         tempList[0]["state"] = temp.state
         return json.dumps(tempList)
@@ -751,7 +720,6 @@ class WesternDisease(db.Model):
             tempList[i]["isClassical"] = temp.isClassical
             tempList[i]["SPETid"] = temp.SPETid
             tempList[i]["illustration"] = temp.illustration
-            tempList[i]["createDay"] = temp.createDay
             tempList[i]["optrid"] = temp.optrid
             tempList[i]["state"] = temp.state
         return json.dumps(tempList)

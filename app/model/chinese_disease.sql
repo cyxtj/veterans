@@ -1,8 +1,662 @@
-INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '590c2344-1e26-408a-b078-79f35385c3b3', '01', 'ä¸­åŒ»å¦‡ç§‘', '-1', 1, 1, '', '', '2008/04/09 02:50:55', '', 3 );
-
-INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '10e5c924-b9f4-4a94-be90-b480b7049a34', '0101', 'æœˆç»å…ˆæœŸ', '01', 2, 1, '', 'æœˆç»å…ˆæœŸç³»ç”±æ°”è™šä¸å›ºæˆ–çƒ­æ‰°å†²ä»»ï¼Œè¡€æµ·ä¸å®ï¼Œå¯¼è‡´æœˆç»å‘¨æœŸæå‰7å¤©ä»¥ä¸Šï¼Œç”šæˆ–åŠæœˆä½™ä¸€è¡Œçš„æœˆç»ç—…ã€‚', '2008/04/09 02:50:55', '', 3 );
-
-INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( 'df820837-1a76-4fa2-b83c-75ad42d9f24b', '0102', 'æœˆç»åæœŸ', '01', 2, 1, '', 'æœˆç»åæœŸç³»ç”±è¥è¡€äºæŸã€é˜³è™šã€å¯’å‡ã€æ°”æ»ã€å†²ä»»ä¸ç•…å¯¼è‡´æœˆç»å»¶å7å¤©ä»¥ä¸Šè€Œè‡³ï¼Œç”šæˆ–40ï½50å¤©ä¸€è¡Œçš„æœˆç»ç—…ã€‚', '2008/04/09 02:50:55', '', 3 );
-
-INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( 'fc65c84a-0d1e-4f50-945f-3c967f306498', '0103', 'æœˆç»å…ˆåæ— å®šæœŸ', '01', 2, 1, '', 'æœˆç»å…ˆåæ— å®šæœŸç³»ç”±è‚éƒè‚¾è™šï¼Œæ°”è¡€å¤±è°ƒå¯¼è‡´è¡€æµ·è“„æº¢å¤±å¸¸ï¼Œå‡ºç°æœˆç»å‘¨æœŸæå‰æˆ–å»¶å7å¤©ä»¥ä¸Šè€Œè‡³çš„æœˆç»ç—…ã€‚', '2008/04/09 02:50:55', '', 3 );
-dbochinese_disease
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '590c2344-1e26-408a-b078-79f35385c3b3', '01', 'ÖĞÒ½¸¾¿Æ', '-1', 1, 1, '', '', '2008/04/09 02:50:55', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '10e5c924-b9f4-4a94-be90-b480b7049a34', '0101', 'ÔÂ¾­ÏÈÆÚ', '01', 2, 1, '', 'ÔÂ¾­ÏÈÆÚÏµÓÉÆøĞé²»¹Ì»òÈÈÈÅ³åÈÎ£¬Ñªº£²»Äş£¬µ¼ÖÂÔÂ¾­ÖÜÆÚÌáÇ°7ÌìÒÔÉÏ£¬Éõ»ò°ëÔÂÓàÒ»ĞĞµÄÔÂ¾­²¡¡£', '2008/04/09 02:50:55', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( 'df820837-1a76-4fa2-b83c-75ad42d9f24b', '0102', 'ÔÂ¾­ºóÆÚ', '01', 2, 1, '', 'ÔÂ¾­ºóÆÚÏµÓÉÓªÑª¿÷Ëğ¡¢ÑôĞé¡¢º®Äı¡¢ÆøÖÍ¡¢³åÈÎ²»³©µ¼ÖÂÔÂ¾­ÑÓºó7ÌìÒÔÉÏ¶øÖÁ£¬Éõ»ò40¡«50ÌìÒ»ĞĞµÄÔÂ¾­²¡¡£', '2008/04/09 02:50:55', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( 'fc65c84a-0d1e-4f50-945f-3c967f306498', '0103', 'ÔÂ¾­ÏÈºóÎŞ¶¨ÆÚ', '01', 2, 1, '', 'ÔÂ¾­ÏÈºóÎŞ¶¨ÆÚÏµÓÉ¸ÎÓôÉöĞé£¬ÆøÑªÊ§µ÷µ¼ÖÂÑªº£ĞîÒçÊ§³££¬³öÏÖÔÂ¾­ÖÜÆÚÌáÇ°»òÑÓºó7ÌìÒÔÉÏ¶øÖÁµÄÔÂ¾­²¡¡£', '2008/04/09 02:50:55', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '7f5d1b84-f2c9-4ae7-97f4-69f9f1a8a58f', '0104', 'ÔÂ¾­¹ı¶à', '01', 2, 1, '', 'ÔÂ¾­¹ı¶àÏµÓÉÆøĞé¡¢ÑªÈÈÊ¹³åÈÎ²»¹Ì£¬»òÒòğöÑªÄÚ×è£¬Ñª²»¹é¾­£¬ÖÂÔÂ¾­Á¿½ÏÕı³£Ã÷ÏÔÔö¶à£¬¶øÖÜÆÚ»ù±¾Õı³£µÄÔÂ¾­²¡¡£', '2008/04/09 02:50:55', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '6e99def8-813f-4fc1-bce7-6afb2f9b4884', '0105', 'ÔÂ¾­¹ıÉÙ', '01', 2, 1, '', 'ÔÂ¾­¹ıÉÙÏµÓÉ¾«ÑªË¥ÉÙ£¬Ñªº£²»Ó¯£¬»òÌµ×èğöÖÍ£¬ÑªĞĞ²»³©£¬ÖÂÊ¹¾­ÆÚËä×¼£¬µ«¾­Á¿½ÏÕı³£Ã÷ÏÔ¼õÉÙ£¬»ò¾­ÆÚ²»×ã2Ìì¾­Á¿ÉÙµÄÔÂ¾­²¡¡£', '2008/04/09 02:50:55', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( 'c2c9bc82-0132-48d2-b4fa-4ffb52afb1bf', '0106', '¾­ÆÚÑÓ³¤', '01', 2, 1, '', '¾­ÆÚÑÓ³¤ÏµÒõĞéÄÚÈÈ¡¢ğö×è³åÈÎ¡¢Ñª²»¹é¾­ÖÂÊ¹¾­ÆÚËä»ù±¾Õı³££¬µ«ĞĞ¾­Ê±¼ä³¬¹ı7Ìì£¬ÉõÖÁÁÜÀì°ëÔÂ·½¾»µÄÔÂ¾­²¡¡£', '2008/04/09 02:50:55', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( 'be06429d-94ad-41c8-83a8-45e1571bcf93', '0107', 'Í´¾­', '01', 2, 1, '', 'Í´¾­ÏµÓÉÇéÖ¾ËùÉË£¬ÁùÒùÎªº¦£¬µ¼ÖÂ³åÈÎÊÜ×è£»»òÒòËØÌå²»×ã£¬°û¹¬Ê§ÓÚå¦Ñø£¬µ¼ÖÂ¾­ÆÚ»ò¾­ĞĞÇ°ºó³ÊÖÜÆÚĞÔĞ¡¸¹ÌÛÍ´µÄÔÂ¾­²¡¡£', '2008/04/09 02:50:55', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( 'b9fad751-93d9-4c11-90c4-fa6ed23e1f4e', '0108', '±Õ¾­', '01', 2, 1, '', '±Õ¾­ÏµÒòÑª¿İ¾«¿÷»òÆøÖÍÌµ×è£¬µ¼ÖÂÅ®×ÓÄêÓâ18ÖÜËêÔÂ¾­Î´ÖÁ£¬»òÕı³£ÔÂ¾­ÖÜÆÚ½¨Á¢ºó£¬ÓÖÍ£¾­3¸öÔÂÒÔÉÏµÄÔÂ¾­²¡¡£', '2008/04/09 02:50:56', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '764def47-5f2b-4be8-bbb8-df84901861e2', '0109', '±ÀÂ©', '01', 2, 1, '', '±ÀÂ©ÒòÑªÈÈ¡¢Æ¢Ğé¡¢ÉöĞé¡¢ÑªğöµÈµ¼ÖÂ³åÈÎËğÉË£¬²»ÄÜÔ¼ÖÆ¾­Ñª£¬·ÇÊ±¶øÏÂ¡£Á¿¶àÈç×¢ÕßÎª±À£¬Á¿ÉÙÁÜÀì²»¾¡ÕßÎªÂ©£¬Á½Õß³£½»Ìæ³öÏÖ¡£¶à¼ûÓÚ×Ó¹¬¹¦ÄÜĞÔ³öÑª¡£', '2008/04/09 02:50:56', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( 'c857d734-2de2-434a-97db-7b92a7161419', '0110', '¾­ĞĞÈé·¿ÕÍÂú', '01', 2, 1, '', '¾­ĞĞÈé·¿ÕÍÍ´ÊÇÓÉ¸ÎÓôÆøÖÍÂöÂç²»³©£¬»ò¸ÎÉöÒõĞé£¬ÂöÂçÊ§Ñø£¬ÒÔÖÂ¾­Ç°¡¢¾­ºó»ò¾­ĞĞÆÚ¼ä³öÏÖÈé·¿ÕÍÍ´»òÈéÍ·ÕÍÍ´×÷Ñ÷£¬ÉõÖÁ²»ÄÜ´¥ÒÂµÄ²¡±ä¡£', '2008/04/09 02:50:56', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( 'b8edee1f-1278-43d4-8bd0-555fcddd4c90', '0111', '¾­ĞĞ·¢ÈÈ', '01', 2, 1, '', '¾­ĞĞ·¢ÈÈÊÇÒòËØÌåĞéÈõ£¬»òğöÈÈÄÚ×èµÈ£¬µ¼ÖÂÆøÑªÓªÎÀÊ§µ÷£¬Ã¿Öµ¾­ÆÚ»òĞĞ¾­Ç°ºó£¬³öÏÖÒÔ·¢ÈÈ£¨ÌåÎÂÒ»°ãÔÚ37.5¡ãCÒÔÉÏ£©ÎªÖ÷Òª±íÏÖµÄ²¡±ä¡£', '2008/04/09 02:50:56', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '0f0e36fd-6418-401b-bddb-469f1650c519', '0112', '¾­ĞĞÍ·Í´', '01', 2, 1, '', '¾­ĞĞÍ·Í´ÏµÒòËØÌåÑªĞé£¬Ñª²»ÉÏÈÙ£¬»òÇéÖ¾ÄÚÉË£¬ğöÑªÄÚ×è£¬ÑôÂç²»Í¨£¬µ¼ÖÂÃ¿ÓÚ¾­ÆÚ»òĞĞ¾­Ç°ºó³öÏÖÒÔÍ·Í´ÎªÖ÷ÒªÖ¢×´µÄ²¡±ä¡£', '2008/04/09 02:50:56', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( 'a880fa7f-14ba-4f8e-8af2-6d21efa350d9', '0113', '¾­ĞĞÉíÍ´', '01', 2, 1, '', '¾­ĞĞÉíÍ´ËØÌåÑªĞé¡¢º®ÊªÁôÖÍ£¬¾­ÂöÊ§Ñø£¬ÖÂ¾­ÆÚ»òĞĞ¾­Ç°ºó³öÏÖÖ«ÌåÌÛÍ´ÖÜÆÚĞÔ·¢×÷µÄ²¡±ä¡£', '2008/04/09 02:50:56', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '10434b3e-4787-48ad-8882-e43036a625d6', '0114', '¾­ĞĞĞ¹Ğº', '01', 2, 1, '', '¾­ĞĞĞ¹ĞºÊÇÖ¸ËØÌåÆ¢ÉöĞéÈõ£¬ÖÂÃ¿·ê¾­ĞĞÆÚ¼ä´óÊ¹äç±¡£¬Éõ»òÇåÏ¡ÈçË®£¬ÈÕ½âÊı´ÎµÄ²¡±ä¡£', '2008/04/09 02:50:56', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( 'ec09bbef-a2fa-46cb-9088-f30e9edbba3d', '0115', '¾­ĞĞÍÂô¬', '01', 2, 1, '', '¾­ĞĞÍÂô¬Ö÷ÒªÊÇÓÉ¸Î»ğÉÏÄæ£¬·ÎÎ¸ÔïÈÈ£¬ÆÈÑªÍıĞĞ£¬ÖÂÃ¿Öµ¾­ÆÚ»ò¾­ĞĞÇ°ºó£¬ÓĞ¹æÂÉ³öÏÖÍÂÑª»òô¬Ñª£¬²¢°éÓĞ¾­Á¿¼õÉÙ»ò²»ĞĞµÄ²¡±ä¡£ÓÖ³Æ"µ¹¾­"»ò"Äæ¾­"¡£', '2008/04/09 02:50:56', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '5bf25f9f-dc81-48d4-891b-247de309b0a9', '0116', '¾­ĞĞ¿ÚÃÓ', '01', 2, 1, '', '¾­ĞĞ¿ÚÃÓÊÇÖ¸ÒõĞé»ğÍú£¬ĞÄ»ğÉÏÑ×£¬»òÎ¸ÈÈÑ¬Õô£¬ÖÂÃ¿Öµ¾­ÆÚ»ò¾­ĞĞÇ°ºó£¬¿ÚÉàÃÓÀÃ£¬³ÊÖÜÆÚĞÔ·¢×÷µÄ²¡±ä¡£', '2008/04/09 02:50:56', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( 'f7eb6ea6-5ee8-4f89-bd1c-45d4c44964b9', '0117', '¾ø¾­Ç°ºóÖîÖ¢', '01', 2, 1, '', '¾ø¾­Ç°ºóÖîÖ¢ÊÇÉöÆø½¥Ë¥£¬Ìì¹ï½«½ß£¬ÒõÑôÊ§ºâ¶øÖÂ¸¾Å®ÔÚ¾ø¾­Ç°ºó³öÏÖÔÂ¾­ÎÉÂÒ£¬ºæÈÈº¹³ö£¬³±ÈÈÃæºì£¬ÇéÖ¾Òì³£µÈ¶àÖÖÖ¢×´¡£Ïàµ±ÓÚ¸üÄêÆÚ×ÛºÏÖ¢¡£', '2008/04/09 02:50:56', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '76c17650-3820-4cda-864a-368b4fea7005', '0118', '´øÏÂ²¡', '01', 2, 1, '', '´øÏÂ²¡ÏµÓÉÊªĞ°Ó°Ïì³åÈÎ£¬´øÂöÊ§Ô¼£¬ÈÎÂöÊ§¹Ì£¬µ¼ÖÂÒõµÀ·ÖÃÚÎïÁ¿¶à»òÉ«¡¢ÖÊ¡¢ÆøÎ¶µÄÒì³£¸Ä±ä¡£¶à¼ûÓÚÒõµÀ¡¢¹¬¾±µÈÑ×Ö¢ĞÔ¼²²¡¡£', '2008/04/09 02:50:56', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '5562ed3a-fe6d-4937-b099-ea86c696b318', '0119', 'ÈÑÉï¶ñ×è', '01', 2, 1, '', 'ÈÑÉï¶ñ×èÊÇÖ¸ÈÑÉïÔçÆÚ³åÂöÖ®ÆøÉÏÄæ£¬Î¸Ê§ºÍ½µ£¬³öÏÖÅ»ÍÂÑáÊ³£¬»òÊ³Èë¼´ÍÂµÄ¼²²¡¡£Ïàµ±ÓÚÈÑÉï¾çÍÂ¡£', '2008/04/09 02:50:56', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( 'b1bb4d46-61d4-49c4-9c72-1afc9b9796de', '0120', 'Ì¥Â©¡¢Ì¥¶¯²»°²', '01', 2, 1, '', 'ÓÉÓÚÄ¸ÌåÓëÌ¥¶ùÁ½·½ÃæÒòËØ£¬µ¼ÖÂ³åÈÎÆøÑª²»µ÷£¬Ì¥ÔªÊ§¹Ì¡£ÔÚÈÑÉïÆÚÒõµÀÉÙÁ¿³öÑª£¬Ê±ÏÂÊ±Ö¹Õß£¬³Æ"Ì¥Â©"£»ÈôÈÑÉïÆÚ¼ä½öÓĞÑüËá£¬¸¹²¿ÕÍ×¹×÷Í´£¬»ò°éÓĞÉÙÁ¿³öÑªÕß£¬³Æ"Ì¥¶¯²»°²"¡£Ïàµ±ÓÚÏÈÕ×Á÷²ú¡£', '2008/04/09 02:50:56', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( 'ad320557-e18e-4922-ae91-fc4d0b2665c6', '0121', '»¬Ì¥', '01', 2, 1, '', '»¬Ì¥ÊÇÓÉÓÚÙ÷ÖÊĞéÈõ£¬ÉöĞé³åÈÎ²»¹Ì£¬¶øÖÂ»³ÔĞºó³öÏÖ×ÔÈ»¶éÌ¥£¬»òĞ¡²úÁ¬Ğø·¢Éú3´ÎÒÔÉÏÕß£¬³ÆÎª»¬Ì¥¡£Ïàµ±ÓÚÏ°¹ßĞÔÁ÷²ú¡£', '2008/04/09 02:50:56', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '8ec1fcde-fa82-4594-82c3-d9e8adb733a5', '0122', '×ÓÖ×', '01', 2, 1, '', '¸¾Å®»³ÔĞÆÚ¼äÓÉÓÚËØÌåÆ¢ÉöÑôĞé£¬Ì¥ÆøÛÕ×è£¬Ë®ÊªÄÚÖÍ£¬¶ø³öÏÖÖ«ÌåÃæÄ¿·¢ÉúÖ×ÕÍÕß£¬³ÆÎª×ÓÖ×¡£Ïàµ±ÓÚÈÑÉïË®Ö×¡£', '2008/04/09 02:50:56', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '718bb78d-ab3f-45f7-9982-3a844170e5fd', '0123', '×ÓÁÜ', '01', 2, 1, '', '¸¾Å®»³ÔĞÆÚ¼ä£¬ÓÉÓÚÉöĞé»ò°òë×ÊªÈÈ£¬Æø»¯Ê§³££¬³öÏÖÄòÆµÄò¼±£¬²¢¸Ğ×ÆÈÈÉ¬Í´µÈÁÙ´²±íÏÖÕß£¬³ÆÎª×ÓÁÜ¡£Ïàµ±ÓÚÈÑÉïºÏ²¢ÄòÂ·¸ĞÈ¾¡£', '2008/04/09 02:50:56', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '5d99527d-cc0b-44ec-9426-2eb8b43193fb', '0124', '×ª°û', '01', 2, 1, '', 'ÔĞ¸¾ËØÌåĞéÈõµ¼ÖÂÌ¥ÆøÏÂ×¹£¬ÆÈ¼°°òë×£¬ÒÔÖÂË®µÀ²»Àû£¬¶ø³öÏÖĞ¡±ã²»Í¨£¬Ğ¡¸¹¾Ğ¼±ÕÍÍ´£¬ĞÄ·³²»µÃÎÔÕß£¬³ÆÎª×ª°û¡£Ïàµ±ÓÚÈÑÉïºÏ²¢Ğ¡±ã²»Í¨¡£', '2008/04/09 02:50:56', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '5db29490-3003-4348-90b6-3a6593ea6e58', '0125', '²úºóÑª±À', '01', 2, 1, '', '²úºóÑª±ÀÊÇÓÉÓÚ²ú¸¾ËØÌåÆøÑªĞéÈõ£¬»òğö×è¡¢ÑªÈÈ£¬µ¼ÖÂÑª²»¹é¾­£¬ÒõµÀ³öÑªÁ¿´ï500ºÁÉıÒÔÉÏÕß¡£', '2008/04/09 02:50:56', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '7b362e26-78c1-40be-88b1-d11d6e723b3a', '0126', '²úºó¶ñÂ¶²»¾ø', '01', 2, 1, '', '²úºó¶ñÂ¶²»¾øÊÇÓÉÓÚ²úÊ±ÀÍÉË¾­Âö£¬µ¼ÖÂÆøÑªÔËĞĞÊ§³££¬¶øÖÂ²úºó3ÖÜÒÔÉÏ£¬ÈÔÓĞÒõµÀ³öÑªÕß¡£Ïàµ±ÓÚ×Ó¹¬¸´¾É²»Á¼£¬×Ó¹¬Çá¶È¸ĞÈ¾£¬Ì¥ÅÌ¡¢Ì¥Ä¤²ĞÁô¡£', '2008/04/09 02:50:56', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( 'fdb562c7-9f9c-4c62-a5be-57f5afaca38f', '0127', '²úºó´ó±ãÄÑ', '01', 2, 1, '', 'ÓÉÓÚ·ÖÃäÊ±Ê§ÑªÉË½ò£¬³¦µÀÊ§ÓÚÈåÈó£¬³öÏÖ´óÊ¹¼èÉ¬£¬ÊıÈÕ²»½â£¬»òÅÅ±ãÊ±¸ÉÔïÌÛÍ´£¬ÄÑÒÔÅÅ³ö£¬³ÆÎª²úºó´ó±ãÄÑ¡£', '2008/04/09 02:50:56', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( 'cfad8981-d0c3-4189-b920-ddc9e4650047', '0128', '²úºó¸ĞÈ¾·¢ÈÈ', '01', 2, 1, '', 'ÓÉÓÚ²úÊ±ÆøÑªÖèĞé£¬ÑôÆø¸¡Ô½£¬¸ĞÈ¾Ğ°¶¾£¬ÕıĞ°½»Õù£¬¶ø³öÏÖ²úºó10ÌìÄÚ·¢ÈÈ£¬°éÓĞ¸¹Í´¼°ÒõµÀ·ÖÃÚÎïµÄÉ«¡¢ÖÊ¡¢Á¿¡¢ÆøÎ¶Òì³£±ä»¯£¬³Æ²úºó¸ĞÈ¾·¢ÈÈ¡£', '2008/04/09 02:50:56', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '834deeb6-c861-4e0b-a56f-466dc1c697c6', '0129', '²úºó×Ôº¹¡¢µÁº¹', '01', 2, 1, '', '²úºóÆøÑª½ÏĞé£¬ÒÈÀí²»ÃÜ£¬ÎÀÑô²»¹Ì£¬³öÏÖä¹ä¹º¹³ö£¬³ÖĞø²»Ö¹£¬¶¯ÔòÒæÉõÕß£¬³Æ"²úºó×Ôº¹"¡£ÒõĞéÄÚÈÈ£¬¸¡Ñô²»Á²¶øË¯ºóº¹³öÊªÒÂ£¬ĞÑÀ´¼´Ö¹Õß£¬³Æ"²úºóµÁº¹"¡£', '2008/04/09 02:50:56', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '23082329-5388-4482-b911-56bc771ba054', '0130', '²úºóÈ±Èé', '01', 2, 1, '', '²úºóÈ±ÈéÏµÒòÆøÑª²»×ã£¬²»ÄÜÉúÈé£¬»ò¸ÎÓôÆøÖÍ£¬ÈéÂö´¹Èû£¬µ¼ÖÂ²ú¸¾ÔÚ²¸ÈéÆÚÈéÖ­ÉõÉÙ»òÈ«ÎŞ£¬Òà³Æ²úºóÈéÖ­²»ĞĞ¡£', '2008/04/09 02:50:56', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( 'ecbce90b-d6a1-406a-9a45-be51fd4022e0', '0131', '²úºóÈéÖ­×Ô³ö', '01', 2, 1, '', '²úºóÈéÖ­×Ô³öÊÇÓÉÓÚÆøĞé²»ÄÜ¹ÌÉã£¬»ò¸Î»ğÄÚ»ı£¬ÆÈÈéÖ­ÍâÒç£¬µ¼ÖÂ²úºóÈéÖ­Î´¾­Ó¤¶ùË±Îü¶ø²»¶Ï×ÔÈ»Á÷³öÕß¡£', '2008/04/09 02:50:56', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '1ed54efd-c53d-4514-aa8f-7ed7fb06a27b', '0132', 'ÒõÍ¦', '01', 2, 1, '', 'ÒõÍ¦ÏµÖ¸ÉöĞéÆøÈõ£¬Ê§ÓÚ¹ÌÉã£¬³öÏÖ×Ó¹¬Î»ÖÃÏÂ´¹£¬ÉõÔòÍÑ³öÒõ»§Ö®ÍâµÄ²¡±ä¡£Ïàµ±ÓÚ×Ó¹¬ÍÑ´¹¡£', '2008/04/09 02:50:56', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '90b9fc26-8181-4b63-ba42-891943413edb', '0133', '²»ÔĞÖ¢', '01', 2, 1, '', 'ÓıÁä¸¾Å®ÓÉÓÚÉöĞé¡¢¸ÎÓô¡¢ÌµÊª¡¢ÑªğöµÈÔ­Òò£¬µ¼ÖÂ³åÈÎ¡¢×Ó¹¬¹¦ÄÜÊ§µ÷£¬½á»é1ÄêÒÔÉÏ£¬»òÔøÔĞÓıºó1ÄêÒÔÉÏ£¬·ò¸¾Í¬¾Ó£¬ÅäÅ¼ÉúÖ³¹¦ÄÜÕı³££¬¶ø²»ÊÜÔĞÕß£¬³ÆÎª²»ÔĞÖ¢¡£', '2008/04/09 02:50:56', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '81e92c86-2b25-4f3c-a4a7-384ae71dda05', '02', 'ÖĞÒ½¶ú±Çºí¿Æ', '-1', 1, 1, '', '', '2008/04/09 03:52:17', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( 'f8f0c6ee-c8f3-443b-ba72-3ecf426bbd34', '0201', '¶úÕÍ¡¢¶ú±Õ', '02', 2, 1, '', '¶úÕÍ¡¢¶ú±ÕÊÇÒòĞ°·¸¶úÇÏ£¬ÆøÑªÊ§³©ËùÖÂ£¬ÒÔ¶úÄÚÕÍÃÆ±ÕÈû¸ĞÎªÌØÕ÷µÄ¶ú²¡¡£Ïàµ±ÓÚ¼±¡¢ÂıĞÔ¿¨ËûĞÔÖĞ¶úÑ×¡£', '2008/04/09 03:52:17', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '04fe2d0e-5d9c-4e9e-ba49-740225d9177d', '0202', 'Å§¶ú', '02', 2, 1, '', 'Å§¶úÊÇÒòĞ°ÈÈÉÏ·¸¶úÇÏ£¬Ñª¸¯»¯Å§ËùÖÂ£¬ÒÔ¹ÄÄ¤´©¿×¡¢¶úÄÚÁ÷Å§ÎªÌØÕ÷µÄ¼²²¡¡£Ïàµ±ÓÚ»¯Å§ĞÔÖĞ¶úÑ×¡£', '2008/04/09 03:52:17', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( 'b7575517-c8b1-4652-a3e7-9e4a765e1ea8', '0203', '±©Áû', '02', 2, 1, '', '±©ÁûÊÇÒòĞ°·¸¶úÇÏ¡¢Æğ²¡Ñ¸ËÙµÄ¸ĞÒôÉñ¾­ĞÔÁû£¬Ö÷ÒªÖ¸ÌØ·¢ĞÔ±©Áû£¨Í»·¢ĞÔÁû£©¡£', '2008/04/09 03:52:17', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( 'c5ede233-cf57-4a9b-b16c-861e08ee0ece', '0204', '¾ÃÁû', '02', 2, 1, '', '¾ÃÁûÊÇÒòÔà¸­¿÷Ğé£¬¶úÇÏÊ§Ñø£¬»ò¾­ÂöÆøÖÍÑªğöËùÖÂ£¬ÒÔ³¤ÆÚÌıÁ¦ÏÂ½µÎªÌØÕ÷µÄ¸ĞÒôÉñ¾­ĞÔÁû¡£°üÀ¨Ò©ÎïÖĞ¶¾ĞÔÁû¡¢ÀÏÄêĞÔÁûµÈ¡£', '2008/04/09 03:52:17', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '4fd6674a-8bc9-4e4c-8ad3-730feb7a0e73', '0205', '¶úÑ£ÔÎ', '02', 2, 1, '', '¶úÑ£ÔÎÊÇÒòĞ°·¸ÄÚ¶ú£¬»òÔà¸­ĞéÈõ£¬ÄÚ¶úÊ§ÑøËùÖÂ£¬ÒÔ·¢×÷ĞÔ¡¢Ğı×ªĞÔÑ£ÔÎÎªÌØÕ÷µÄ¼²²¡¡£Ïàµ±ÓÚ¶úÔ´ĞÔÑ£ÔÎ£¨ÃÀÄá¶ûÊÏ²¡£©¡£', '2008/04/09 03:52:17', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '66522337-9b13-473d-a8c9-1c8ea4996f59', '0206', 'ÉË·ç±ÇÈû', '02', 2, 1, '', 'ÉË·ç±ÇÈûÊÇÖ¸·çĞ°·¸¼°±ÇÇÏËùÖÂ£¬ÒÔ±ÇÈû¡¢Á÷ÌéÎªÌØÕ÷µÄ¼±ĞÔ±Ç²¡¡£Ïàµ±ÓÚ¼±ĞÔ±ÇÑ×¡£', '2008/04/09 03:52:17', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '2609d530-b1ed-47ae-ac12-3846c9a55e8e', '0207', '±ÇÖÏ', '02', 2, 1, '', '±ÇÖÏÊÇÒòÔà¸­ĞéÈõ£¬Ğ°ÖÍ±ÇÇÏËùÖÂ£¬ÒÔ³¤ÆÚ±ÇÈû¡¢Á÷ÌéÎªÌØÕ÷µÄÂıĞÔ±Ç²¡¡£Ö÷ÒªÖ¸ÂıĞÔ±ÇÑ×¡£', '2008/04/09 03:52:17', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '404bfb0a-44c6-4a5a-acf1-57c0bf8bf8b7', '0208', '±ÇéÂ', '02', 2, 1, '', '±ÇéÂÊÇÒò½òÒº²»ÄÜÉÏå¦±ÇÇÏËùÖÂ£¬ÒÔ±ÇÖĞ¸ÉÔï¡¢Õ³Ä¤Î®ËõÎªÌØÕ÷µÄÂıĞÔ±Ç²¡¡£Ö÷ÒªÖ¸Î®ËõĞÔ±ÇÑ×¡£', '2008/04/09 03:52:17', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '594eda87-98a4-46f1-8e27-2f1ca1f3b86a', '0209', '±Ç÷ü', '02', 2, 1, '', '±Ç÷üÊÇÒòÙ÷ÖÊÌØÒì£¬Ğ°·¸±ÇÇÏËùÖÂ£¬ÒÔÕó·¢ĞÔ±ÇÑ÷¡¢Á¬ĞøÅçÌçÎªÌØÕ÷µÄ¼²²¡¡£Ïàµ±ÓÚ±äÓ¦ĞÔ±ÇÑ×£¨¹ıÃôĞÔ±ÇÑ×£©¡£', '2008/04/09 03:52:17', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '6c56539b-b855-43d5-8ed9-e6197828f2d0', '0210', '±ÇÔ¨', '02', 2, 1, '', '±ÇÔ¨ÊÇÒòĞ°·¸±Çñ¼£¬ñ¼ÄÚÊªÈÈÔÌ»ı£¬Äğ³ÉÌµ×ÇËùÖÂ£¬ÒÔ±ÇÁ÷×ÇÌéÁ¿¶àÎªÌØÕ÷µÄ±Ç²¡¡£Ö÷ÒªÖ¸¼±¡¢ÂıĞÔ±Çñ¼Ñ×¡£', '2008/04/09 03:52:17', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( 'e79686d3-6a61-4142-9544-1ab5a7b35d51', '0211', '±Çô¬', '02', 2, 1, '', '±Çô¬ÊÇÓÉ·ÎÈÈÉÏÕô£¬±ÆÑªÄæĞĞ£¬»òÔïÆøÍâÏ®ËùÖÂ£¬ÒÔ±ÇÇ»³öÑªÎªÖ÷ÒªÖ¢×´µÄ²¡Ö¤¡£ÊÇ¶ú±Çºí¿Æ³£¼û¼±Ö¢¡£', '2008/04/09 03:52:17', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( 'ac70791e-522b-4363-a46c-a5044568a13e', '0212', '¼±ºí±Ô', '02', 2, 1, '', '¼±ºí±ÔÊÇ¹úÍâĞ°¿ÍÓÚÑÊ²¿ËùÖÂ£¬ÒÔÑÊÍ´¡¢ÑÊÕ³Ä¤Ö×ÕÍÎªÌØÕ÷µÄ¼±ĞÔÑÊ²¡¡£Ö÷ÒªÖ¸¼±ĞÔÑÊÑ×¡£', '2008/04/09 03:52:17', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '523762f2-424f-4c00-87be-ef8e14d657f7', '0213', 'Âıºí±Ô', '02', 2, 1, '', 'Âıºí±ÔÊÇÒòÔà¸­ĞéÈõ£¬ÑÊ²¿Ê§Ñø£¬»òĞ°ÖÍÓÚÑÊËùÖÂ£¬ÒÔÑÊ²¿²»ÊÊ£¬ÑÊÕ³Ä¤Ö×ÕÍ»òÎ®ËõÎªÌØÕ÷µÄÂıĞÔÑÊ²¡¡£Ö÷ÒªÖ¸ÂıĞÔÑÊÑ×¡£', '2008/04/09 03:52:17', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '8eb4acd1-ce6f-45ed-8931-a95ea45bf5ca', '0214', 'Èé¶ê', '02', 2, 1, '', 'Èé¶êÊÇÒòĞ°¿ÍºíºË£¨±âÌÒÌå£©£¬ºËÄÚÑªÈâ¸¯°ÜËùÖÂ£¬ÒÔÑÊÍ´¡¢ºíºËºìÖ×»ò»¯Å§ÎªÌØÕ÷µÄÑÊ²¿¼²²¡¡£·Ö¼±Èé¶êºÍÂıÈé¶êÁ½Àà£¬Ïàµ±ÓÚ¼±¡¢ÂıĞÔ±âÌÒÌåÑ×¡£', '2008/04/09 03:52:17', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( 'fc6fd5c1-3c88-4e3c-ab7e-ce3c0dd0245a', '0215', 'ºí¹ØÓ¸', '02', 2, 1, '', 'ºí¹ØÓ¸ÊÇÒòĞ°¿ÍÈé¶ê£¬ÈÈ¶¾Âû¼°ÖÜÎ§ËùÖÂ£¬ÒÔÑÊÍ´¾çÁÒ¡¢ºíºË£¨±âÌÒÌå£©ÅÔºìÖ×Â¡ÆğÎªÌØÕ÷µÄÑÊ²¡¡£Ïàµ±ÓÚ±âÌÒÌåÖÜÎ§Å§Ö×¡£', '2008/04/09 03:52:17', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '51c6ef80-f206-46bb-bd37-d53242775eda', '0216', '¼±ºíà³', '02', 2, 1, '', '¼±ºíà³ÊÇÒòĞ°·¸ÓÚºíËùÖÂ£¬ÒÔÉùÒôË»ÑÆ¡¢Éù´øË®Ö×ÎªÌØÕ÷µÄ¼±ĞÔºí²¡¡£Ö÷ÒªÖ¸¼±ĞÔºíÑ×¡£', '2008/04/09 03:52:17', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '3b4be459-6d84-42c2-83ae-4303aa5ac1c4', '0217', 'Âıºíà³', '02', 2, 1, '', 'Âıºíà³ÊÇÒòÔà¸­ĞéÈõ£¬ÉùÃÅÊ§Ñø£¬»òÆøÑªğöÖÍ£¬Ìµ×ÇÄı¾ÛÓÚÉùÃÅËùÖÂ£¬ÒÔ³¤ÆÚÉùÒôË»ÑÆÎªÌØÕ÷µÄÂıĞÔºí²¡¡£Ö÷ÒªÖ¸ÂıĞÔºíÑ×£¬Òà°üÀ¨Éù´øĞ¡½á¡¢Éù´øÏ¢Èâ¡£', '2008/04/09 03:52:17', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '01b4f15f-f64e-4ba0-8ec4-db062cb2b03f', '0218', 'Ã·ºËÆø', '02', 2, 1, '', 'Ã·ºËÆøÊÇÒòÇéÖ¾²¨¶¯£¬Æø»ú²»³©ËùÖÂ£¬ÒÔÑÊÖĞËÆÓĞÃ·ºË×èÈû¸ĞÎªÌØÕ÷µÄ¼²²¡¡£Ïàµ±ÓÚÑÊÉñ¾­¹ÙÄÜÖ¢¡£', '2008/04/09 03:52:17', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( 'b8d2a791-9d7c-4747-a4f1-fc04cb6259b0', '0219', 'ÑÀĞû', '02', 2, 1, '', 'ÑÀĞûÊÇÒòĞ°·¸ÑÀ´²£¬»òÔà¸­ĞéËğ£¬ö¸ÈâÊ§ÑøËùÖÂ£¬ÒÔö¸ÈâÖ×ÕÍ»òÎ®Ëõ£¬ÑÀ¸ùĞûÂ¶£¬ö¸³İ¼äÉø³öÅ§ÑªÎªÌØÕ÷µÄ¼²²¡¡£Ö÷ÒªÖ¸ÑÀÖÜÑ×£¬Òà°üÀ¨ÑÀö¸Ñ×µÈÆäËûÑÀÖÜ×éÖ¯²¡¡£', '2008/04/09 03:52:17', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '14a55090-ad4c-422c-ba4f-99e111379560', '0220', '¿Ú´¯', '02', 2, 1, '', '¿Ú´¯ÊÇ¿ÚÇ»Õ³Ä¤ÊÜĞ°ÈÈÕô×Æ£¬»òÊ§ÓÚÆøÑªÈÙÑøËùÖÂ£¬ÒÔ¾Ö²¿³öÏÖĞ¡À£Ññ£¬×ÆÈÈÌÛÍ´ÎªÌØÕ÷µÄ¿ÚÇ»Õ³Ä¤²¡¡£°üÀ¨¸´·¢ĞÔ¿Ú´¯ºÍ¿Ú´¯ĞÔ¿ÚÑ×¡£', '2008/04/09 03:52:17', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '4726022d-0426-48b0-9796-860cf7917405', '051001', 'Ë³Ö¤', '0510', 3, 1, ' ', '²¡³ÌÓĞÃ÷ÏÔµÄ½×¶ÎĞÔ¡£', '2008/04/10 12:04:44', ' ', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '3f8908bb-079e-4c3d-8c5b-0bf014043b56', '06', 'ÖĞÒ½¹ÇÉË¿Æ', '-1', 1, 1, '', '', '2008/04/10 03:30:16', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '3c13642f-29cd-4825-a54a-e792876e0f63', '0601', 'Ëø¹Ç¹ÇÕÛ', '06', 2, 1, '', '', '2008/04/10 03:30:16', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( 'b4635fd4-5677-4e1a-a2c3-84f7fe66540f', '0602', '¼çëÎ¹Ç¹ÇÕÛ', '06', 2, 1, '', '', '2008/04/10 03:30:16', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( 'b73dce57-ab60-4eb7-b456-8894c318d5f9', '0603', 'ëÅ¹Ç´ó½á½Ú¹ÇÕÛ', '06', 2, 1, '', '', '2008/04/10 03:30:16', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '5af95408-93ad-41f4-aea9-a294ee166765', '0604', 'ëÅ¹ÇÍâ¿Æ¾±¹ÇÕÛ', '06', 2, 1, '', '', '2008/04/10 03:30:16', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '8e01dd06-b1cc-42fb-9a04-8ab3838b0a2c', '0605', 'ëÅ¹Ç¸É¹ÇÕÛ', '06', 2, 1, '', '', '2008/04/10 03:30:16', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( 'f9d1e242-9d28-44a1-9285-b348952872e0', '0606', 'ëÅ¹Ç÷ÁÉÏ¹ÇÕÛ', '06', 2, 1, '', '', '2008/04/10 03:30:16', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( 'e17c7384-354b-493a-bf9b-635419936b26', '0607', 'ëÅ¹Ç÷Á¼ä¹ÇÕÛ', '06', 2, 1, '', '', '2008/04/10 03:30:16', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( 'adabeb3b-f9c7-4832-8531-d9abad7d659c', '0608', 'ëÅ¹ÇÍâ÷Á¹ÇÕÛ', '06', 2, 1, '', '', '2008/04/10 03:30:16', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '3f1655cb-fff4-4682-b196-bcde646d4abb', '0609', 'ëÅ¹ÇÄÚÉÏ÷Á¹ÇÕÛ', '06', 2, 1, '', '', '2008/04/10 03:30:16', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '15724e8a-141e-404c-b503-aae52065532d', '0610', 'ëÅ¹ÇÍ·¹ÇÕÛ', '06', 2, 1, '', '', '2008/04/10 03:30:16', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( 'cdacee1c-f8ea-4a52-b1a7-bf8a79034c8e', '0611', '³ß¹ÇÓ¥×ì¹ÇÕÛ', '06', 2, 1, '', '', '2008/04/10 03:30:16', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '006c660e-7aa6-4a9d-94af-2c71919ea1bb', '0612', 'èã¹ÇĞ¡Í·¹ÇÕÛ', '06', 2, 1, '', '', '2008/04/10 03:30:16', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( 'a412cad7-963c-4f89-9155-fa0daa67323a', '0613', '³ß¹ÇÉÏ1£¯3¹ÇÕÛ²¢èã¹ÇÍ·ÍÑÎ»', '06', 2, 1, '', '', '2008/04/10 03:30:16', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( 'e4cad3f3-0e33-4990-ad34-2ba7cac26b28', '0614', '³ßèã¹Ç¸ÉË«¹ÇÕÛ', '06', 2, 1, '', '', '2008/04/10 03:30:16', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '7f5ca4ad-11d2-49fd-a038-f91f5adf778a', '0615', 'èã¹ÇÏÂ1£¯3¹ÇÕÛ²¢ÏÂ³ßèã¹Ø½ÚÍÑÎ»', '06', 2, 1, '', '', '2008/04/10 03:30:16', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '35887e55-ee2d-4844-85f7-eaa254d7aae0', '0616', 'èã¹ÇÏÂ¶Ë¹ÇÕÛ', '06', 2, 1, '', '', '2008/04/10 03:30:16', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '8eee9047-c549-4206-aa27-ed7ad042e8af', '0617', 'ÍóÖÛ¹Ç¹ÇÕÛ', '06', 2, 1, '', '', '2008/04/10 03:30:16', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( 'd3ea8072-6dda-44e0-82cf-9bf0fb137eef', '0618', 'ÕÆ¹Ç¹ÇÕÛ', '06', 2, 1, '', '', '2008/04/10 03:30:16', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '547bf026-3139-4696-abe0-59fa55097f2a', '0619', 'Ö¸¹Ç¹ÇÕÛ', '06', 2, 1, '', '', '2008/04/10 03:30:16', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '736b5522-df34-468e-b66b-13d535369e38', '050301;
+', '·¢×÷ÆÚ', '0503;
+', 3, 1, ' ', ' ', '2008/04/10 12:04:44', ' ', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '736b5522-df34-468e-b66b-13d535369e39', '050302;
+', '»º½âÆÚ', '0503;
+', 3, 1, ' ', ' ', '2008/04/10 12:04:44', ' ', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '301dcdb3-cd13-43a0-b06d-f196d55408be', '0620', '¹É¹Ç¾±¹ÇÕÛ', '06', 2, 1, '', '', '2008/04/10 03:30:16', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( 'cbbf4a23-043b-4f53-b722-9326538261d1', '0621', '¹É¹Ç´ÖÂ¡¼ä¹ÇÕÛ', '06', 2, 1, '', '', '2008/04/10 03:30:16', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '44263bb5-79f6-436d-83a4-23763335a5ec', '0622', '¹É¹Ç¸É¹ÇÕÛ', '06', 2, 1, '', '', '2008/04/10 03:30:16', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '06169f66-9269-4c14-91fb-a34254109a12', '0623', '¹É¹Ç÷ÁÉÏ¹ÇÕÛ', '06', 2, 1, '', '', '2008/04/10 03:30:16', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '8b1a821a-eca7-4219-8625-999292ec53ba', '0624', '÷Æ¹Ç¹ÇÕÛ', '06', 2, 1, '', '', '2008/04/10 03:30:16', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '58d99bd6-b4db-4868-9009-6ad661003256', '0625', 'ëÖ¹ÇÆ½Ì¨¹ÇÕÛ', '06', 2, 1, '', '', '2008/04/10 03:30:16', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '0c065ebb-0667-458f-9e7b-d8a598a60f08', '0626', 'ëÖëè¹Ç¸É¹ÇÕÛ', '06', 2, 1, '', '', '2008/04/10 03:30:16', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( 'b24c90a9-ef7a-489b-ae6d-103a08837088', '0627', 'õ×²¿¹ÇÕÛ', '06', 2, 1, '', '', '2008/04/10 03:30:16', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '951835c7-073d-4849-95d2-ef4eafaa019c', '0628', '¾à¹Ç¹ÇÕÛ', '06', 2, 1, '', '', '2008/04/10 03:30:16', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '4a710776-f24f-4296-8f28-70cde39adf08', '0629', '×ãÖÛ¹Ç¹ÇÕÛ', '06', 2, 1, '', '', '2008/04/10 03:30:16', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '7420acb0-66c9-4e05-8748-96cea77a2d3f', '0630', '¸ú¹Ç¹ÇÕÛ', '06', 2, 1, '', '', '2008/04/10 03:30:16', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( 'e22f9352-fda2-41ef-a308-c32cabe2f0cb', '0631', 'õÅ¹Ç¹ÇÕÛ', '06', 2, 1, '', '', '2008/04/10 03:30:16', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '165af04a-cd31-4a90-81e8-9bbf1920f171', '0632', 'Öº¹Ç¹ÇÕÛ', '06', 2, 1, '', '', '2008/04/10 03:30:16', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( 'da7a4977-1a95-4d81-b723-c84ffe45224c', '0633', 'ĞØ¹Ç¹ÇÕÛ', '06', 2, 1, '', '', '2008/04/10 03:30:16', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( 'dc5059a8-6022-4496-b96d-43d0d76a2430', '0634', 'Àß¹Ç¹ÇÕÛ', '06', 2, 1, '', '', '2008/04/10 03:30:16', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( 'a525f4d5-2333-4f09-a618-66dc25a23f30', '0635', '»·¡¢Êà×µ¹ÇÕÛ¡¢ÍÑÎ»', '06', 2, 1, '', '', '2008/04/10 03:30:16', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '6585372a-5eea-48a1-90ce-f4536dd95816', '0636', '¾±×µ¹ÇÕÛ¡¢ÍÑÎ»', '06', 2, 1, '', '', '2008/04/10 03:30:16', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( 'feb734d2-f021-4039-83d6-0458abc82053', '0637', 'ĞØ¡¢Ñü×µ¹ÇÕÛ', '06', 2, 1, '', '', '2008/04/10 03:30:16', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '46779818-a5b1-46c1-bd31-a681055442c0', '0638', '¹ÇÅè¹ÇÕÛ', '06', 2, 1, '', '', '2008/04/10 03:30:16', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '1763dd65-2fc6-44d9-9e4f-6b3bc9b54ae8', '0639', 'Î²×µ¹ÇÕÛ¡¢ÍÑÎ»', '06', 2, 1, '', '', '2008/04/10 03:30:16', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( 'ec50d43c-5680-46ae-ac93-6b2de4362ad3', '0640', '¿ª·ÅĞÔ¹ÇÕÛ', '06', 2, 1, '', '', '2008/04/10 03:30:16', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '40b59446-e887-4c4d-b464-2eb9b24dc367', '0641', '³Â¾ÉĞÔ¹ÇÕÛ', '06', 2, 1, '', '', '2008/04/10 03:30:16', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '058a5c45-d8ca-47bc-98c6-640ae5aa2426', '0642', 'ò¨ò¢¹Ø½ÚÍÑÎ»', '06', 2, 1, '', '', '2008/04/10 03:30:16', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '5784dc8f-c9ac-465e-b459-eb8bb1b8bf32', '0643', 'ĞØËø¹Ø½ÚÍÑÎ»', '06', 2, 1, '', '', '2008/04/10 03:30:16', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( 'b7809bb1-45e8-4ddd-81a7-e8c390145195', '0644', '¼çËø¹Ø½ÚÍÑÎ»', '06', 2, 1, '', '', '2008/04/10 03:30:16', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( 'a1d500ba-25de-45ca-8d7b-5e76c8daafa8', '0645', '¼ç¹Ø½ÚÍÑÎ»', '06', 2, 1, '', '', '2008/04/10 03:30:16', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( 'b62f9a7d-bbd8-4d1a-9210-6786498ff7b1', '0646', 'Öâ¹Ø½ÚÍÑÎ»', '06', 2, 1, '', '', '2008/04/10 03:30:16', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '8219b66f-4567-4647-a700-704b45439f29', '070901', '·¢×÷ÆÚ', '0709', 3, 1, ' ', ' ', '2008/04/10 03:43:35', ' ', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '8219b66f-4567-4647-a700-704b45439f30', '070902', '»º½âÆÚ', '0709', 3, 1, ' ', ' ', '2008/04/10 03:43:35', '  ', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '8219b66f-4567-4647-a700-704b45439f31', '072501', '¼±ĞÔÑªÎü³æ²¡', '0725', 3, 1, ' ', ' ', '2008/04/10 03:43:35', ' ', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '8219b66f-4567-4647-a700-704b45439f32', '072502', 'ÂıĞÔÑªÎü³æ²¡', '0725', 3, 1, ' ', ' ', '2008/04/10 03:43:35', ' ', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '8219b66f-4567-4647-a700-704b45439f33', '072503', 'ÍíÆÚÑªÎü³æ²¡', '0725', 3, 1, ' ', ' ', '2008/04/10 03:43:35', ' ', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '8219b66f-4567-4647-a700-704b45439f34', '072601', 'ÌĞ³æ²¡', '0726', 3, 1, ' ', ' ', '2008/04/10 03:43:35', ' ', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '8219b66f-4567-4647-a700-704b45439f35', '072602', 'ÄÒ³æ²¡', '0726', 3, 1, ' ', ' ', '2008/04/10 03:43:35', ' ', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( 'c2d12a7f-7d98-4512-93b4-10b0e7a2f503', '0833', 'ÇàÉß¶¾', '08', 2, 1, '', 'ÇàÉß¶¾ÊÇÒòÊªÈÈÖ®Ğ°ÍâÇÖ£¬ÒÔÖÂÆøÑªÄıÖÍ£¬ÂöÂçÖÍÈû²»Í¨¶ø³É£¬³Ê¾Ö²¿½îÂöÖ×ÕÍÉ«ºì£¬×ÆÈÈÌÛÍ´¡£Ïàµ±ÓÚÑªË¨ĞÔÇ³¾²ÂöÑ×¡£', '2008/04/10 08:17:13', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '09071624-e613-4732-ad5a-c7c75ba046a9', '0834', '¹ÉÖ×', '08', 2, 1, '', '¹ÉÖ×ÊÇÒòğöÑª×èÓÚÒõÂö£¬±Ô×Å²»Í¨£¬ÓªÑªÄæĞĞÊÜ×è£¬Ë®½òÍâÒç£¬µ¼ÖÂÏÂÖ«ÕÍÍ´£¬Æ¤É«·¢°×£¬Ö«ÌåÔö´ÖÎªÌØÕ÷µÄ¼²²¡¡£Ïàµ±ÓÚÏÂÖ«ÑªË¨ĞÔÉî¾²ÂöÑ×¡£', '2008/04/10 08:17:13', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '3d67d187-99ee-4353-b0f4-fc0c3fa9f6d2', '0835', 'Ë®»ğÌÌÉË', '08', 2, 1, '', 'Ë®»ğÌÌÉËÊÇÒòÈÈ¶¾Ö®Æø³ãÊ¢£¬¸¯ÀÃÆ¤Èâ£¬ÉõÕß»ğ¶¾ÄÚ¹¥¿ÉÏÖ²»Í¬Ôà¸­¼æÖ¤¡£Ïàµ±ÓÚÉÕÉË¡£', '2008/04/10 08:17:13', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( 'f18b6b67-2a19-493f-ab62-98c5a9e7b510', '0836', '¶³´¯', '08', 2, 1, '', '¶³´¯ÊÇÒòÊÜº®Ğ°ÇÖÏ®£¬ÆøÑªğöÖÍ£¬Æ¤·ô×ÏºìÂéÄ¾´ÌÍ´£¬»ò¾Ö²¿¼¡·ô»µËÀ£¬ÉõÕß¿ÉÖÂÈ«Éí¶³½©¡£Ïàµ±ÓÚ¶³ÉË¡£', '2008/04/10 08:17:13', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '7ceaa2cd-e61b-4199-a1d7-c901cebeb3ce', '0837', '¶¾ÉßÒ§ÉË', '08', 2, 1, '', '¶¾ÉßÒ§ÉËÊÇ±»ÓĞ¶¾Ö®ÉßÒ§ÉË£¬¶¾ÒºÇÖÈëÉË¿Ú£¬ÆøÑªÊÜÉË£¬ÄÚ¹¥Ôà¸­¶ø·¢ÉúµÄÎ£¼±ÖØÖ¢¡£Òò¶¾ĞÔ²»Í¬¶ø±íÏÖ¶àÖÖÈ«ÉíÖĞ¶¾Ö¢×´¡£', '2008/04/10 08:17:13', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '25c64bd9-9ef8-4554-8334-a76a8196f2c0', '0838', 'ÆÆÉË·ç', '08', 2, 1, '', 'ÆÆÉË·çÊÇÓÉÆÆÉË¸ĞÊÜ·ç¶¾Ö®Ğ°£¬ÒıÆğÒÔÈ«ÉíºÍ¾Ö²¿¼¡ÈâÇ¿Ö±ĞÔºÍÕó·¢ĞÔ¾·ÂÎÎªÌØÕ÷µÄ¼²²¡¡£', '2008/04/10 08:17:13', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '82f50cdf-8e9d-4135-9be2-956bfd92f192', '03', 'ÖĞÒ½¸Ø³¦¿Æ', '-1', 1, 1, '', '', '2008/04/09 04:09:55', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '1831225c-6b16-4417-af94-9a0efdabf978', '0301', 'ÄÚÖÌ', '03', 2, 1, '', 'ÄÚÖÌÏµ·¢ÉúÓÚ³İÏßÒÔÉÏµÄ¾²ÂöÇúÕÅÍÅ¿é£¬ÓÖ³Æ"ÀïÖÌ"¡£', '2008/04/09 04:09:55', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '0ab0b5df-7d6a-4ccd-9ac1-f2b69806bd2b', '0302', 'ÍâÖÌ', '03', 2, 1, '', 'ÍâÖÌÏµ·¢ÉúÓÚ³İÏßÒÔÏÂµÄ¾²ÂöÇúÕÅÍÅ¿é»ò×¸Æ¤¡£', '2008/04/09 04:09:55', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( 'be8f7535-c637-41ef-9f26-2dcf569e3d33', '0303', '»ìºÏÖÌ', '03', 2, 1, '', '»ìºÏÖÌÏµ·¢ÉúÓÚÍ¬Ò»·½Î»³İÏßÉÏÏÂ£¬ĞÎ³ÉÒ»ÌåµÄ¾²ÂöÇúÕÅÍÅ¿é¡£', '2008/04/09 04:09:55', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '7f06b32b-f70b-4134-9318-b788ac9ebd4b', '0304', '¸ØÁÑ', '03', 2, 1, '', '¸ØÁÑÏµÖ¸¸Ø¹ÜÆ¤·ô¼°Æ¤ÏÂ×éÖ¯ÁÑ¿ª»òĞÎ³ÉÀ£Ññ¡£ÓÖÃû"¹³³¦ÖÌ"¡¢"ÁÑ¸Ø"¡£', '2008/04/09 04:09:55', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '096dc779-dd53-4916-8fa4-cf3a94b8cc62', '0305', '¸ØÓ¸', '03', 2, 1, '', '¸ØÓ¸Ïµ¸Ø¹ÜÖ±³¦ÖÜÎ§Èí×éÖ¯¼äÏ¶¼±ĞÔ¸ĞÈ¾ËùĞÎ³ÉµÄ»¯Å§ĞÔ²¡±ä£¬ÓÖ³Æ¸ØÃÅÖ±³¦ÖÜÎ§Å§Ö×¡£', '2008/04/09 04:09:55', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '95617344-0f74-4eb5-ae09-d8e8fbb9522c', '0306', '¸ØÂ©', '03', 2, 1, '', '¸ØÂ©Ïµ¸ØÓ¸³ÉÅ§×ÔÀ£»òÇĞ¿ªºóËùÒÅÁôµÄÇ»µÀ¡£Òå³ÆÖÌÂ©¡¢ÖÌ´¯¡£', '2008/04/09 04:09:55', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( 'fcc703eb-1a63-40e4-9854-6b9ee8f88bf9', '0307', 'ÍÑ¸Ø', '03', 2, 1, '', 'ÍÑ¸ØÖ÷ÒªÖ¸Ö±³¦Õ³Ä¤»òÖ±³¦È«²ãÍÑ´¹£¬ÉÙÊı¿É·¢Éú²¿·ÖÒÒ×´½á³¦ÍÑ´¹£¬ÓÖ³ÆÖ±³¦ÍÑ´¹¡£', '2008/04/09 04:09:55', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( 'f45ae0b0-a86c-4b11-92b2-fd0d323a4b6d', '0308', 'ĞüÖéÖÌ', '03', 2, 1, '', 'ĞüÖéÖÌÏµÕı³£¸ØÈéÍ·ÒòÂıĞÔÑ×Ö¢´Ì¼¤ËùÖÂÏËÎ¬½áµŞ×éÖ¯ÔöÉú£¬ÓÖ³Æ¸ØÈéÍ·ÏËÎ¬Áö¡£', '2008/04/09 04:09:55', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '16f0ef9c-e5c5-41a1-94c1-8276ba925cf0', '0309', '÷¾Î²²¿»ûÌ¥Áö', '03', 2, 1, '', '÷¾Î²²¿»ûÌ¥ÁöÊÇÆğÔ´ÓÚÅßÌ¥Ô­Ê¼Ï¸°û£¬Éú³¤ÓÚ÷¾Î²²¿µÄÖ×Áö¡£', '2008/04/09 04:09:55', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '1fb14ffb-bce9-42e0-a58f-a003aac8df53', '0310', '÷¾Î²²¿ÄÒÖ×ñ¼', '03', 2, 1, '', '÷¾Î²²¿ÄÒÖ×ñ¼Ö¸Î»ÓÚ÷¾Î²²¿µÄÄÒÖ×Òò¸ĞÈ¾ËùĞÎ³ÉµÄñ¼µÀ¡£', '2008/04/09 04:09:55', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '4a84d33f-527d-4f04-b02f-9c5ee3eafd03', '0311', 'Ï¢ÈâÖÌ', '03', 2, 1, '', 'Ï¢ÈâÖÌÖ¸·¢ÉúÓÚÖ±³¦ÄÚÕ³Ä¤ÉÏµÄ×¸ÉúÎï£¬ÓĞµÙ»òÎŞµÙ£¬ÓÖ³ÆÖ±³¦Ï¢Èâ¡£', '2008/04/09 04:09:55', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '75201b21-dd7c-4727-a6b6-789aa63086ad', '0312', '¸ØÃÅÖ±³¦ÏÁÕ­', '03', 2, 1, '', '¸ØÃÅÖ±³¦ÏÁÕ­Ö¸ÈÎºÎÔ­ÒòËùÖÂ¸ØÃÅ¡¢Ö±³¦Ç»µÀ±äÕ­£¬²¢µ¼ÖÂÅÅ±ãÀ§ÄÑ¡£', '2008/04/09 04:09:55', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '939be377-c1d1-45fa-980c-af038e2dbc5f', '0313', '¸ØÃÅÊ§½û', '03', 2, 1, '', '¸ØÃÅÊ§½ûÖ¸¸ØÃÅÍêÈ«»ò²»ÍêÈ«Ê§È¥¿ØÖÆÅÅ±ãµÄÄÜÁ¦¡£', '2008/04/09 04:09:55', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( 'b2cf1c63-313d-4fe2-aed0-16e5747a38e3', '0314', 'Ö±³¦Ç°Í»', '03', 2, 1, '', 'Ö±³¦Ç°Í»ÏµÌ§Ö±³¦Ç°ÏÂ¶ÎÏòÒõµÀ·½ÏòÍ»³ö£¬ĞÎ³ÉÒ»¸öÄÒÇ»£¬ÓÈÔÚÅ¬ÕõÅÅ±ãÊ±ÎªÉõ£¬ÖÂ·à±ãÖÍÁô£¬³öÏÖÅÅ±ãÀ§ÄÑ¡£', '2008/04/09 04:09:55', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( 'abb6ff75-7a70-46a9-ad1f-baf3ac64143d', '0315', 'Åèµ×¼¡¾·ÂÎ×ÛºÏÕ÷', '03', 2, 1, '', 'Åèµ×¼¡¾·ÂÎ×ÛºÏÕ÷ÏµÓÉÓÚÅèµ×¼¡¾·ÂÎ£¨·´³£ÊÕËõ£©£¬³öÏÖÒÔÅÅ±ãÀ§ÄÑ£¬¸ØÃÅ²»ÊÊÎªÖ÷ÒªÖ¢×´µÄ¼²²¡¡£', '2008/04/09 04:09:55', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( 'e4982182-71b4-4fd5-8b9a-fbf02d947f0d', '0316', '¸ØÃÅÊªÑñ', '03', 2, 1, '', '¸ØÃÅÊªÑñÊÇÒ»ÖÖ³£¼ûµÄ·Ç´«È¾ĞÔÆ¤·ô²¡£¬²¡±ä¶à¾ÖÏŞÓÚ¸ØÃÅÖÜÎ§Æ¤·ô¡£Ïàµ±ÓÚ¸ØÃÅÊªÕî¡£', '2008/04/09 04:09:55', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '22c16f97-f663-46e4-b52f-21713644876f', '0317', 'Ëø¸ØÖÌ', '03', 2, 1, '', 'Ëø¸ØÖÌÏµ·¢ÉúÔÚ¸Ø¹ÜÖ±³¦µÄ¶ñĞÔÖ×Áö¡£Ïàµ±ÓÚ¸Ø¹ÜÖ±³¦°©¡£', '2008/04/09 04:09:55', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '2602967d-03b5-411a-a97d-e6578288a042', '04', 'ÖĞÒ½Æ¤·ô¿Æ', '-1', 1, 1, '', '', '2008/04/09 04:59:42', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '0204b76e-0e41-4375-b449-efece3765811', '0401', '»ÆË®´¯', '04', 2, 1, '', '»ÆË®´¯ÊÇÒ»ÖÖÒò¶¾ÈÈÓôÓÚÆ¤Ã«£¬ÒÔÁ÷»ÆË®¡¢½şÒù³ÉÆ¬ÎªÌØÕ÷µÄÆ¤·ô´«È¾²¡¡£Ïàµ±ÓÚÅ§ğå´¯¡£', '2008/04/09 04:59:42', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( 'e763afd8-7fb2-4275-ab07-ae811ac6aef8', '0402', 'Á÷Æ¤Â©', '04', 2, 1, '', 'Á÷Æ¤Â©ÓÖ³ÆÑ»à¢´¯£¬ÊÇÒ»ÖÖÆ¤·ôËğº¦ÎªÉîºìÉ«½şÈó°ß¿é£¬±íÃæÓĞ×ØºìÉ«½á½Ú£¬ÓúºóĞÎ³ÉÎ®ËõĞÔñ£ºÛµÄÆ¤·ô²¡¡£Ïàµ±ÓÚÑ°³£ÀÇ´¯¡£', '2008/04/09 04:59:42', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '7ff56278-7880-4610-ba61-d6245b863efa', '0403', 'ëèõß¾Ò', '04', 2, 1, '', 'ëèõß¾ÒÊÇ·¢ÉúÔÚĞ¡ÍÈ¶Ç£¬ÒÔ°µºìÉ«Ó²½á£¬¿ÉÀ£ÀÃ¶ø¾Ã²»ÊÕ¿ÚÎªÌØÕ÷µÄ´¯Ññ£¬ÀàËÆÓÚÓ²ºì°ß¡£', '2008/04/09 04:59:42', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '3b8160c9-f835-400f-b718-67160197e4e6', '0404', '·Ê´¯', '04', 2, 1, '', '·Ê´¯ÊÇ¶à·¢ÉúÔÚÍ·²¿µÄÒ»ÖÖÑ¢£¬ÒÔ½á»Æğè¡¢·¢ÍºÂäÎªÌØÕ÷¡£Ïàµ±ÓÚ»ÆÑ¢¡£', '2008/04/09 04:59:42', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '1a12d225-9f82-4bf5-a7c2-28a7a120f953', '0405', '°×Íº´¯', '04', 2, 1, '', '°×Íº´¯ÊÇ¶à·¢ÉúÔÚÍ·²¿µÄÒ»ÖÖÑ¢£¬ÒÔÍÑ°×Ğ¼£¬¾ÃÔòÃ«·¢ÕÛ¶ÏÎªÌØÕ÷¡£Ïàµ±ÓÚÖ®°×Ñ¢¡£', '2008/04/09 04:59:42', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '72435478-e2f2-432c-b315-96f9427ea871', '0406', 'Ô²Ñ¢', '04', 2, 1, '', 'Ô²Ñ¢ÊÇ·¢ÉúÔÚÆ½»¬Æ¤·ôµÄÒ»ÖÖÑ¢£¬ÒÔÕîÈçÇ®±ÒÓĞ¿ïÀª£¬ğşÑ÷ÎªÌØÕ÷¡£Ïàµ±ÓÚÌåÑ¢¡£', '2008/04/09 04:59:42', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '8cc7202b-4528-4f00-a915-8509b662022b', '0407', '¶ìÕÆ·ç', '04', 2, 1, '', '¶ìÕÆ·çÊÇÒ»ÖÖ·¢ÉúÔÚÊÖÕÆ²¿µÄÆ¤·ô²¡£¬¡¢ÒÔÆ¤·ô´Ö²Ú¡¢±äºñ¡¢ÓÚÁÑÎªÌØÕ÷¡£Ïàµ±ÓÚÊÖÑ¢¡£', '2008/04/09 04:59:42', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '79a8c923-fe03-4815-87b5-fa202cce7477', '0408', '½ÅÊªÆø', '04', 2, 1, '', '½ÅÊªÆøÊÇ·¢ÉúÔÚ×ã²¿µÄÆ¤·ô²¡£¬ÒÔ×ãÑ¾°×°ßÊªÀÃ»ò×ãõÅ¡¢Öº¼äÆğË®ğåÎªÌØÕ÷¡£Ïàµ±ÓÚ×ãÑ¢¡£', '2008/04/09 04:59:42', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '498f67ed-1f95-482f-83f8-7dd3fed78993', '0409', '»ÒÖ¸£¨Öº£©¼×', '04', 2, 1, '', '»ÒÖ¸£¨Öº£©¼×¶àÓÉÓÚ¶ìÕÆ·ç»ò½ÅÊªÆøÈÕ¾ÃÑÓ¼°×¦¼×£¬ÒÔÖ¸£¨Öº£©¼×ÔöºñÉ«»Ò£¬Ê§È¥¹âÔóÎªÌØÕ÷¡£Ïàµ±ÓÚ¼×Ñ¢¡£', '2008/04/09 04:59:42', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '19f2c756-1d11-44d1-bf88-0ed2e178e756', '0410', '½ê´¯', '04', 2, 1, '', '½ê´¯ÊÇÓÉ½ê³æÇÖÏ®Æ¤·ôËùÖÂ¡£ÒÔÖ¸·ì¡¢ÊÖÍó¡¢ÆêÖÜ¡¢Òõ¹É²¿µÈÆ¤·ô·¢ÉúË®ğå¡¢ËíµÀ£¬Ò¹¼äÑ÷ÉõÎªÌØÕ÷µÄ´«È¾¼şÆ¤·ô²¡¡£', '2008/04/09 04:59:42', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( 'a0109f7c-f5c5-4f43-b1c1-4c3b1abc8ef1', '0411', 'Éß´®´¯', '04', 2, 1, '', 'Éß´®´¯ÊÇÒò¸ÎÆ¢ÄÚÔÌÊªÈÈ£¬¼æ¸ĞĞ°¶¾ËùÖÂ¡£ÒÔ³É´ØË®´¯ÑØÉíÌåÒ»²à³Ê´ø×´·Ö²¼£¬ÅÅÁĞÍğÈçÉßĞĞ£¬ÇÒÌÛÍ´¾çÁÒÎªÌØÕ÷µÄÆ¤·ô²¡¡£Ïàµ±ÓÚ´ø×´ğåÕî¡£', '2008/04/09 04:59:42', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '30fe8813-318d-440b-b497-2c66861d8e21', '0412', 'ÈÈ´¯', '04', 2, 1, '', 'ÈÈ´¯¶àÒòÄÚÈÈ³ãÊ¢ËùÖÂ¡£ÒÔÆ¤·ôÕ³Ä¤½»½ç´¦·¢Éú³ÉÈºË®ğå£¬Ñ÷Í´Ïà¼æÎªÌØÕ÷¡£Ïàµ±ÓÚµ¥´¿ğåÕî¡£', '2008/04/09 04:59:42', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( 'f8f86121-e8e3-418f-9810-1b4d698fcfb3', '0413', '±âğú', '04', 2, 1, '', '±âğúÊÇÒ»ÖÖ¶à·¢ÉúÓÚÑÕÃæ»òÊÖ±³µÄÃ×Á£´óĞ¡¡¢±âÆ½£¬ÉÔ¸ßÆğÆ¤ÃæµÄĞ¡ğà¡£Ïàµ±ÓÚ±âÆ½ğà¡£', '2008/04/09 04:59:42', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '566f6d3b-21c8-47da-b194-ebc4fb7b7921', '0414', 'ğàÄ¿', '04', 2, 1, '', 'ğàÄ¿ÎªºÃ·¢ÓÚÊÖ¡¢×ã¡¢Í·Æ¤£¬´óÈç»Æ¶¹£¬´Ö²Ú¶ø¼áÓ²£¬±íÃæ³Ê´Ì×´£¬Ïàµ±ÓÚÑ°³£ğà¡£', '2008/04/09 04:59:42', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '727a9939-d242-4406-a12a-5a7d686c4e18', '0415', 'ÊóÈé', '04', 2, 1, '', 'ÊóÈé¶àÉúÔÚÇûÓÚ¡¢ËÄÖ«³ÊÂÌ¶¹ÖÁ»Æ¶¹´óĞ¡£¬°ëÇòĞÎÂ¡Æğ£¬ÕîÖĞÑëÓĞÆêÎÑ£¬ĞÎÈçÊóÈé¡£Ïàµ±¸É´«È¾ĞÔÈíğà¡£', '2008/04/09 04:59:42', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '82630884-dfae-422c-af1c-8cd4419071b7', '0416', '¼¦ÑÛ', '04', 2, 1, '', '¼¦ÑÛÊÇÒò×ã²¿£¨ÒàÅ¼¼ûÓÚÊÖ²¿£©³¤ÆÚÊÜ¼·Ñ¹»òÑ¹ÆÈËùÖÂ£¬Æä¸ùÏİÈâÀï£¬¶¥ÆğÓ²½á£¬ĞÎËÆ¼¦ÑÛµÄÆ¤·ô²¡¡£', '2008/04/09 04:59:42', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( 'a85fb0dd-d808-480a-b9ed-bae0f84832e6', '0417', 'ëİëÕ', '04', 2, 1, '', 'ëİëÕÊÇÖ¸ÒòÊÖ×ã¾ÃÊÜÄ¦²ÁÑ¹ÆÈËùÖÂ£¬ÆäÌØÕ÷ÎªÆ¤ºñÉ¬¶øÔ²¶ÌÈç¼ë¡£', '2008/04/09 04:59:42', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '3e6f90a6-be93-4726-b98b-d6a39c709c67', '0418', 'Êª´¯', '04', 2, 1, '', 'Êª´¯ÊÇÓÉÙ÷ĞÔ²»ÄÍ£¬·çÊªÈÈĞ°¿ÍÓÚ¼¡·ô¶ø³É¡£Æ¤Õî³Ê¶àÖÖĞÎÌ¬£¬·¢ÎŞ¶¨Î»£¬Ò×ÓÚÊªÀÃÁ÷½òµÄğşÑ÷ĞÔÉø³öĞÔÆ¤·ô²¡¡£Ïàµ±ÓÚÊªÕî¡£', '2008/04/09 04:59:42', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( 'ad6dcbf2-d476-4b8c-8c8f-c00bde373aee', '0419', 'ËÄÍä·ç', '04', 2, 1, '', 'ËÄÍä·çÊÇÒòÙ÷ĞÔ²»ÄÍ»òÆ¢ĞéÊªÊ¢ËùÖÂ¡£ºÃ·¢ÓÚËÄÖ«ÍäÇú´¦£¬ÒÔÆ¤·ô¸ÉÔï·Êºñ£¬×¥ÆÆÁ÷½ò£¬ğşÑ÷ÎŞ¶ÈÎªÌØÕ÷µÄÒ»ÖÖÂıĞÔÆ¤·ô²¡¡£Ïàµ±ÓÚÒìÎ»ĞÔÆ¤Ñ×¡£', '2008/04/09 04:59:42', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( 'a32700f2-b85c-49d0-b986-9d356fc642c3', '0420', 'ñ«Õî', '04', 2, 1, '', 'ñ«ÕîÓÖ³Æbei(±¶£©lei £¨ÀÙ£©¡£ÆäÌØÕ÷ÎªÉíÌåğşÑ÷£¬É¦Ö®³öÏÖºì°ßÂ¡Æğ£¬ĞÎÈç¶¹°ê£¬¶ÑÀÛ³ÉÆ¬£¬·¢ÎŞ¶¨´¦£¬ºöÒşºöÏÖ£¬ÍËºó²»ÁôºÛ¼£¡£Ïàµ±ÓÚİ¡ÂéÕî¡£', '2008/04/09 04:59:42', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( 'ca50967f-9424-4e08-bda6-47338520d3b0', '0421', 'ÍÁ·ç´¯', '04', 2, 1, '', 'ÍÁ·ç´¯Ö¸Òò¼¡ëíĞéÊè£¬¸´¸Ğ·çĞ°ËùÖÂ£¬ÒÔ×´Èç·çÕî¶øÍ·ÆÆ£¬Õ§·¢Õ§ğûÎªÌØÕ÷µÄÆ¤·ô²¡¡£ÀàËÆÓÚÇğÕîĞÔİ¡ÂéÕî¡£', '2008/04/09 04:59:42', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '57ba211e-598e-4b2d-99f9-cf2c63271bdc', '0422', 'Ò©¶¾', '04', 2, 1, '', 'Ò©¶¾ÊÇÖ¸ÒòÙ÷¸³²»ÄÍ£¬Ò©¶¾ÄÚÇÖËùÖÂµÄÆ¤·ô·¢Õî¡£Ïàµ±ÓÚÒ©ÎïĞÔÆ¤Ñ×¡£', '2008/04/09 04:59:42', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '6688fcdb-4463-4c15-b8f4-069d2cfdea35', '0423', 'Ììğå´¯', '04', 2, 1, '', 'Ììğå´¯ÊÇÓÉĞÄ»ğÆ¢Êª£¬¼æ¸Ğ·çÈÈÊîÊªÖ®Ğ°£¬Ş¹Õô¼¡·ô¶ø³É¡£ÒÔÆ¤·ôÆğÁÇ½¬Ë®ğå£¬Ğ¡ÈçÜÍÊµ£¬´óÈçÆå×Ó£¬Æ¤ÆÆÁ÷½ò£¬²øÃà²»ÓúµÄ´óğåĞÔÆ¤·ô²¡¡£', '2008/04/09 04:59:42', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( 'a18c45c7-6a82-4cb6-97d4-e57c29234351', '0424', '»ğ³à´¯', '04', 2, 1, '', '»ğ³à´¯ÊÇÒÔË®ğå³ÉÈº£¬¶à³Ê»·×´ÅÅÁĞ£¬²¢°éÓĞºì°ß£¬ğşÑ÷ÄÑÈÌÎªÌØÕ÷µÄ´óğåĞÔÆ¤·ô²¡¡£ÏàËÆÓÚğåÕîÑùÆ¤Ñ×¡£', '2008/04/09 04:59:42', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '7459fbd6-4a60-4da1-bd51-f532edb3ab40', '0425', 'µÇ¶¹´¯', '04', 2, 1, '', 'µÇ¶¹´¯ÊÇÒò±íĞéÀïÊµ£¬¶¾ÈÈÈëÓÚÓªÑªËùÖÂ¡£ÒÔÆ¤·ô´óÆ¬³±ºì£¬³öÏÖÈº¼¯Ã±ÕëÍ·ÖÁËÚÁ£´óĞ¡Å§ğåÎªÌØÕ÷µÄÆ¤·ô²¡£¬ÏàËÆÓÚğåÕîÑùÅ§ğå²¡¡£', '2008/04/09 04:59:42', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( 'ca9673be-10d9-4e0a-8b1d-c08f16ed7af8', '0426', 'ºìºûµû´¯', '04', 2, 1, '', 'ºìºûµû´¯ÊÇÒ»ÖÖÃæ²¿³£·¢Éú×´ËÆºûµûĞÎÖ®ºì°ß£¬²¢¿É°éÓĞ¹Ø½ÚÌÛÍ´¡¢Ôà¸­ËğÉËµÈÈ«Éí²¡±äµÄÏµÍ³ĞÔ¼²²¡¡£Ïàµ±ÓÚºì°ßĞÔÀÇ´¯¡£', '2008/04/09 04:59:42', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( 'ddef2ce8-a9dd-4f36-aadf-37d00cdc9d46', '0427', 'Æ¤±Ô', '04', 2, 1, '', 'Æ¤±ÔÊÇÒÔÆ¤·ôÖ×ÕÍ¡¢Ó²»¯£¬ºóÆÚ·¢ÉúÎ®ËõµÄÆ¤·ô²¡¡£¿É¾ÖÏŞÓÚÄ³Ò»²¿Î»£¬Òà¿ÉÀÛ¼°È«Éí¡£ÏàËÆÓ²Æ¤²¡¡£', '2008/04/09 04:59:42', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( 'ef9fb9d7-50f7-450e-9d78-e28e30b03d96', '0428', 'ºü»ó²¡', '04', 2, 1, '', 'ºü»ó²¡ÊÇÒ»ÖÖÒÔ¿ÚÑÊ¡¢Òõ²¿Ê´ÀÃ£¬Ä¿³àÈçğ¯ÑÛÎªÌØÕ÷µÄ×ÛºÏĞÔÆ¤·ô²¡¡£ÀàËÆÓÚ°×ÈûÊÏ×ÛºÏÖ¤¡£', '2008/04/09 04:59:42', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( 'e111efd8-506c-4d38-8d8f-9c0d1f49409b', '0429', 'Ã¨ÑÛ´¯', '04', 2, 1, '', 'Ã¨ÑÛ´¯ÒòÆäÕîĞÎÈçÃ¨Ö®ÑÛ¶øµÃÃû¡£¶à·¢ÓÚ´ºÇï¼¾£¬ºÃ·¢ÓÚÊÖ×ã£¬¿ÉÀÛ¼°¿ÚÇ»¼°Òõ²¿¡£Ïàµ±ÓÚ¶àĞÎĞÔºì°ß¡£', '2008/04/09 04:59:42', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '1b49b96f-a69c-4477-b4b9-48ac0576b0e5', '0430', '¹ÏÌÙ²ø', '04', 2, 1, '', '¹ÏÌÙ²øÊÇÒÔĞ¡ÍÈÆğºì°ß½á½Ú£¬ÓÌÈçÌÙÏµ¹Ï¹ûÈÆëÖ¶øÉúÎªÌØÕ÷µÄÆ¤·ô²¡¡£ÀàËÆÓÚ½á½ÚĞÔºì°ß¡£', '2008/04/09 04:59:42', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '6ce15cfc-1f03-4ab5-88b8-486ef03f3867', '0431', '·çÈÈ´¯', '04', 2, 1, '', '·çÈÈ´¯ÊÇÒÔÇû¸ÉÆğµ­ºìÉ«°ßÆ¬£¬¶àËæÆ¤ÎÆÅÅÁĞ£¬ÍÑĞ¼Èç¿·ïõÖ®×´ÎªÌØÕ÷µÄÆ¤·ô²¡¡£Ïàµ±ÓÚÃµ¹å¿·Õî¡£', '2008/04/09 04:59:42', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( 'fbcc7440-3df6-46e8-8543-172c364fdd6e', '0432', '°×¯H', '04', 2, 1, '', '°×¯HÊÇÒÔÆ¤·ôÉÏÆğºìÉ«°ßÆ¬£¬ÉÏ¸²¶à²ã°×É«Æ¤Ğ¼£¬×¥È¥Æ¤Ğ¼¿É¼ûµã×´³öÑªÎªÌØÕ÷µÄÆ¤·ô²¡£¬Ïàµ±ÓÚÒøĞ¼²¡¡£', '2008/04/09 04:59:42', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( 'e7e4cbf2-07e9-4992-ad53-bfecaf99ae63', '0433', 'ÉãÁì´¯', '04', 2, 1, '', 'ÉãÁì´¯ÊÇºÃ·¢ÔÚ¾±²¿Á½²à£¬ÒÔÆ¤·ô´Ö²Ú·Êºñ£¬¾çÁÒğşÑ÷ÎªÌØÕ÷µÄÆ¤·ô²¡¡£Ïàµ±ÓÚÉñ¾­ĞÔÆ¤Ñ×¡£', '2008/04/09 04:59:42', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '9be8370a-bc77-4305-a99e-a8e9e1c488e5', '0434', 'ÍçÊª¾Û½á', '04', 2, 1, '', 'ÍçÊª¾Û½áÊÇÒòÌåÄÚÔÌÊª£¬Íâ¸Ğ·ç¶¾»ò³æÒ§ËùÖÂ£¬ÒÔËÄÖ«·¢Éú»ÒºÖÉ«¼áÊµ½á½Ú£¬°éÆæÑ÷ÎªÌØÕ÷µÄÆ¤·ô²¡¡£Ïàµ±ÓÚ½á½ÚĞÔÑ÷Õî¡£', '2008/04/09 04:59:42', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '6e4e72f1-8318-456c-95a0-2a350071a4dd', '0435', '×Ïñ°·ç', '04', 2, 1, '', '×Ïñ°·çÊÇÒÔÆ¤·ô³öÏÖ×ÏºìÉ«±âÆ½Æ¤Õî£¬×Ô¾õğşÑ÷£¬¿É·¢ÓÚÈ«Éí¸÷´¦£¬³£ÀÛ¼°¿Ú´½ÎªÌØÕ÷µÄÆ¤·ô²¡¡£Ïàµ±ÓÚ±âÆ½Ì¦Ñ¢¡£', '2008/04/09 04:59:42', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '6b0ffbd1-4bc5-4b60-acc4-ecf20d859849', '0436', '°×²µ·ç', '04', 2, 1, '', '°×²µ·çÊÇÒÔÆ¤·ô±ä°×£¬ĞÎ×´²»Ò»£¬²¢²»Ñ÷Í´ÎªÌØÕ÷µÄÆ¤·ô²¡¡£Ïàµ±ÓÚ°×ñ°·ç¡£', '2008/04/09 04:59:42', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( 'ba030faf-6167-491e-9a1b-9cc1d0251b99', '0437', '÷óºÚ°ß', '04', 2, 1, '', '÷óºÚ°ßÊÇ·¢ÉúÔÚÃæ²¿µÄ»ÆºÖÉ«»ò»ÒºÚÉ«°ßÆ¬£¬²»¸ß³öÆ¤·ô£¬³£¼ûÓÚ±Ç±³Á½²à¡£ÀàËÆÓÚ»ÆºÖ°ß¡£', '2008/04/09 04:59:42', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '1a23a39f-2533-4b70-b25d-834237a8224f', '0438', 'Ğ·×ãÖ×', '04', 2, 1, '', 'Ğ·×ãÖ×ÊÇ´´ÉË»ò×Ô·¢¶øÆğ¡£ÔÚÆ¤·ôÉÏ³öÏÖ·Ê´ó¶ø¼áÊµµÄ°ß¿é£¬ĞÎ×´ÈçĞ·×ãµÄÒ»ÖÖÆ¤·ô²¡¡£Ïàµ±ÓÚñ£ºÛ¸í´ñ¡£', '2008/04/09 04:59:42', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '8798cc4d-8c99-4383-92ef-c93ed78f3444', '0439', '¾ÆÔã±Ç', '04', 2, 1, '', '¾ÆÔã±ÇÊÇ·¢ÉúÔÚ±Ç×¼Í·¼°±ÇÁ½²à£¬ÒÔÆ¤·ô³±ºì¡¢ÇğÕî¡¢Å§ğå£¬ÉõÔò±ÇÍ·Ôö´ó±äºñÎªÌØÕ÷µÄÒ»ÖÖÆ¤·ô²¡¡£', '2008/04/09 04:59:42', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '6633b88d-5692-4dd3-aa5c-4ce1e8ae1acc', '0440', '·Û´Ì', '04', 2, 1, '', '·Û´Ì¶à·¢ÓÚÃæ²¿£¬ÒÔÇğÕî¡¢Å§ğå¡¢½á½ÚÓĞÊ±¿É¼·³ö°×É«ËéÃ×Ñù·ÛÖ­ÎªÌØÕ÷µÄÒ»ÖÖÆ¤·ô²¡¡£Ïàµ±ÓÚÑ°³£ĞÔğî´¯¡£', '2008/04/09 04:59:42', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '9e1b6da9-39f5-4d21-b00f-96bdc330b7bb', '0441', 'ÃæÓÎ·ç', '04', 2, 1, '', 'ÃæÓÎ·çÊÇ¶à·¢ÉúÓÚÃæ²¿£¬ÒÔÆ¤·ôÓÍÄå»ò¸ÉÔï£¬½á»Æğè»òÆğ°×Ğ¼£¬Ñ÷ÉõÎªÌØÕ÷µÄÆ¤·ô²¡¡£ÀàËÆÓÚÖ¬ÒçĞÔÆ¤Ñ×¡£', '2008/04/09 04:59:42', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '432f866d-a069-4bf2-bb0e-78efecf1c511', '0442', 'ÁÜ²¡', '04', 2, 1, '', 'ÁÜ²¡¶àÎªÁÜÇò¾ú¸ĞÈ¾¶øÒıÆğ£¬ÒÔÄòÆµ¡¢Äò¼±¡¢ÄòµÀ´ÌÍ´»òÄòµÀÒçÅ§£¬ÉõÖÁÅÅÄòÀ§ÄÑÎªÖ÷ÒªÁÙ´²±íÏÖµÄĞÔ´«²¥¼²²¡¡£', '2008/04/09 04:59:42', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '23b59ca9-b01d-4cd9-966f-16b460f3fd90', '05', 'ÖĞÒ½¶ù¿Æ', '-1', 1, 1, '', '', '2008/04/10 12:04:44', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '08ecbb6e-3f5c-4dcb-a5fc-0ad49b845281', '0501', '¸ĞÃ°', '05', 2, 1, '', '¸ĞÃ°Ö¸ÓÉÍâ¸Ğ·çĞ°£¬¿ÍÓÚ·ÎÎÀËùÖÂ¡£ÁÙ´²ÒÔ¶ñº®¡¢·¢ÈÈ¡¢Í·Í´¡¢±ÇÈû¡¢Á÷Ìé¡¢´òÌç¡¢¿ÈËÔÎªÖ÷ÒªÖ¢×´¡£Ò»ÄêËÄ¼¾¾ù¿É·¢Éú¡£', '2008/04/10 12:04:44', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '444a26aa-31fe-435a-b7a7-f109a57952fe', '0502', '¿ÈËÔ', '05', 2, 1, '', '¿ÈËÔÖ¸ÓÉÍâĞ°Ï®·Î£¬·ÎÊ§ĞûËà¶øÖÂ¿ÈËÔµÄ²¡Ö¢¡£Æä³¤ÆÚ²»ÓúÕßÎªÂıĞÔ¿ÈËÔ¡£¶à¼ûÓÚ¼±¡¢ÂıĞÔÖ§Æø¹ÜÑ×¡£', '2008/04/10 12:04:44', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( 'ce76695a-2bc9-4624-9fee-53628bf07a3e', '0503', 'Ïø´­', '05', 2, 1, '', 'Ïø´­ÓÉ¸ĞÊÜÍâĞ°£¬»òÒò·üÌµÙí¸ù¸´¼ÓÍâ¸Ğ¡¢ÒûÊ³µÈÒòËØÓÕ·¢£¬ÒÔºí¼äÌµÃùÓĞÉù£¬ºôÎüÀ§ÄÑÎªÖ÷ÒªÁÙ´²±íÏÖµÄ¼²²¡¡£³£¼ûÓÚÏø´­ĞÔÖ§Æø¹ÜÑ×»òÖ§Æø¹ÜÏø´­¡£', '2008/04/10 12:04:44', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( 'f640ec4f-9c56-42b7-830f-df869ff382eb', '0504', '·ÎÑ×´­ËÔ', '05', 2, 1, '', '·ÎÑ×´­ËÔÓÉÍâĞ°·¸·Î£¬Ğ°ÛÕ·ÎÆø¶ø¼û·¢ÈÈ¡¢¿ÈËÔ¡¢Æø´­¡¢±ÇÉ¿ÎªÖ÷Ö¢µÄ¼²²¡¡£ÈôÕıĞéĞ°Áµ£¬¿ÉÇ¨ÑÓÄÑÓú¡£³£¼ûÓÚÖ§Æø¹Ü·ÎÑ×¡¢´óÒ¶ĞÔ·ÎÑ×¡¢Ç¨ÑÓĞÔ·ÎÑ×¡£', '2008/04/10 12:04:44', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( 'fb8b15c6-1cfe-43c9-9eeb-dc384a7b2854', '0505', '¶ì¿Ú´¯', '05', 2, 1, '', '¶ì¿Ú´¯ÊÇÓÉ¸ĞÊÜĞ°¶¾£¬ÄÚÒòĞÄÆ¢»ıÈÈ£¬ÉÏÑ¬¿ÚÉà£¬¶øÖÂ¿ÚÇ»³öÏÖ³ÉÆ¬°×Ğ¼£¬×´Èç¶ì¿ÚµÄ¼²²¡¡£Ïàµ±ÓÚÃ¹¾úĞÔ¿ÚÇ»Ñ×¡£', '2008/04/10 12:04:44', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '54c9d129-2b5c-49f3-ac22-60febd35911c', '0506', 'Ğ¹Ğº', '05', 2, 1, '', 'Ğ¹ĞºÊÇÓÉÍâ¸ĞÊ±Ğ°£¬»òÄÚÉËÈéÊ³¶øÖÂ´ó±ã´ÎÊıÔö¶àµÄ¼²²¡¡£Èç²¡¾Ã²»Óú£¬³£¿Éµ¼ÖÂğáÖ¢¡£', '2008/04/10 12:04:44', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( 'f30decc7-48ed-499f-9b75-9c249186b214', '0507', 'ÑáÊ³', '05', 2, 1, '', 'ÑáÊ³Ö¸ÓÉÆ¢Î¸Ê§µ÷£¬²»Óû½øÊ³£¬ÉõÖÁ¾ÜÊ³µÄ¼²²¡¡£', '2008/04/10 12:04:44', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '446ee709-7376-45c1-83ef-3815c5943a8e', '0508', 'ğáÖ¢', '05', 2, 1, '', 'ğáÖ¢Ö¸ÓÉÎ¹Ñø²»µ±£¬Æ¢Î¸ÊÜÉË£¬Ó°ÏìÉú³¤·¢ÓıµÄ²¡Ö¢¡£Ïàµ±ÓÚÓªÑøÕÏ°­µÄÂıĞÔ¼²²¡¡£', '2008/04/10 12:04:44', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '6b70500c-8b09-4a9d-8cca-2f8a20439501', '0509', 'Ë®Ö×', '05', 2, 1, '', 'Ë®Ö×ÊÇÓÉÍâ¸Ğ·çĞ°»òĞ°¶¾ÈëÇÖ£¬µ¼ÖÂ·Î¡¢Æ¢¡¢Éö¹¦ÄÜÊ§µ÷£¬Ë®µÀ²»Àû£¬Ë®ÊªÒçÓÚ¼¡·ô¶øÖÂÈ«ÉíË®Ö×¡£¶à¼ûÓÚ¼±¡¢ÂıĞÔÉöÑ×£¬Éö²¡×ÛºÏÕ÷¡£', '2008/04/10 12:04:44', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( 'e1217f88-5139-4781-bb76-dcd40a1570fb', '0510', 'ÂéÕî', '05', 2, 1, '', 'ÂéÕîÖ¸ÓÉ¸ĞÊÜÂéÕîÒß¶¾ËùÖÂ£¬ÒÔ·¢ÈÈ¿ÈËÔ£¬ÀáË®ÍôÍô£¬´½ÄÚ¼Õ"ÂéÕîÕ³Ä¤°ß"¼°ÂúÉí²¼·¢ºìÕîÎªÌØÕ÷£¬ºÃ·¢ÓÚ¶¬´º¼¾½ÚµÄÒÒÀà´«È¾²¡¡£', '2008/04/10 12:04:44', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '8811e45f-75c8-43d8-b6ea-6872063672dc', '0511', '·çğğ', '05', 2, 1, '', '·çğğÖ¸Íâ¸Ğ·çğğÊ±¶¾£¬ÔÌÓÚ·ÎÆ¢£¬·¢ÓÚ¼¡·ô¶ø³öÏÖµÄµ­ºìÉ«°ßÇğÕî£¬Ö¢×´ÇáÇ³¡£ºÃ·¢ÓÚ5ËêÒÔÏÂĞ¡¶ù£¬Ïàµ±ÓÚ±ûÀà´«È¾²¡µÄ·çÕî¡£', '2008/04/10 12:04:44', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( 'e4bfe5da-a85d-4fa2-8b87-f7e7ddf9c9d2', '0512', 'µ¤ğğ', '05', 2, 1, '', 'µ¤ğğÓÉµ¤ğğÒß¶¾¸ĞÈ¾£¬ÒÔ¼¡·ô²¼ÓĞÃÖÂşĞÔÏÊºìÏ¸Ğ¡Æ¤ÕîÈôµ¤£¬ÑÊºíÖ×Í´»òÓĞ¸¯ÀÃ£¬¿Ú´½²Ô°×ÎªÌØÕ÷µÄ´«È¾²¡¡£Ïàµ±ÓÚĞÉºìÈÈ¡£', '2008/04/10 12:04:44', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( 'cadd2374-0df7-4a70-856d-2ae065ebc1f3', '0513', 'Ë®¶»', '05', 2, 1, '', 'Ë®¶»Ö¸ÓÉ¸ĞÈ¾Ê±ĞĞ²¡¶¾£¬ÔÌÓÚ·ÎÆ¢£¬·¢ÓÚ¼¡·ô£¬Æ¤·ô³öÏÖºìÉ«ÇğÕî£¬ÖĞÓĞË®ğåµÄ´«È¾²¡¡£', '2008/04/10 12:04:44', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '4726022d-0426-48b0-9796-860cf7917402', '0514', 'ğäÈù', '05', 2, 1, '', 'ğäÈùÊÇÓÉ·çÎÂĞ°¶¾ÒıÆğ£¬ÒÔ·¢ÈÈ¡¢¶úÏÂÈù²¿Ö×Í´ÎªÖ÷Ö¢µÄ¼±ĞÔ´«È¾²¡£¬Ïàµ±ÓÚÁ÷ĞĞĞÔÈùÏÙÑ×¡£', '2008/04/10 12:04:44', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '8a5810e2-7932-4fe2-8237-b7c43dd76b7f', '0515', '¶Ù¿È', '05', 2, 1, '', '¶Ù¿ÈÊÇÓÉ¸ĞÈ¾Ê±ĞĞÒß¶¾£¬¿ÍÓÚ·ÎÏµËùÖÂ£¬ÒÔÕó·¢¾·ÂÎĞÔ¿ÈËÔ£¬¿ÈºóÓĞÌØÊâµÄÎüÆøĞÔºğÉùÎªÌØÕ÷¡£Ïàµ±ÓÚ°ÙÈÕ¿È¡£', '2008/04/10 12:04:44', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '9cb534e1-babe-480a-8c95-737687c91de2', '0516', 'ÊîÎÁ', '05', 2, 1, '', 'ÊîÎÁÓÉ¸ĞÊÜÊîÒßĞ°¶¾ËùÖÂ£¬ÒÔ·¢ÈÈ¡¢Í·Í´¡¢Å»Ò¶¡¢ÏîÇ¿ÎªÖ÷Ö¢¡£ÖØÖ¢¿ÉÍ»È»¸ßÈÈ¡¢Éñ»è³é´¤¶øÉúÄÚ±ÕÍâÍÑÎ£Ïó¡£Ïàµ±ÓÚÁ÷ĞĞĞÔÒÒĞÍÄÔÑ×¡£', '2008/04/10 12:04:44', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( 'ca31a2aa-fc6e-47de-b6c3-9fff05ab59cc', '0517', 'ÏÄ¼¾ÈÈ', '05', 2, 1, '', 'ÏÄ¼¾ÈÈÊÇÓÉÓÚĞ¡¶ù²»ÄÍÊîÆøµÄÑ¬Õô£¬ÔÌÓÚ·ÎÎ¸£¬ÒÔÖÂ³¤ÆÚ·¢ÈÈ£¬º¹±Õ£¬¿Ú¿Ê£¬¶àÄòÎªÖ÷Ö¢¡£ÆäÌØµãÎªÌåÎÂ³£ËæÆøÎÂµÄ±ä»¯¶øÉı½µµÄ¼¾½ÚĞÔ¼²²¡¡£', '2008/04/10 12:04:44', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( 'c00cdad0-0123-4831-9049-e55f82b4a2ea', '0518', 'ğæÏÄ', '05', 2, 1, '', 'ğæÏÄÊÇÖ¸´ºÏÄÖ®½»£¬¿ªÊ¼È«Éí¾ëµ¡£¬Ê³Óû²»Õñ£¬´ó±ã²»µ÷£¬ÉíÎ¢ÈÈ£¬µ«ÌåÎÂ¶àÕı³££¬ÇïÁ¹ºó¶à¿É×ÔÓúµÄ¼¾½ÚĞÔ¼²²¡£¬ÓĞ±ğÓÚÏÄ¼¾ÈÈ¡£', '2008/04/10 12:04:44', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '2bcfb60a-48b6-40e7-9bc8-ea09b38c39a8', '0519', 'ÒÅÄò', '05', 2, 1, '', 'ÒÅÄòÊÇÖ¸5ËêÒÔÉÏÓ×Í¯£¬²»ÄÜ×ÔÖ÷¿ØÖÆÅÅÄò£¬¾­³£ÈëË¯ºóÒÅÄòÕß¡£', '2008/04/10 12:04:44', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '186120d2-8b08-4f10-9309-2af18ef0650a', '0520', 'Ì¥»Æ', '05', 2, 1, '', 'Ì¥»ÆÊÇÓÉÌ¥¶ùÊ±ÆÚ¸ĞÊÜÊªÈÈ£¬»òğöÈÈÄÚ×è£¬³öÉúºóÈ«ÉíÆ¤·ô¡¢¹®Ä¤·¢»ÆÎªÖ÷ÒªÖ¢×´µÄ¼²²¡¡£', '2008/04/10 12:04:44', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( 'd431a08e-5ecd-4971-8ebb-c4002de099e9', '0521', 'Òß¶¾Á¡', '05', 2, 1, '', 'Òß¶¾Á¡ÊÇÓÉ½øÊ³²»½àÖ®Îï£¬¶øÍ»È»·¢Éú¸ßÈÈ£¬»èÃÔ£¬¾ªØÊ£¬±ãÏÂÅ§Ñª£¨»òÎŞ£©µÈÎªÖ÷ÒªÖ¢×´µÄ¼±ĞÔ³¦µÀ´«È¾²¡¡£', '2008/04/10 12:04:44', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '8e739ce6-1ad6-4048-88d3-de54e87ee801', '0522', 'ÄÌÑ¢', '05', 2, 1, '', 'ÄÌÑ¢ÓÖÃûÌ¥´¯£¬ÊÇÖ¸²¸ÈéÆÚÓ¤¶ùÒò·çÊªÈÈĞ°½şÒùÆ¤·ô£¬¶øÒÔÃæ²¿³öÏÖµÄÊªĞÔ»ò¸ÉĞÔÆ¤ÕîµÄ¼²²¡¡£Ïàµ±ÓÚÓ¤¶ùÊªÕî¡£', '2008/04/10 12:04:44', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '779483ea-0a4a-421b-86a6-06acb215c235', '0523', '»ıÖÍ', '05', 2, 1, '', '»ıÖÍÊÇÓÉÈéÊ³ÄÚ»ı£¬Æ¢Î¸ÊÜËğ¶øÒıÆğµÄ³¦Î¸¼²²¡£¬ÁÙ´²ÒÔ¸¹Ğº»ò±ãÃØ¡¢Å»ÍÂ¡¢¸¹ÕÍÎªÖ÷ÒªÖ¢×´¡£', '2008/04/10 12:04:44', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( 'b4caa70c-e42f-4de2-9fad-572051696b01', '0524', 'ØşÂ§²¡', '05', 2, 1, '', 'ØşÙÍ²¡ÊÇÓÉÏÈÌì²»×ã»òÓªÑøÈ±·¦¶øÖÂµÄ·¢Óı³Ù»º£¬¹ÇÈí±äĞÎµÄ¼²²¡¡£Ïàµ±ÓÚÖĞÒ½Ñ§Îå³Ù¡¢ÎåÈí¡¢¼¦ĞØ¡¢ÉöğáÖ®ÀàµÄ¼²²¡¡£', '2008/04/10 12:04:44', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '02a9f1e8-6008-48d8-8d71-bc82ff28260b', '0525', 'ÓªÑøĞÔÆ¶Ñª', '05', 2, 1, '', 'ÓªÑøĞÔÆ¶ÑªÊÇÓÉºóÌìÊ§µ÷£¬ÆøÑªÉú»¯·¦Ô´¶øÖÂµÄÆøÑªĞéÈõĞÔ¼²²¡¡£', '2008/04/10 12:04:44', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '8e275bc4-8e1f-480c-b814-ef957f35cf50', '0526', '¶à¶¯Ö¢', '05', 2, 1, '', '¶à¶¯Ö¢ÊÇÖ¸Ñ§Áä¶ùÍ¯ÓÉÓÚ¸ÎÆøÆ«Íú£¬ÒõÑôÊ§µò£¬ĞÄÉö²»½»¶øÖÂµÄºÃ¶¯²»°²£¬Ã°Ê§ÎŞÀñÃ²£¬Æ¢Æø¾óÇ¿µÄ²¡Ö¢¡£', '2008/04/10 12:04:44', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( 'af10bb4e-95a0-4cbe-a7fd-1b98d222791e', '0527', '½âÂ­', '05', 2, 1, '', '½âÂ­ÊÇÓÉÏÈÌì²»×ã£¬Â­ÄÚÊÜËğ£¬»òÒòÈÈ¶¾ÛÕÖÍ£¬Ë®Í£ÓÚÄÔ£¬ÖÂÒÔÍ·Â­Ôö´ó£¬Ç°Ø¶ºÍÂ­·ì¿ª½âÎªÌØÕ÷µÄ¼²²¡¡£Ïàµ±ÓÚÄÔ»ıË®¡£', '2008/04/10 12:04:44', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( 'a639fbd7-10da-4494-b69b-97e4040b0c73', '0528', 'Ò¹Ìä', '05', 2, 1, '', 'Ò¹ÌäÊÇÖ¸1ËêÒÔÄÚµÄ²¸ÈéÓ¤¶ù£¬Òòº®¡¢ÈÈ¡¢ÊÜ¾ªµÈ¶øÖÂµÄÒ¹¼ä¶¨Ê±Ìä¿Ş£¬ÉõÔò¿ÉÍ¨Ïü´ïµ©µÄ¼²²¡¡£', '2008/04/10 12:04:44', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '077c39c0-7551-4976-b477-7ca39aa1b379', '0529', 'ÄÌÂé', '05', 2, 1, '', 'ÄÌÂéÖ¸²¸ÈéÆÚÓ¤¶ùÒò¸ĞÊÜÊ±ĞĞÒß¶¾£¬·¢²¡¼±£¬ÌåÎÂ¸ß£¬ÈÈÍËºó¼¡·ô³öÏÖÃµ¹åÉ«Ï¸É¢Æ¤ÕîµÄ¼²²¡¡£Ïàµ±ÓÚÓ×¶ù¼±Õî¡£', '2008/04/10 12:04:44', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '377ee666-d3e3-4596-9c87-161f888f7bbf', '0530', 'ĞÂÉú¶ù·ÎÑ×', '05', 2, 1, '', 'ĞÂÉú¶ù·ÎÑ×ÊÇÖ¸³öÉúºó¸ĞÊÜÍâĞ°£¬ÒÔÖÂ·ÎÆøÓô±Õ»òĞÄÑªğö×è¶ø³öÏÖÒÔ²»Èé´­±ïÎªÖ÷Ö¢µÄ¼²²¡¡£', '2008/04/10 12:04:44', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '5a7d6446-12da-4562-b450-133afb6c1819', '0531', '»×³æ²¡', '05', 2, 1, '', '»×³æ²¡Îª³¦µÀ¼ÄÉú³æ²¡£¬¶ùÍ¯·¢²¡ÂÊÆÄ¸ß¡£', '2008/04/10 12:04:44', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( 'dc2aab39-00f9-4699-85df-8d02553b8b3a', '0532', 'òÍ³æ²¡', '05', 2, 1, '', 'òÍ³æ²¡Îª³¦¼ÄÉú³æ²¡£¬¶à¼ûÓÚ1¡«5ËêĞ¡¶ù£¬ÒÔ¸ØÃÅ»òÍâÒõ²¿×÷Ñ÷£¬Ò¹¼äÎªÉõ£¬¼ûÓĞ³æĞÎÏ¸Ğ¡ÈçÏßÍ·£¬Ë×³ÆÎª"Ïß³æ"¡£', '2008/04/10 12:04:44', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '736b5522-df34-468e-b66b-13d535369e37', '0533', '½ªÆ¬³æ²¡', '05', 2, 1, '', '½ªÆ¬³æ²¡Îª³¦µÀ¼ÄÉú³æ²¡£¬¶à¼ûÓÚ5ËêÒÔÉÏ¶ùÍ¯¡£ÍÂ³öÎï»ò´ó±ãÅÅ³ö³É³æ£¬ÆäÉ«³àÈçÉúÈâ£¬Òà³Æ"³à³æ"¡£', '2008/04/10 12:04:44', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '4726022d-0426-48b0-9796-860cf7917406', '051002', 'ÄæÖ¤', '0510', 3, 1, ' ', 'ÈÈ¶¾³ãÊ¢Õß£¬¿É³öÏÖÏÂÁĞÑÏÖØÖ¤ºò', '2008/04/10 12:04:44', ' ', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '30ffd830-ae1f-4551-b0b5-93861c9964f9', '07', 'ÖĞÒ½ÄÚ¿Æ', '-1', 1, 1, '', '', '2008/04/10 03:43:35', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '88b89644-866f-4f3b-b7bb-fbb65f6ed925', '0701', '¸ĞÃ°', '07', 2, 1, '', '¸ĞÃ°²¡ÏµÍâ¸Ğ·çĞ°£¬¿ÍÓÚ·ÎÎÀ£¬ÒÔ±ÇÈû¡¢Á÷Ìé¡¢¿ÈËÔ¡¢¶ñº®¡¢·¢ÈÈ¡¢Í·ÉíÌÛÍ´ÎªÖ÷ÒªÁÙ´²±íÏÖ¡£', '2008/04/10 03:43:35', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '61bdfcd4-438d-4b49-9b17-ef338f395d67', '0702', '¿ÈËÔ', '07', 2, 1, '', '¿ÈËÔÊÇÒòĞ°¿Í·ÎÏµ£¬·ÎÊ§ĞûËà£¬·ÎÆø²»ÇåËùÖÂ£¬ÒÔ¿ÈËÔ¡¢¿©ÌµÎªÖ÷ÒªÖ¢×´µÄ²¡Ö¢¡£¶à¼ûÓÚ¼±¡¢ÂıĞÔÖ§Æø¹ÜÑ×¡£', '2008/04/10 03:43:35', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '305694af-7bb8-45de-aef9-0cabd48a6525', '0703', '·çÎÂ·ÎÈÈ²¡', '07', 2, 1, '', '·çÎÂ·ÎÈÈ²¡ÊÇÓÉ·çÈÈ²¡Ğ°·¸·Î£¬ÈÈÛÕ·ÎÆø£¬·ÎÊ§ÇåËàËùÖÂ£¬ÒÔ·¢ÈÈ£¬¿ÈËÔ£¬ĞØÍ´µÈÎªÖ÷ÒªÁÙ´²±íÏÖ¡£Ïàµ±ÓÚ¼±ĞÔ·Î²¿Ñ×ĞÔ²¡±ä¡£', '2008/04/10 03:43:35', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( 'fd2be8fe-8064-4c6a-9784-b965e581366c', '0704', '·ÎÓ¸', '07', 2, 1, '', '·ÎÓ¸ÊÇÓÉ·çÈÈĞ°¶¾ÔÌÖÍÓÚ·Î£¬ÈÈÛÕÑªğö£¬Ñª¸¯»¯Å§¶ø³É¡£ÒÔ·¢ÈÈ£¬ĞØÍ´£¬¿ÈÍÂĞÈ³ôÅ§ÑªÌµÎªÖ÷ÒªÖ¢×´µÄ·Î»¯Å§Ö¢¡£', '2008/04/10 03:43:35', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( 'e0266cae-83ae-4168-9572-fbd03f9eaa62', '0705', '·Îğì', '07', 2, 1, '', '·ÎğìÏµÓÉ¸ĞÈ¾¡°ñ©³æ¡±ËùÖÂµÄ·Î²¿ÂıĞÔÏûºÄĞÔ´«È¾ĞÔ¼²»¼¡£¿É¼û¿ÈËÔ¡¢¿©Ñª¡¢³±ÈÈ¡¢µÁº¹¡¢ÏûÊİµÈÖ÷Ö¢¡£Ïàµ±ÓÚ·Î½áºË¡£', '2008/04/10 03:43:35', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( 'a39ff4b3-cd9d-4df9-9711-eb15d1a39fe7', '0706', '¿©Ñª', '07', 2, 1, '', '¿©ÑªÊÇ·ÎÂçÊÜÉË£¬ÑªÒçÂöÍâ£¬ÒÔ¿ÈËÔ£¬¿©Ñª£¬»òÌµÖĞ´øÑªµÈÎªÖ÷Òª±íÏÖ¡£¶à¼ûÓÚÖ§Æø¹ÜÀ©ÕÅ¡£', '2008/04/10 03:43:35', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '79f76a66-ee21-4ae9-b0e2-f612c16bc1ff', '0707', 'ĞüÒû', '07', 2, 1, '', 'ĞüÒûÊÇÖ¸·ÎÆø²»×ã£¬ÍâĞ°³ËĞéÇÖÏ®£¬·ÎÊ§ĞûÍ¨£¬ĞØÂçÓôÖÍ£¬Æø²»²¼½ò£¬ÒÔÖÂÒûÍ£ĞØĞ²£¬³öÏÖ¿ÈÍÙĞØĞ²ÒıÍ´£¬»ò¼ûĞ²Àß±¥Âú¡£¶à¼ûÓÚÉø³öĞÔĞØÄ¤Ñ×¡£', '2008/04/10 03:43:35', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '497f4299-c6fc-48ea-9420-ee4f5d47b841', '0708', '´­²¡', '07', 2, 1, '', '´­²¡ÊÇÒò¾Ã»¼·ÎÏµ¼²²¡»òËûÔà²¡±äÓ°Ïì£¬ÖÂ·ÎÆøÉÏÄæ£¬Ëà½µÎŞÈ¨£¬³öÏÖÆø¶Ì´­´Ù£¬ºôÎüÀ§ÄÑ£¬ÉõÔòÕÅ¿ÚÌ§¼ç£¬²»ÄÜÆ½ÎÔµÈÖ¢¡£¶à¼ûÓÚ×èÈûĞÔ·ÎÆøÖ×¡¢·ÎÔ­ĞÔĞÄÔà²¡¡¢ĞÄ·Î¹¦ÄÜ²»È«µÈ¡£', '2008/04/10 03:43:35', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( 'ac6cd916-545e-441e-a85a-d38b612e511d', '0709', 'Ïø²¡', '07', 2, 1, '', 'Ïø²¡ÏµËŞÌµ·ü·Î£¬ÒòÍâĞ°¡¢ÒûÊ³¡¢ÇéÖ¾¡¢ÀÍ¾ëµÈÒòËØ£¬ÖÂÆøÖÍÌµ×è£¬ÆøµÀÂÎ¼±¡¢ÏÁÕ­¶ø·¢²¡¡£ÒÔ·¢×÷ĞÔºíÖĞÏøÃùÓĞÉù£¬ºôÎüÀ§ÄÑ£¬ÉõÔò´­Ï¢²»µÃÆ½ÎÔÎªÖ÷Òª±íÏÖ¡£Ïàµ±ÓÚÖ§Æø¹ÜÏø´­¡¢´­Ï¢ĞÔÖ§Æø¹ÜÑ×¡£', '2008/04/10 03:43:35', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( 'dc721271-afd0-4be7-b9c1-08ff2a847d95', '0710', 'Î¸ëäÍ´', '07', 2, 1, '', 'Î¸ëäÍ´ÏµÒòÎ¸ÆøÓôÖÍ£¬ÆøÑª²»³©ËùÖÂ¡£ÁÙ´²ÒÔÉÏ¸¹²¿½üĞÄÎÑ´¦¾­³£·¢ÉúÌÛÍ´ÎªÖ÷Ö¢¡£¶à¼ûÓÚÎ¸¡¢Ê®¶şÖ¸³¦Ñ×Ö¢¡¢À£Ññ¡¢¾·ÂÎµÈ¼²²¡¡£', '2008/04/10 03:43:35', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '9b6fb7f8-5285-46cf-a39b-fb4aa9f76ca5', '0711', 'Ò­ëõ', '07', 2, 1, '', 'Ò­ëõÏµÒòÌµÆø½»×è£¬»òÌµğö×èÖÍ£¬ÖÂÎ¸Ê§ºÍ½µ£¬³öÏÖÒûÊ³¹£Ò­ÄÑÏÂ£¬»òÊ³Èë¼´ÍÂÎªÖ÷ÒªÁÙ´²±íÏÖµÄ²¡Ö¢¡£¶à¼ûÓÚÊ³µÀ¡¢êÚÃÅ²¿¼²²¡¡£', '2008/04/10 03:43:35', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( 'd162865b-92be-4d8d-a0a0-e1fb08b926a3', '0712', 'Å»ÍÂ', '07', 2, 1, '', 'Å»ÍÂÏµÒòÎ¸Ê§ºÍ½µ£¬Î¸ÆøÉÏÄæ£¬¶ø³öÏÖÒÔÎ¸ÄÚÈİÎï´Ó¿ÚÍÂ³öÎªÖ÷ÒªÁÙ´²±íÏÖµÄ²¡Ö¢¡£', '2008/04/10 03:43:35', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '5835b53c-98b1-41d3-a851-5485ca48c0b3', '0713', 'ÍÂÑª', '07', 2, 1, '', 'ÍÂÑªÏµÎ¸ÂçÊÜËğ£¬ÂçÉËÑªÒç£¬³öÏÖÑª´Ó¿ÚÖĞÅ»ÍÂ¶ø³öµÄ²¡Ö¢¡£Ö¸ÉÏÏû»¯µÀ³öÑª¡£', '2008/04/10 03:43:35', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( 'd9daa152-8514-4d79-ab96-d36a45ec6ab5', '0714', '±ãÑª', '07', 2, 1, '', '±ãÑªÏµÎ¸¡¢³¦ÂçÂöÊÜËğ£¬³öÏÖÑªÒºËæ´ó±ã¶øÏÂ£¬»ò´ó±ã³Ê°ØÓÍÑùÎªÖ÷ÒªÁÙ´²±íÏÖµÄ²¡Ö¢¡£¿É¼ûÓÚÏû»¯µÀ³öÑª¡£', '2008/04/10 03:43:35', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( 'fdacd65f-4e13-4eff-8a49-3d49415fe8ce', '0715', 'Á¡¼²', '07', 2, 1, '', 'Á¡¼²ÏµÒò¸ĞÊÜÊªÈÈ²¡¶¾£¬»ıÖÍ³¦¸­£¬Ö¬Ä¤ÑªÂçÊÜÉË£¬ÒÔ¸¹Í´¡¢¸¹Ğº£¬Àï¼±ºóÖØ£¬´ó±ã³Ê³à°×Õ³¶³»òÅ§ÑªÎªÖ÷ÒªÁÙ´²±íÏÖ¡£Ïàµ±ÓÚÏ¸¾úĞÔÁ¡¼²»ò³¦°¢Ã×°Í²¡¡£', '2008/04/10 03:43:35', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '6ea8328b-0849-4957-81bf-16b9ea0b6b54', '0716', 'Ğ¹Ğº', '07', 2, 1, '', 'Ğ¹ĞºÏµÒò¸ĞÊÜÍâĞ°£¬»òÒûÊ³ÄÚÉË£¬ÖÂÆ¢Ê§½¡ÔË£¬´«µ¼Ê§Ë¾£¬ÒÔ´ó±ã´ÎÊıÔö¶à£¬ÖÊÏ¡äç»òÈçË®ÑùÎªÖ÷Òª±íÏÖµÄ²¡Ö¢¡£Ïàµ±ÓÚ¼±¡¢ÂıĞÔ³¦Ñ×»ò³¦¹¦ÄÜÎÉÂÒµÈ¼²²¡¡£', '2008/04/10 03:43:35', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '83886669-4da0-48aa-9dde-c1169e25be3c', '0717', '»Æğã', '07', 2, 1, '', '»ÆğãÏµ¸ĞÊÜÊªÈÈ²¡Ğ°£¬×èÖÍ¸Îµ¨£¬Æø»úÊÜ×è£¬ÊèĞ¹Ê§³££¬µ¨Ö­ÍâÒçËùÖÂ¡£ÒÔÄ¿»Æ¡¢Éí»Æ¡¢äÑ»ÆÎªÖ÷ÒªÁÙ´²±íÏÖµÄ²¡Ö¢¡£¶à¼ûÓÚ¸Îµ¨ÏµÍ³¼²²¡¡£', '2008/04/10 03:43:35', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( 'bc25108c-8066-417d-bfac-30872064b1ab', '0718', 'Ë®ëû', '07', 2, 1, '', 'Ë®ëûÏµÒò¸ÎÆ¢ÊÜÉË£¬ÊèÔËÊ§³££¬ÆøÑª½»×è£¬ÖÂË®ÆøÄÚÍ££¬³öÏÖ¸¹ÂúÕÍ´óÎªÖ÷ÒªÁÙ´²±íÏÖµÄ²¡Ö¢¡£Ïàµ±ÓÚ¸ÎÓ²»¯¸¹Ë®¡£', '2008/04/10 03:43:35', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( 'c8b12adb-edd9-418e-a943-b52fa6095876', '0719', '±ãÃØ', '07', 2, 1, '', '±ãÃØÏµÒòÆøÒõ²»×ã£¬»òÔïÈÈÄÚ½á£¬¸­Æø²»³©ËùÖÂ£¬ÒÔÅÅ±ã¼ä¸ôÊ±¼äÑÓ³¤£¬´ó±ã¸É½áÄÑ½âÎªÖ÷ÒªÁÙ´²±íÏÖµÄ²¡Ö¢¡£³£Ö¸Ï°¹ßĞÔ±ãÃØ¡£', '2008/04/10 03:43:35', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '7868745d-8e39-464d-ab60-caa4f0df62b2', '0720', '×Ïñ°', '07', 2, 1, '', '×Ïñ°ÊÇÓÉÑªÂçÊÜÉË£¬ÑªÉøÓÚ¼¡·ôÖ®¼ä£¬Æ¤·ô±íÏÖµã×´»òÆ¬×´Çà×Ï°ß¿éµÄ²¡Ö¢¡£Ïàµ±ÓÚÔ­·¢ĞÔÑªĞ¡°å¼õÉÙ»òÑª¹ÜĞÔ¡¢¹ıÃôĞÔ×Ïñ°¡£', '2008/04/10 03:43:35', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '54db04ee-9f22-4375-bd65-9e62353edaa3', '0721', 'ÊªÎÂ', '07', 2, 1, '', 'ÊªÎÂÊÇÓÉÊªÈÈ²¡Ğ°£¬×è¶ôÆ¢Î¸£¬ÛÕÖÍ³¦µÀ£¬ÖÂÉíÈÈ²»Ñï£¬Í·ÖØÉíÀ§£¬ĞØÆ¦¸¹ÕÍ£¬Ì¦ÄåÂö»ºµÈÎªÖ÷Ö¢µÄ³¦µÀ´«È¾²¡¡£¶à¼ûÓÚÉËº®¡¢¸±ÉËº®¡£', '2008/04/10 03:43:35', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( 'b4810674-76ab-4ead-8567-e7bf9ad76ddc', '0722', '»ôÂÒ', '07', 2, 1, '', '»ôÂÒÏµÓÉÒûÊ³²»½à£¬¸ĞÊÜÒß¶¾£¬ÖÂÍ»È»¾çÁÒĞ¹Ğº£¬¼ÌÔòÅ»ÍÂ£¬³Ê»Ó»ôÁÃÂÒÖ®ÊÆµÄÁÒĞÔ´«È¾²¡¡£', '2008/04/10 03:43:35', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '47543a10-4b00-4745-953e-5ed307906d68', '0723', 'ÖĞÊî', '07', 2, 1, '', 'ÖĞÊîÊÇÏÄ¼¾ÔÚÁÒÈÕ»ò¸ßÎÂ»·¾³ÏÂÀÍ¶¯£¬ÒòÊîÈÈÇÖÏ®£¬ÖÂĞ°ÈÈÄÚÓô£¬ÌåÎÂµ÷½Ú¹¦ÄÜÊ§³££¬Ëù·¢ÉúµÄ¼±ĞÔ²¡±ä¡£', '2008/04/10 03:43:35', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '4815e524-7678-4b6a-be28-f7cd71c066bd', '0724', 'Å±¼²', '07', 2, 1, '', 'Å±¼²ÊÇÓÉ¸ĞÊÜÅ±Ğ°ËùÖÂµÄ´«È¾²¡¡£ÒÔº®Õ½×³ÈÈ£¬º¹ºóÈÈÍË£¬Ğİ×÷ÓĞÊ±ÎªÖ÷Ö¢¡£¾İĞİ×÷Ê±¼ä·ÖÃ¿ÈÕÅ±¡¢¼äÈÕÅ±¡¢ÈıÒõÅ±£»¾İÖ¤ºò·ÖÎÂÅ±¡¢ğ÷Å±¡¢êòÅ±¡¢ÒßÅ±µÈ¡£', '2008/04/10 03:43:35', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '8219b66f-4567-4647-a700-704b45439f28', '0725', 'ÑªÎü³æ²¡', '07', 2, 1, '', 'ÑªÎü³æ²¡ÊÇÒòÈÕ±¾ÁÑÖ³ÌåÑªÎü³æ¼ÄÉúÔÚÈËÌåÃÅ¾²ÂöÏµÍ³ËùÒıÆğµÄµØ·½ĞÔ¼²²¡¡£', '2008/04/10 03:43:35', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '7c9d8faa-5bf6-43af-9ae3-7c424f053d7c', '0726', 'ÌĞ³æ²¡¡¢ÄÒ³æ²¡', '07', 2, 1, '', 'ÌĞ³æ²¡ÊÇÓÉÖí¡¢Å£ÌĞ³æ¼ÄÉúÓÚÈËÌåĞ¡³¦ËùÖÂµÄ¼²²¡¡£ÄÒ³æ²¡ÊÇÓÉÌĞ³æÄÒÎ²òÊ¼ÄÉúÓÚÈËÌå¸÷²¿×éÖ¯ÒıÆğµÄ¼²²¡¡£¶şÕß¾ùÊô³¦¼ÄÉú³æ²¡¡£', '2008/04/10 03:43:35', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '4c1dee7e-6020-4356-b270-3c5ab090d9fe', '0727', '¹³³æ²¡', '07', 2, 1, '', 'ÓÉÓÚ¹³³æ¼ÄÉúÓÚÈËÌå³¦µÀËùÖÂµÄ¼ÄÉú³æ²¡¡£±ğÃû¡°É£Ò¶»Æ¡±¡¢¡°»ÆÅÖ²¡¡±¡¢¡°ÀÁ»Æ²¡¡±¡£', '2008/04/10 03:43:35', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '6c7021d3-ecca-4be4-934a-c44bdc790036', '08', 'ÖĞÒ½Íâ¿Æ', '-1', 1, 1, '', '', '2008/04/10 08:17:13', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '91884d9e-aaa2-4434-98e7-21ff5faaf66e', '0801', 'ğÜ', '08', 2, 1, '', 'ğÜÊÇÖ¸¼¡·ôÇ³±í²¿Î»¸ĞÊÜ»ğ¶¾£¬ÖÂ¾Ö²¿ºìÖ×ÈÈÍ´ÎªÖ÷Òª±íÏÖµÄ¼±ĞÔ»¯Å§ĞÔ¼²²¡¡£°üÀ¨ÓĞÍ·ğÜ¡¢ÎŞÍ·ğÜ¡¢ò÷òÁğÜ¡¢ğÜ²¡¡£Ïàµ±ÓÚğÜ¡¢Æ¤·ôÅ§Ö×¡¢Í·Æ¤´©ÔäĞÔÅ§Ö×¼°ğÜ²¡¡£', '2008/04/10 08:17:13', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '47002e12-49d8-4984-9697-bf81a3d4e3de', '0802', 'Ìµ¶¾', '08', 2, 1, '', 'Ìµ¶¾ÊÇ¸ĞÊÜ·çÈÈÊª¶¾£¬ÆøÑª±»¶¾Ğ°ÛÕÈûÓÚÆ¤ÈâÖ®¼ä£¬¼Ì¶øÁ¶Òº³ÉÌµ£¬Ìµ¶¾»¥×è£¬½á¿é¶øÖ×µÄ¼±ĞÔ»¯Å§ĞÔ¼²²¡¡£±¾²¡°üÀ¨¾±Ó¸¡¢Ò¸Ó¸¡¢¿è¸¹Ó¸¡£Ïàµ±ÓÚ¼±ĞÔ»¯Å§ĞÔÁÜ°Í½áÑ×¡£', '2008/04/10 08:17:13', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( 'a88cc32f-cb01-4027-8150-ed12a2e479a3', '0803', 'ÓĞÍ·¾Ò', '08', 2, 1, '', 'ÓĞÍ·¾ÒÊÇÒòÍâ¸Ğ·çÈÈ¡¢ÊªÈÈ¡¢»ğ¶¾Ö®Ğ°£¬ÆøÑªğöÖÍ£¬½á¾ÛÓÚ¼¡·ô¼äµÄ¼±ĞÔ»¯Å§ĞÔ¼²²¡¡£ÒÔ¾Ö²¿ºìÖ×ÈÈÍ´£¬ÓĞ¶à¸öÅ§Ë¨¶Ñ»ıÎªÌØÕ÷¡£¶à·¢ÓÚÖĞÀÏÄêÓÈÆäÒÔÏû¿Ê²¡¶à¼û£¬Ò×³öÏÖ¡°ÏİÖ¤¡±¡£Ïàµ±ÓÚÓ¸¡£', '2008/04/10 08:17:13', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '46759b5b-96b9-4a30-9ecb-b0f982f0ee5c', '0804', 'ÑÕÃæğÛ´¯', '08', 2, 1, '', 'ÑÕÃæğÛ´¯ÊÇ¸ĞÊÜ»ğÈÈÖ®¶¾£¬»òÒòÀ¥³æÒ§ÉË£¬Æ¤·ôÆÆËğÈ¾¶¾£¬ÔÌÕô¼¡·ô£¬ÆøÑªÄıÖÍ¶ø·¢ÉúµÄ²¡±äÑ¸ËÙ¡¢Î£ÏÕĞÔ½Ï´óµÄ¼±ĞÔ»¯Å§ĞÔ¼²²¡¡£Ïàµ±ÓÚÑÕÃæ²¿ğÜºÍÓ¸¡£', '2008/04/10 08:17:13', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( 'f21ec997-aa76-4744-8d90-97c362d003af', '0805', 'ÊÖ²¿ğÛ´¯', '08', 2, 1, '', 'ÊÖ²¿ÁÆ´¯ÊÇÒòÍâÉËºó¸ĞÈ¾¶¾Ğ°£¬»ğ¶¾×èÓÚÆ¤Èâ£¬»¼´¦³öÏÖºìÖ×¾çÁÒÌÛÍ´£¬ÈİÒ×Ëğ¹ÇµÄ¼±ĞÔ»¯Å§ĞÔ¼²²¡¡£°üÀ¨¼×¹µÑ×¡¢»¯Å§ĞÔÖ¸Í·Ñ×¡¢ÊÖÖ¸»¯Å§ĞÔ½¡ÇÊÑ×¡¢ÕÆÖĞ¼äÏ¶¸ĞÈ¾µÈ¡£', '2008/04/10 08:17:13', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '81fdb486-7c56-426d-b90a-6ac673829446', '0806', 'ºìË¿ğÛ', '08', 2, 1, '', 'ºìË¿ğÛ¶àÒòÊÖ×ãÆ¤·ôËğÉË£¬¸ĞÈ¾Ğ°ÈÈ»ğ¶¾£¬×ß×¢¾­Âç£¬³ÊºìË¿ÏÔÂ¶£¬Ñ¸ËÙÉÏ¹¥ÊÖ²²»òĞ¡ÍÈµÄ¼±ĞÔ¸ĞÈ¾ĞÔ¼²²¡¡£Ğ°¶¾ÖØÕß¿ÉÄÚ¹¥Ôà¸­£¬·¢Éú¡°×ß»Æ¡±¡£±¾²¡Ö¸¼±ĞÔÁÜ°Í¹ÜÑ×¡£', '2008/04/10 08:17:13', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( 'c1b52342-59a6-4171-ba7e-2790fa286794', '0807', 'ÀÃğÛ', '08', 2, 1, '', 'ÀÃğÛ¶àÓÉÆ¤ÈâÆÆËğ£¬½Ó´¥ÎÛÄà¡¢ÔàÎï£¬¸ĞÈ¾¶¾Ğ°£¬ÒÔÖÂ¶¾¾Û¼¡·ô£¬Æ¤ÈâÑ¸ËÙ¸¯ÀÃ£¬Á÷³ö³ô»àÎÛÑªµÄÎ£¼±ÖØÖ¢¡£¶¾Ğ°×ßÉ¢¿É²¢·¢¡°×ß»Æ¡±¡£Ïàµ±ÓÚÆøĞÔ»µ¾Ò¡£', '2008/04/10 08:17:13', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '69ad1f1f-1be7-411f-91c2-1494bff5b93b', '0808', '·¢ÒÃ', '08', 2, 1, '', '·¢ÒÃ¶àÓÉÍâ¸Ğ»òÊÖÊõºó£¬º¹³ö²»³©£¬ÓàĞ°ÈÈ¶¾Î´ÄÜÍâ´ï£¬½á¾ÛÓÚÒÃò¢Ö®¼äµÄ¼±ĞÔ»¯Å§ĞÔ¼²²¡¡£ÒÔÒÃò¢²¿Ö×ÕÍÌÛÍ´£¬ÕÅ¿ÚÊÜÏŞ£¬°é¸ßÈÈÎªÌØÕ÷¡£Ïàµ±ÓÚ¼±ĞÔ»¯Å§ĞÔÈùÏÙÑ×¡£', '2008/04/10 08:17:13', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( 'd1defda5-27db-4535-b374-dd10662aadda', '0809', 'µ¤¶¾', '08', 2, 1, '', 'µ¤¶¾¶àÏÈÓÉÆ¤·ô¡¢Õ³Ä¤ÆÆËğ£¬ÍâÊÜ»ğ¶¾ÓëÑªÈÈ²«½á£¬ÔÌ×è¼¡·ô£¬²»µÃÍâĞ¹£¬ÖÂ»¼²¿ÏÊºì×ÆÈÈ£¬ÓĞÈçÍ¿µ¤ÎªÌØÕ÷µÄ¼±ĞÔ¸ĞÈ¾¼²²¡¡£ÉúÓÚÏÂÖ«Õß³Æ¡°Á÷»ğ¡±£»ÉúÓÚÍ·ÃæµÄ³Æ¡°±§Í·»ğµ¤¡±£»ĞÂÉú¶ù¶àÉúÓÚÍÎ²¿£¬³Æ¡°³àÓÎµ¤¡±¡£Ïàµ±ÓÚ¼±ĞÔÍø×´ÁÜ°Í¹ÜÑ×¡£', '2008/04/10 08:17:13', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( 'ec1a54c5-fe91-4853-a571-2eb03ef7c9db', '0810', 'Á÷×¢', '08', 2, 1, '', 'Á÷×¢ÊÇÒò¸ĞÈ¾Ğ°¶¾£¬Á÷´ÜÑªÂç£¬×èÓÚÄ¤Àí¼¡ÈâÖ®¼ä£¬³öÏÖÒ»´¦»òÊı´¦ÂşÖ×¡¢Î¢ÈÈÌÛÍ´µÄÅ§Ö×¡£ÓĞÊîÊªÁ÷×¢£¬ÊªÌµÁ÷×¢£¬Óà¶¾Á÷×¢£¬ğöÑªÁ÷×¢£¬÷ÀÎÑÁ÷×¢Ö®·Ö¡£Ïàµ±ÓÚÅ§ÑªÖ¢¡¢¼¡ÈâÉî²¿Å§Ö×ºÍ÷ÀÎÑÅ§Ö×¡£', '2008/04/10 08:17:13', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '4f952459-5dc6-48bc-9b12-dec0d53c5295', '0811', 'ñ¨Áö', '08', 2, 1, '', 'ñ¨ÁöÊÇÄÚÓĞÓô»ğ£¬Íâ¸Ğ·çÈÈĞ°¶¾£¬½áÓÚñ¨ÄÒ¶ø³É¡£Ö¤¼ûºí½áÁ½ÅÔ½á¿éÖ×Ó²ÌÛÍ´¡£Ïàµ±ÓÚ¼±ĞÔ¼××´ÏÙÑ×¡£', '2008/04/10 08:17:13', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '130c5f08-714f-4cb5-96cf-f52fdb21daa9', '0812', 'Èâñ¨', '08', 2, 1, '', 'Èâñ¨¶àÒòÇéÖ¾ÄÚÉË£¬Ìµ×ÇÄı½á£¬¾Û¶ø³É¿é£¬·¢ÓÚ½áºíÁ½ÅÔ£¬ËæÍÌÑÊ¶øÉÏÏÂÒÆ¶¯¡£Ïàµ±ÓÚ¼××´ÏÙÏÙÁö¡£', '2008/04/10 08:17:13', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '3f80a5bc-36cd-43d7-a1dc-7780dbec4fd1', '0813', 'ñ§ğß', '08', 2, 1, '', 'ñ§ğßÒò¸ÎÆøÓô½á£¬ÆøÓô»¯»ğ£¬×Æ½òÎªÌµ£¬½áÓÚ¾±Ïî¶ø·¢²¡¡£ÒÔ½áºËÀÛÀÛ³É´®£¬À£ºóÅ§³öÇåÏ¡£¬´¯¿Ú¾­¾Ã²»ÓúÎªÌØÕ÷¡£Ïàµ±ÓÚ¾±²¿ÁÜ°Í½á½áºË¡£', '2008/04/10 08:17:13', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( 'ffdd213d-59bf-4677-9b95-9fc12354b47b', '0814', 'ÈéÓ¸', '08', 2, 1, '', 'ÈéÓ¸¶àÒòÈéÍ·ÆÆËé£¬·çĞ°ÍâÏ®£¬»òÈéÖ­ÓÙ»ı£¬ÈéÂç×èÖÍ£¬Óô¾Ã»¯ÈÈ¶ø³É¡£ÒÔÈé·¿²¿½á¿éÖ×ÕÍÌÛÍ´£¬À£ºóÅ§³ö³íºñÎªÌØÕ÷¡£Ïàµ±ÓÚ¼±ĞÔÈé·¿Ñ×¡£', '2008/04/10 08:17:13', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '2f7c7b5f-7e7d-46fb-a677-a1d8787901fb', '0815', 'Èéğì', '08', 2, 1, '', 'Èéğì¶àÓÉËØÌå·ÎÉöÒõĞé£¬»òÏÈ»¼·Îğì¡¢ñ§ğß¶øºó¼Ì·¢Èéğì¡£Èé·¿½á¿é²»Í´£¬ÊıÔÂºóÖ×¿é»¯Å§£¬Å§³öÏ¡±¡£¬´¯¿Ú²»Ò×ÊÕÁ²£¬ÓÖÃûÈéÌµ¡£Ïàµ±ÓÚÈé·¿½áºË¡£', '2008/04/10 08:17:13', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '2fcc4ba9-58f7-46f3-a976-95763a11c476', '0816', 'Èéğİ', '08', 2, 1, '', 'Èéğİ¶àÒò¸ÎÉö²»×ã£¬ÌµğöÄı½á¶ø³É¡£Èé·¿½á¿é·¢ÉúÔÚÈéÔÎ²¿Ò»²à»ò¶ş²à£¬³Ê°ëÇòĞÎ£¬´¥Ö®ÌÛÍ´¡£Ïàµ±ÓÚÈé·¿Òì³£·¢ÓıÖ¢¡£', '2008/04/10 08:17:13', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '4df24a9c-9a2a-4157-ae47-1f483416816b', '0817', 'ÈéÑÒ', '08', 2, 1, '', 'ÈéÑÒÓÉÇéÖ¾ÄÚÉË£¬³åÈÎÊ§µ÷£¬ÆøÖÍÌµğö»¥½á¶ø³É¡£Èé·¿²¿½á¿é£¬ÖÊµØ¼áÓ²£¬¸ßµÍ²»Æ½£¬²¡¾ÃÖ×¿éÀ£ÀÃ£¬Å§ÑªÎÛ»à¶ñ³ô£¬ÌÛÍ´ÈÕÔö£¬ºóÆÚ¿É²¡Ôî×ªÒÆ¡£Ïàµ±ÓÚÈé°©¡£', '2008/04/10 08:17:13', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( 'bd1985d7-eaab-41bb-945e-40041c0b5e09', '0818', 'Èéñ±', '08', 2, 1, '', 'Èéñ±ÊÇÓÉÇéÖ¾ÄÚÉË£¬³åÈÎÊ§µ÷£¬ÌµğöÄı½á¶ø³É¡£Èé·¿Ö×¿éºÍÌÛÍ´ÓëÔÂ¾­ÖÜÆÚÏà¹Ø¡£Ïàµ±ÓÚÈéÏÙÔöÉú²¡¡£', '2008/04/10 08:17:13', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( 'f3e5f2d9-31be-408c-ad93-151f022f679f', '0819', '·Û´ÌĞÔÈéÍ´', '08', 2, 1, '', '·Û´ÌĞÔÈéÓ¸ÓÉ¸ÎÓô»¯ÈÈ£¬Èâ¸¯»¯Å§¶ø³É¡£¶àÓĞÏÈÌìĞÔÈéÍ·°¼Ïİ»ûĞÎ£¬ÈéÍ·³£ÓĞ·ÛÔüÑùÎïÅÅ³ö¡£ÈéÔÎ»òÈé·¿²¿³öÏÖÖ×¿é£¬À£ºóĞÎ³Éğü¹Ü£¬ÓëÈéÍ·ÏàÍ¨£¬¾­¾Ã·´¸´²»Óú¡£Ïàµ±ÓÚ½¬Ï¸°ûĞÔÈéÏÙÑ×»òµ¼¹ÜÀ©ÕÅÖ¢¡£', '2008/04/10 08:17:13', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '06da98e8-b46f-416b-bf1c-d67b2b30d5eb', '0820', 'Èéô¬', '08', 2, 1, '', 'Èéô¬ÊÇÒò¸ÎÆ¢Á½ÉË£¬¸Î¾­»ğÓô¡¢Æ¢Ê§Í³Ñª¶ø·¢¡£Ö¤¼ûÈéÇÏÒç³öÑªĞÔÒºÌå£¬ÔÚÈéÍ·»òÈéÔÎ²¿¿ÉÃş¼°Ö×¿é¡£Ïàµ±ÓÚÈéÏÙµ¼¹ÜÈéÍ·×´Áö¼°ÈéÏÙµ¼¹ÜÈéÍ·×´°©¡£', '2008/04/10 08:17:13', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '74cb80ea-1bff-4bcc-aeba-841110d6a14d', '0821', 'ÈéºË', '08', 2, 1, '', 'ÈéºËÓÉ³åÈÎÊ§µ÷£¬ÇéÖ¾ËùÉË£¬ÑªğöÌµÄı»¥½áÓÚÈé·¿¶ø³É¡£Ö×¿é±íÃæ¹â»¬£¬ÖÊµØ¼áÓ²£¬±ß½çÇå³ş£¬ÍÆÖ®»î¶¯²»Í´£¬ÓëÔÂ¾­ÖÜÆÚÎŞ¹Ø¡£Ïàµ±ÓÚÈéÏÙÏËÎ¬ÏÙÁö¡£', '2008/04/10 08:17:13', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( 'e29108bf-0c6c-4a67-b5f3-37424cb70411', '0822', '³¦Ó¸', '08', 2, 1, '', '³¦Ó¸ÊÇÒòÒûÊ³²»½Ú£¬ÊªÈÈÄÚ×è£¬ÖÂ°ÜÑª×ÇÆøÛÕ¶ôÓÚÀ»ÃÅ¶ø³É¡£ÒÔ×ªÒÆĞÔÓÒÏÂ¸¹Í´Îª±¾²¡Ö÷ÒªÖ¢×´¡£Ïàµ±ÓÚ¼±ĞÔÀ»Î²Ñ×¡£', '2008/04/10 08:17:13', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '98d1c7df-baef-4b8c-aef2-57a457e13b1e', '0823', 'Ë®ğŞ', '08', 2, 1, '', 'Ë®ğŞÊÇÓÉÏÈÌìÉöÆø²»×ã£¬Æ¢Ê§½¡ÔË¼°ÍâÉËµÈ£¬Ê¹Ë®ÊªÄÚÍ£ÓÚÉö×Ó£¨ØºÍè£©¼°×ÓÏµ£¨¾«Ë÷£©ËùÖÂ¡£ÒÔÒõÄÒÏÂ´¹Ö×´ó»ò×ÓÏµ´¦ÓĞÌµ°üÎªÌØÕ÷¡£Ïàµ±ÓÚØºÍèÇÊÄ¤»ıÒº¼°¾«Ë÷ÄÒÖ×¡£', '2008/04/10 08:17:13', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '5a4dc62d-052f-4cf0-973c-36ad3e4648c9', '0824', '×ÓÓ¸', '08', 2, 1, '', '×ÓÓ¸ÊÇÓÉÊªÈÈÏÂ×¢ØÊÒõÖ®Âç£¬ÖÂÆøÑªÄıÖÍ¶ø³É¡£ÒÔÒõÄÒÕÍÍ´ÏÂ´¹£¬ØºÍèÖ×ÕÍÌÛÍ´ÎªÌØÕ÷¡£Ïàµ±ÓÚ¼±ĞÔ¸½ØºÑ×£¬ÂıĞÔ¸½ØºÑ×Óë¼±ĞÔØºÍèÑ×¡£', '2008/04/10 08:17:13', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '03fb439b-d2a9-44c7-9e3a-8c19fe3b7aab', '0825', '×ÓÌµ', '08', 2, 1, '', '×ÓÌµÏµÓÉ¸ÎÉöÒõ¿÷£¬ÌµÊª³ËĞéÈëÂç£¬ÄıÓÚÉö×Ó¶øÉú¡£ÒÔ¸½ØºÖ×´ó£¬Ó²½á´¥Í´£¬À£ºóÁ÷Å§ÇåÏ¡£¬ĞÎ³Éğü¹ÜÎªÌØÕ÷¡£Ïàµ±ÓÚ¸½Øº½áºË¡£', '2008/04/10 08:17:13', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '32abd504-6f65-4530-89d7-af814f529ded', '0826', '¾«ñª', '08', 2, 1, '', '¾«ñªÊÇÓÉÉöÔª¿÷ĞéµÈ¶àÖÖÔ­Òò£¬µ¼ÖÂ¾«ÊÒÖ×´ó£¬°òë×Æø»¯Ê§Ë¾£¬ÒÔÅÅÄòÀ§ÄÑºÍÄòäóÁôÎªÖ÷ÒªÁÙ´²±íÏÖµÄ¼²²¡¡£Ïàµ±ÓÚÇ°ÁĞÏÙ·Ê´ó¡¢ÔöÉúÖ¢¡£', '2008/04/10 08:17:13', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '7934a3b3-43ff-4be4-9b63-b80f5789c3ae', '0827', '¾«×Ç', '08', 2, 1, '', '¾«×ÇÊÇÓÉÉöĞé»òÊªÈÈğöÖÍµÈ²¡Ğ°£¬ÏÂ×¢ÓÚ¾«ÊÒ£¬µ¼ÖÂ»áÒõ×¹ÕÍÌÛÍ´£¬ÄòÒº³£ÓĞ¾«ÒºÒç³öÎªÖ÷ÒªÁÙ´²±íÏÖµÄ¼²²¡¡£Ïàµ±ÓÚÇ°ÁĞÏÙÑ×¡£', '2008/04/10 08:17:13', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '1bc5a4af-6342-431f-8b7d-00876f54693d', '0828', 'ì¡´¯', '08', 2, 1, '', 'ì¡´¯¶àÓÉ¾ÃÕ¾»ò¹ı¶È¸ºÖØ£¬¶øÖÂĞ¡ÍÈ½îÂöºá½â£¬Çà½îÏÔÂ¶£¬ğöÍ£ÂöÂç£¬¾Ã¶ø»¯ÈÈ£¬»òĞ¡ÍÈÆ¤·ôÆÆËğÈ¾¶¾£¬ÊªÈÈÏÂ×¢¶ø³É£¬´¯¿Ú¾­¾Ã²»Óú¡£Ïàµ±ÓÚÏÂÖ«ÂıĞÔÀ£Ññ¡£', '2008/04/10 08:17:13', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '5ff2f19d-720d-4331-8870-8a76088b9c1c', '0829', 'Èì´¯', '08', 2, 1, '', 'Èì´¯ÓÖÃû¡°Ï¯´¯¡±¡£¶àÒò¾Ã²¡ÎÔ´²£¬ÆøÑªÔËĞĞÊ§³©£¬¼¡·ôÊ§Ñø£¬Ã¿ÒòÄ¦²ÁÆ¤ÆÆ£¬È¾¶¾¶ø³É¡£¶à·¢ÓÚÎ²÷¾¡¢Öâõ×¡¢±³¼¹µÈÈİÒ×ÊÜÑ¹²¿Î»£¬ÒÔÆ¤·ôÆÆÀ££¬´¯¿Ú¾­¾Ã²»ÓúÎªÌØÕ÷¡£', '2008/04/10 08:17:13', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '33c518c4-703f-4052-8ebf-bdb9ae3e6d79', '0830', '¸½¹Ç¾Ò', '08', 2, 1, '', '¸½¹Ç¾ÒÊÇÒò¶¾Ğ°ÉîÏ®£¬×èÓÚ½î¹Ç£¬¾­ÂçÛÕÈû£¬ÆøÑªÄıÖÍËù³É¡£Ïàµ±ÓÚ¼±¡¢ÂıĞÔ»¯Å§ĞÔ¹ÇËèÑ×¡£', '2008/04/10 08:17:13', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '4c9d8db8-1197-4c6c-9587-531ba0aed57e', '0831', 'Á÷Ìµ', '08', 2, 1, '', 'Á÷ÌµÊÇÒòÏÈÌì¸ÎÉö²»×ã£¬ºóÌìÊ§µ÷£¬¹Ç÷À¿ÕĞé£¬·çº®ÊªÌµÖ®Ğ°£¬³ËÏ¶¶øÈë£¬Á÷×¢ÓÚ½î¹Ç¹Ø½Ú¶ø³É¡£±¾²¡ÒÔÅ§Ö×ÅÔÁ÷ºÍÀ£ºóÅ§ÒºÖĞ°é°ÜĞõ×´ÌµÑùÎïÎªÌØÕ÷¡£Ïàµ±ÓÚ¹ÇÓë¹Ø½Ú½áºË¡£', '2008/04/10 08:17:13', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( 'c947406e-6e96-44b9-bc7b-3205d076ca8c', '0832', 'ÍÑ¾Ò', '08', 2, 1, '', 'ÍÑ¾ÒÊÇÒòÏÈÌì²»×ã£¬ÕıÆøË¥Èõ£¬º®ÊªÖ®Ğ°ÇÖÏ®£¬ÖÂğö×èÂöÂç£¬ÆøÑª²»³©£¬Éõ»ò±Ô×è²»Í¨¶ø·¢²¡¡£³õÆğÖ«ÀäÂéÄ¾£¬ºóÆÚÖº½Ú»µËÀÍÑÂä£¬ºÚ¸¯À£ÀÃ£¬´¯¿Ú¾­¾Ã²»Óú¡£Ïàµ±ÓÚÑªË¨±ÕÈûĞÔÂö¹ÜÑ×ºÍ±ÕÈûĞÔ¶¯ÂöÓ²»¯Ö¢¡£', '2008/04/10 08:17:13', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '33c518c4-703f-4052-8ebf-bdb9ae3e6d80', '082401', '¼±ĞÔ×ÓÓ¸', '0824', 3, 1, ' ', ' ', '2008/04/10 08:17:14', ' ', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '33c518c4-703f-4052-8ebf-bdb9ae3e6d81', '082402', 'ÂıĞÔ×ÓÓ¸', '0824', 3, 1, ' ', ' ', '2008/04/10 08:17:14', ' ', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( 'eefff949-7bca-451d-8354-730d8e08c505', '09', 'ÖĞÒ½ÑÛ¿Æ', '-1', 1, 1, '', '', '2008/04/10 08:34:50', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '892a6cc0-313f-4118-81ae-e090b8353c17', '0901', 'ÕëÑÛ', '09', 2, 1, '', 'ÕëÑÛÊÇÒò¸ĞÊÜÍâĞ°£¬°ûíú±ßÔµÉúĞ¡Ó²½á£¬ºìÖ×ÌÛÍ´£¬ĞÎÈçÂóÁ£µÄÑÛ²¡¡£Ïàµ±ÓÚÂóÁ£Ö×¡£', '2008/04/10 08:34:50', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( 'ea9a7039-1070-4a80-a378-b49dd4bba0a4', '0902', '°ûÉúÌµºË', '09', 2, 1, '', '°ûÉúÌµºËÊÇÒòÌµÊªÄı¼¯°ûíúÆ¤ÏÂÉúºË×´Ó²½á£¬²»ºì²»Í´£¬Æ¤É«Èç³££¬ÍÆÖ®ÄÜÒÆµÄÑÛ²¡¡£Ïàµ±ÓÚö±Á£Ö×¡£', '2008/04/10 08:34:50', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '21cf4e75-14b9-43fc-a20a-50dec18034da', '0903', 'íúÏÒ³àÀÃ', '09', 2, 1, '', 'íúÏÒ³àÀÃÊÇÓÉ·çÊªÈÈĞ°ÔÌ½áÒıÆğ£¬ÒÔ°ûíú±ßÔµ³àÖ×À£ÀÃ£¬´ÌÑ÷×ÆÍ´ÎªÖ÷Òª±íÏÖµÄÑÛ²¡¡£Ïàµ±ÓÚíúÔµÑ×¡£', '2008/04/10 08:34:50', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '98763218-44e3-4b13-9ac3-5a169195684b', '0904', 'ÑÛµ¤', '09', 2, 1, '', 'ÑÛµ¤ÊÇÒòÈÈ¶¾ÄÚÔÌ£¬ÒıÆğ°ûíúºìÖ×¸ßÆğ£¬ÖÊÓ²£¬±ß½çÇå³ş£¬Æ¤É«¹â»¬£¬ÏÊºìÈçĞìµ¤É°µÄÑÛ²¡¡£Ïàµ±ÓÚÑÛíúµ¤¶¾¡£', '2008/04/10 08:34:50', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '29383d83-84c4-4711-a0c0-f97190cf6cbf', '0905', '·ç³à´¯ğê', '09', 2, 1, '', '·ç³à´¯ğêÊÇÒòÆ¢Î¸ÊªÈÈ£¬¸´¸Ğ·çĞ°£¬¿Íì¶°ûíú£¬ÒÔÖÂ°ûíúÆ¤·ôºìÖ×ÌÛÍ´£¬ÆğÇğÕî£¬Ğ¡Åİ£¬¼ÌÔòÒıÆğÅ§ğå£¬À£ÀÃµÄÑÛ²¡¡£Ïàµ±ÓÚÄ³Ğ©ÑÛíúÆ¤·ôÑ×Ö¢¡£', '2008/04/10 08:34:50', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '31952cfa-f7ad-40b9-b74e-776b49d404e3', '0906', 'É³ÑÛ', '09', 2, 1, '', 'É³ÑÛÊÇÓÉÉ³ÑÛÒÂÔ­Ìå¸ĞÈ¾ÒıÆğµÄ´«È¾ĞÔ½áÄ¤½ÇÄ¤Ñ×¡£', '2008/04/10 08:34:50', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '312748ce-f6c8-417e-911e-0681f4eb32ed', '0907', 'Ä¿¹ô', '09', 2, 1, '', 'Ä¿¹ôÊÇ·çĞ°ÇÖÄ¿»ò¾«Ñª²»×ã£¬Ä¿Ê§å¦ÑøÒıÆğµÄÒÔ°ûíúÆµÆµÕ£¶¯£¬²»ÄÜ×ÔÖ÷¿ØÖÆµÄ×´Ì¬£¬³£¼ûÓÚÉ³ÑÛ¡¢Ç³²ãµã×´½ÇÄ¤Ñ×¡¢½ÇÄ¤Èí»¯Ö¢µÈ¡£', '2008/04/10 08:34:50', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '4ceee186-4179-4c18-9416-014d5542a7b3', '0908', '°ûÖ×ÈçÌÒ', '09', 2, 1, '', '°ûÖ×ÈçÌÒÊÇÒòÊµÈÈÓºÊ¢£¬ÂöÂç×èÖÍ£¬ÒÔ°ûíú¸ß¶ÈºìÖ×¡£´¹Ö×ÈçÌÒ£¬ÌÛÍ´µÈÎªÖ÷Òª±íÏÖµÄÑÛ²¡¡£Ïàµ±ÓÚÖØ¶ÈÑÛíúÑ×ĞÔË®Ö×¡£', '2008/04/10 08:34:50', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( 'db617603-dc0b-4c00-bae9-b7ef5205f2a3', '0909', '°ûĞéÈçÇò', '09', 2, 1, '', '°ûĞéÈçÇòÊÇÒòÆ¢ĞéÆøÈõ£¬Ë®ÊªÉÏ·º£¬ÒÔ°ûíúÖ×ÕÍ£¬Æ¤É«Õı³££¬ĞéÈíÈçÇò£¬°´Ö®²»Í´ÎªÖ÷ÒªÖ¢×´µÄÑÛ²¡¡£Ïàµ±ÓÚÑÛíú·ÇÑ×ĞÔË®Ö×¡£', '2008/04/10 08:34:50', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( 'd6508d74-d165-4a0b-bff2-103009c6bb09', '0910', 'ÉÏ°ûÏÂ´¹', '09', 2, 1, '', 'ÉÏ°ûÏÂ´¹ÊÇÒòÆøĞé²»ÄÜÉÏÌá£¬ÑªĞé²»ÄÜÑø½î£¬»ò·çĞ°ÖĞÂç¶øÖÂ£¬ÒÔÉÏíúÌá¾ÙÎŞÁ¦»ò²»ÄÜÌ§ÆğÒÔÖÂíúÁÑ±äÕ­£¬ÉõÖÁÕÚ¸Ç²¿·Ö»òÈ«²¿Í«Éñ£¬Ó°ÏìÊÓÁ¦µÄÒ»ÖÖÑÛ²¡¡£¼´ÉÏíúÏÂ´¹¡£', '2008/04/10 08:34:50', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '62fe2cef-99fc-4ed1-89eb-f5dfdd4cef14', '0911', '°ûÂÖÕñÌø', '09', 2, 1, '', '°ûÂÖÕñÌøÊÇÒòÆøÑª²»ºÍÖÂÑÛíú²»×ÔÖ÷Ç£×§Ìø¶¯µÄ¼²²¡¡£¼´ÑÛíúÂÖÔÑ¼¡¾·ÂÎ¡£', '2008/04/10 08:34:50', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '4c697fcc-f600-491a-b8aa-b5a1a2970831', '0912', 'ÀäÀáÖ¢', '09', 2, 1, '', 'ÀäÀáÖ¢ÊÇÒò¸ÎĞéÀáÇÏÔ¼ÊøÎŞÁ¦£¬»ò·çĞ°ÒıÆğÀáÒºÆµÆµÍâÒç£¬µ«ÎŞÈÈ¸ĞÄ¿ÎŞ³àÍ´µÄÑÛ²¡¡£ÓÖ·Ö¡°ÎŞÊ±ÀäÀá¡±£¬¡°Ó­·çÀäÀá¡±¡£Ïàµ±ÓÚÀáµÀ²»Í¨»ò²»³©£¬¼°ÀáÄÒ¹¦ÄÜ²»È«ÒıÆğµÄÒçÀá¡£', '2008/04/10 08:34:50', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( 'fcd6e54e-d8d3-47be-a8da-be359bcb4f5d', '0913', 'Â©¾¦´¯', '09', 2, 1, '', 'Â©¾¦´¯ÊÇÒòÈÈ¶¾ÔÌ½áÄÚíö²¿½ü¾¦Ã÷Ñ¨ÏÂ·½£¬Í»·¢ºìÖ×¸ßÆğ£¬¼Ì¶øÆÆÀ£³öÅ§µÄÒ»ÖÖÑÛ²¡¡£¼´¼±ĞÔÀáÄÒÑ×¡£', '2008/04/10 08:34:50', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '369228ec-2111-405c-85c0-ba0eec0a4fa5', '0914', '±©·ç¿ÍÈÈ', '09', 2, 1, '', '±©·ç¿ÍÈÈÊÇÒò·çÈÈÖ®Ğ°Í»È»ÇÖÄ¿£¬°×¾¦´âÈ»ºì³à£¬Éúí÷Á÷ÀáµÄÑÛ²¡¡£Ïàµ±ÓÚÄ³Ğ©¼±ĞÔ¿¨ËûĞÔ½áÄ¤Ñ×ºÍ¹ıÃôĞÔ½áÄ¤Ñ×¡£', '2008/04/10 08:34:50', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( 'dd2c564f-72cc-4b3f-bac5-1294f2189a48', '0915', 'ÌìĞĞ³àÑÛ', '09', 2, 1, '', 'ÌìĞĞ³àÑÛÊÇÒòÍâÈ¾ÌìĞĞÒßğİÖ®Æø£¬°×¾¦ºì³à£¬Ïà»¥´«È¾Ò×ÒıÆğÁ÷ĞĞµÄÑÛ²¡¡£Ïàµ±ÓÚÁ÷ĞĞĞÔ½ÇÄ¤½áÄ¤Ñ×£¬Á÷ĞĞĞÔ³öÑªĞÔ½áÄ¤Ñ×µÈ¡£', '2008/04/10 08:34:50', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '929c5145-f8d0-4149-bd40-dce1eaba167c', '0916', 'Ê±¸´Ö¢', '09', 2, 1, '', 'Ê±¸´Ö¢ÊÇÒòÊ±Ğ°ÓëÊªÈÈ½»×è£¬·¢²¡Ê±°×¾¦ºì³à£¬ÆæÑ÷ÄÑÈÌ£¬Ã¿ÄêÖÁÆÚ¶ø·¢£¬¹ıÆÚÄËÓú£¬³ÊÖÜÆÚĞÔ·´¸´·¢×÷µÄÑÛ²¡¡£Ïàµ±ÓÚ´º¼¾¿¨ËûĞÔ½áÄ¤Ñ×µÈ²¡¡£', '2008/04/10 08:34:50', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '149d25ba-5d32-44e5-8680-89bf2800f409', '0917', 'ÉñË®½«¿İ', '09', 2, 1, '', 'ÉñË®½«¿İÊÇÆøÓô»¯»ğ£¬½òÒº¿÷Ëğ£¬ÀáÒº¼õÉÙÒÔÖÂÄ¿Öé¸ÉÔïÊ§ÔóµÄÑÛ²¡£¬Ïàµ±ÓÚÀáÏÙ·ÖÃÚ½µµÍÒıÆğµÄ½áÄ¤¸ÉÔïÖ¢¡£', '2008/04/10 08:34:50', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( 'be0a474a-416b-497f-9dd5-d1fedf5a4944', '0918', '½ğğá', '09', 2, 1, '', '½ğğáÊÇÒòÔïÈÈÉËÒõ£¬·ÎÊ§Ëà½µ£¬°×¾¦±í²ãÉúÔ²ĞÎĞ¡ÅİÈçÓñÁ££¬ÖÜÎ§ÈÆÒÔ³àÂöµÄÑÛ²¡¡£Ïàµ±ÓÚÅİĞÔ½áÄ¤Ñ×¡£', '2008/04/10 08:34:50', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '9dabaf71-6284-40aa-ac0e-38eab8646f61', '0919', '»ğğá', '09', 2, 1, '', '»ğğáÊÇÒò»ğĞ°Óô½á£¬°×¾¦Éî²ãÓĞ½á½ÚÂ¡Æğ£¬É«×Ïºì£¬ÌÛÍ´¾Ü°´µÄÑÛ²¡¡£Ïàµ±ÓÚÇ°¹®Ä¤Ñ×¡£', '2008/04/10 08:34:50', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '14d06bc4-ecf7-4611-a870-68970cf4ae25', '0920', '¾ÛĞÇÕÏ', '09', 2, 1, '', '¾ÛĞÇÕÏÊÇÒòÍâ¸Ğ·çĞ°£¬Ğ®ÈÈ»¯»ğ£¬ÖÂºÚ¾¦ÉÏÉúÏ¸Ğ¡ĞÇôè°éÓĞÉ¬ÌÛ¡¢Î·¹â¡¢Á÷ÀáµÄÑÛ²¡¡£Ïàµ±ÓÚµ¥ğå²¡¶¾ĞÔ½ÇÄ¤Ñ×¡£', '2008/04/10 08:34:50', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '2c8bcd98-4f64-4a57-82fa-b6f7cc7ece10', '0921', 'ÄıÖ¬ôè', '09', 2, 1, '', 'ÄıÖ¬ôèÊÇÓÉ·çÈÈĞ°¶¾ÈëÇÖ£¬ÖÂ·çÂÖºÚ¾¦Éúôè£¬±íÃæÉ«°×»ò»Æ£¬×´ÈçÄıÖ¬£¬·¢²¡Ñ¸ËÙ£¬»ò°é»ÆÒºÉÏ³åµÄÑÛ²¡¡£Ïàµ±ÓÚÙëĞĞĞÔ½ÇÄ¤À£ÑñºÍÂÌÅ§¸Ë¾úĞÔ½ÇÄ¤À£Ññ¡£', '2008/04/10 08:34:50', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '99711dac-0e1c-4368-bd01-c9c6d3fda7a8', '0922', '»¨ôè°×Ïİ', '09', 2, 1, '', '»¨ôè°×ÏİÊÇÒò¸Î¾­½áÈÈ£¬»ò¸ĞÍâĞ°£¬ÖÂºÚ¾¦Éúôè¡¢»ì×Ç»Ò°µ£¬ËÄÖÜ¸ßÆğ£¬ÖĞÑëµÍÏİ£¬ĞÎÈç»¨°êµÄÑÛ²¡¡£Ïàµ±ÓÚÄ³Ğ©½ÇÄ¤À£Ññ¡£', '2008/04/10 08:34:50', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( 'f3d039ff-e70f-44ef-8544-e43ba4e89b84', '0923', '»ì¾¦ÕÏ', '09', 2, 1, '', '»ì¾¦ÕÏÊÇÒòĞ°·ü·çÂÖ£¬ÆøÑªğöÖÍ£¬ºÚ¾¦Éî²ãÂşÖéÒ»Æ¬ôèÕÏ»ì×Ç£¬ÒÔÖÂºÚ¾¦³Ê¾µÃæ¹şÆø×´µÄÑÛ²¡¡£Ïàµ±ÓÚ»ùÖÊĞÔ½ÇÄ¤Ñ×µÈ²¡¡£', '2008/04/10 08:34:50', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( 'efc2c926-83b2-4fc1-9d4a-46f1ea93c79e', '0924', '·çÂÖ³à¶¹', '09', 2, 1, '', '·çÂÖ³à¶¹ÊÇÒòÆ¢ĞéĞ®Ìµ£¬¸Î¾­»ıÈÈ£¬ºÚ¾¦Éúôè£¬ÓĞ³àÂö´Ó°×¾¦×·Ëæ»·ÈÆ×´Èç³à¶¹µÄÑÛ²¡¡£Ïàµ±ÓÚÊø×´½ÇÄ¤Ñ×¡£', '2008/04/10 08:34:50', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '13d310f2-1fa7-4cae-954c-1d6b3dbc4783', '0925', 'ğá»ıÉÏÄ¿', '09', 2, 1, '', 'ğá»ıÉÏÄ¿ÊÇÓÉĞ¡¶ùğá»ıÒıÆğµÄ£¬³õÎªÓÚÉ¬¡¢Ò¹Ã¤£¬ÈÕ¾ÃºÚ¾¦Éúôè£¬ÉõÔòÀ£ÆÆ´©¿×µÄÑÛ²¡¡£Ïàµ±ÓÚÎ¬ÉúËØAÈ±·¦ÒıÆğµÄ½ÇÄ¤Èí»¯Ö¢¡£', '2008/04/10 08:34:50', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( 'c042c8e6-50dd-406e-988e-6c30dfad7e0f', '0926', 'Ñªôè°ü¾¦', '09', 2, 1, '', 'Ñªôè°ü¾¦ÊÇÓÉ·çÈÈÛÕÊ¢£¬ÆøÑªğöÖÍ£¬ÒÔÖÂ³àÂö´ÓºÚ¾¦ËÄÖÜÇÖÈë£¬ÃÜ¼¯ĞÎ³ÉôèÄ¤£¬ÂşÉ¢ºÚ¾¦µÄÒ»ÖÖÑÛ²¡¡£Ïàµ±ÓÚÈ«½ÇÄ¤Ñª¹Üôè¡£', '2008/04/10 08:34:50', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '04d5aa76-ca6f-4ac5-831e-6bf5f3d2ea59', '0927', 'ËŞôè', '09', 2, 1, '', 'ËŞôèÊÇÔÚºÚ¾¦¼²»¼È¬Óúºó£¬½á³É°áºÛ£¬±íÃæ¹â»¬£¬±ßÔµÇå³ş£¬ÎŞºì³àÌÛÍ´µÄÑÛ²¡¡£¹Å´ú¸ù¾İñ£ºÛµÄºñ±¡¡¢ĞÎ×´£¬ÓĞ"±ùÏ¾ôè"¡¢"ÔÆôè"¡¢"ºñôè"¡¢"°ßÖ¬ôè"µÈÃüÃû¡£', '2008/04/10 08:34:50', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '6bc75893-48a0-4f2c-ae0c-503aacb9615f', '0928', 'Í«»ØÉñ½ôĞ¡', '09', 2, 1, '', 'Í«Éñ½ôĞ¡ÊÇÒòĞ°ÈÈ×ÆÉË»ÆÈÊÒÔÖÂÍ«ÉñËõĞ¡£¬Õ¹ËõÊ§Áé£¬°é±§ÂÖºì³à£¬ºÚ¾¦ºó±ÚÓĞ³Á×ÅÎï£¬ÉñË®»ì×Ç£¬ÊÓÁ¦ÏÂ½µµÄÑÛ²¡¡£Ïàµ±ÓÚÇ°²¿É«ËØÄ¤Ñ×¡£', '2008/04/10 08:34:50', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '7904528d-72e3-4dd9-82f7-735bc02d1588', '0929', '»ÆÒºÉÏ³å', '09', 2, 1, '', '»ÆÒºÉÏ³åÊÇÒò»ÆÈÊÎªĞ°ÈÈËùÉË£¬×Æ½òÎªÅ§¡¢ºÚ¾¦Óë»ÆÈÊÖ®¼ä£¬»ıÓĞ»ÆÉ«Å§ÒºµÄÑÛ²¡¡£¼´Ç°·¿»ıÅ§¡£', '2008/04/10 08:34:50', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '21b6439b-b931-4549-bf41-14308f2eb3da', '0930', 'Ñª¹àÍ«Éñ', '09', 2, 1, '', 'Ñª¹àÍ«ÉñÊÇÒòÄ¿ÄÚÖ®Ñª²»Ñ­¾­¶øĞĞ£¬ÒçÓÚÍ«ÉñÇ°ºóµÄÑÛ²¡¡£¼´Ç°·¿»ıÑª»ò²£Á§Ìå»ıÑª¡£', '2008/04/10 08:34:50', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( 'afcea8f7-c9eb-4b5f-8aba-ce286e13968f', '0931', 'ÂÌ·çÄÚÕÏ', '09', 2, 1, '', 'ÂÌ·çÄÚÕÏÊÇÒò±©Å­·ŞÓô£¬ÆøÓô»¯»ğ£¬·ç»ğÌµ×ÇÉÏ¹¥£¬»òÆ¢Î¸Ğéº®£¬ÒûĞ°ÉÏ·º£¬ÖÂºÚ¾¦ÆøÉ«»ì×Ç£¬Í«ÉñÉ¢´ó²»Çå³ÊÒşÒşÂÌÉ«£¬°éÓĞÍ·Í´ÑÛÕÍ£¬¶ñĞÄÅ»ÍÂ£¬ÊÓÁ¦¼±¾çÏÂ½µµÄÑÛ²¡¡£Ïàµ±ÓÚ±Õ½ÇĞÍÇà¹âÑÛ¼±ĞÔ·¢×÷ÆÚ¡£', '2008/04/10 08:34:50', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( 'a5843a38-f85d-4cb0-8d7a-8a4aad937501', '0932', 'Ô²ôèÄÚÕÏ', '09', 2, 1, '', 'Ô²ôèÄÚÕÏÊÇÒò¸ßÄêÌåÈõ£¬¾«ÆøÈÕË¥£¬Ä¿Ê§º­ÑøËùÖÂ¾§Öé»ì×Ç£¬ÊÓÁ¦½¥½µ£¬×îÖÕÍ«ÉñÄÚ³ÊÔ²ĞÎÒø°×É«ôèÕÏ£¬ÊÓÁ¦ÕÏ°­µÄÑÛ²¡¡£Ïàµ±ÓÚÀÏÄêĞÔ°×ÄÚÕÏ¡£', '2008/04/10 08:34:50', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '52afacdb-1061-40ce-b1f5-c03a6c0bae53', '0933', 'ÔÆÎíÒÆ¾¦', '09', 2, 1, '', 'ÔÆÎíÒÆ¾¦ÊÇÒòÉñ¸àÎªĞ°Ëù³Ë£¬»ì×Ç²»ÇåËùÖÂ£¬ÑÛÍâ¹Û¶ËºÃ£¬×Ô¾õÑÛÇ°ÓĞÎÃÓ¬»òÔÆÎíÑùºÚÓ°·ÉÎèÆ®ÒÆ£¬ÉõÕßÊÓÎï»èÃÉµÄÑÛ²¡¡£¼´²£Á§Ìå»ì×Ç¡£', '2008/04/10 08:34:50', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '40dc233d-1c6d-450d-8c12-6afcc3bc0388', '0934', 'ÊÓÕ°»èÃì', '09', 2, 1, '', 'ÊÓÕ°»èÃìÊÇÒòÆøÑªÊ§µ÷£¬¾«Æø²»ÄÜÉÏÈÙì¶Ä¿ËùÖÂ£¬×Ô¾õÊÓÁ¦ÏÂ½µ£¬ÊÓÎï»èÃÉ¶øÍâÑÛÎŞÒìµÄÑÛ²¡¡£Ïàµ±ÓÚÂıĞÔÇòºóÊÓÉñ¾­Ñ×¡¢ÖĞĞÄĞÔ½¬ÒºĞÔÂöÂçÄ¤ÊÓÍøÄ¤²¡±äµÈ¡£', '2008/04/10 08:34:50', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '0315f6db-af0d-4d96-9d79-51b7d1c27cc2', '0935', 'ÊÓÖ±ÈçÇú', '09', 2, 1, '', 'ÊÓÖ±ÈçÇúÊÇÒòÊÓÒÂ½òÒºÊä²¼Ê§µ÷»òÑªÒçÂçÍâ£¬µ¼ÖÂ»¼ÑÛÊÓÕıÖ±Ö®ÎïÈçÍäÇúÖ®×´µÄÑÛ²¡¡£Ïàµ±ÓÚÖĞĞÄĞÔ½¬ÒºĞÔÂöÂçÄ¤ÊÓÍøÄ¤²¡±äµÈ»Æ°ß²¿¼²²¡¡£', '2008/04/10 08:34:50', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '3dedca7d-a754-4fc5-8911-6fcf6e57c271', '0936', '±©Ã¤', '09', 2, 1, '', '±©Ã¤ÊÇÓÉÊÓÒÂÄ¿ÏµÂöÂç×èÖÍ£¬Æø»úÓô±Õ£¬µ¼ÖÂÉñ¹âÀëÉ¢£¬¶ø³öÏÖÊÓÁ¦¼±ÖèÏÂ½µÊ§Ã÷µÄÄÚÕÏÑÛ²¡¡£¶à¼ûÓÚÎ÷Ò½Ö®Ğí¶à¼±ĞÔÊÓÁ¦ÕÏ°­ÑÛµ×²¡£¬Ö÷ÒªÓĞÊÓÍøÄ¤ÖĞÑë¶¯Âö×èÈû£¬ÑÛÄÚ³öÑªºÍ¼±ĞÔÊÓÉñ¾­Ñ×µÈ£¬×È·ÖÊöÈçÏÂ£º', '2008/04/10 08:34:50', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( 'f3c99ece-2f68-4141-94c2-2d62f23beb6a', '093601', 'ÊÓÍøÄ¤ÖĞÑë¶¯Âö×èÈû', '0936', 3, 1, '', ' ', '2008/04/10 08:34:50', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '8f0641cd-83d0-4a1a-95eb-0a62f4584535', '093602', 'ÊÓÍøÄ¤ÖĞÑë¾²Âö×èÈû', '0936', 3, 1, '', ' ', '2008/04/10 08:34:50', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '7af7411f-ad2e-4531-bcec-beac02a6ab6d', '093603', 'ÊÓÍøÄ¤¾²ÂöÖÜÎ§Ñ×', '0936', 3, 1, '', ' ', '2008/04/10 08:34:50', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( 'b0f6e431-f4f5-4052-aa78-61ac70cc5a9e', '093604', '¼±ĞÔÊÓÉñ¾­Ñ×', '0936', 3, 1, '', ' ', '2008/04/10 08:34:50', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '11351975-3c25-4e51-b56d-b09127347f8f', '0941', 'ÇàÃ¤', '09', 2, 1, '', 'ÇàÃ¤ÊÇÖ¸ÑÛÍâ¹Û¶ËºÃ£¬¶øÊÓÁ¦Öğ½¥ÏÂ½µ£¬ÒÔÖÂÊ§Ã÷µÄÑÛ²¡¡£¶àÓÉÊÓÕ°»èÃì£¬¸ß·çÈ¸Ä¿µÈÍ«Éñ¼²²¡ÈÕ¾ÃÊ§ÖÎÑİ±ä¶øÀ´¡£Ïàµ±ÓÚÊÓÉñ¾­Î®Ëõ¡£', '2008/04/10 08:34:50', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( 'f24ca2b3-80b0-471a-beb8-7ddd871c75e2', '0942', '¸ß·çÈ¸Ä¿', '09', 2, 1, '', '¸ß·çÈ¸Ä¿ÊÇÓÉÏÈÌìÙ÷¸³²»×ã£¬ÂöÂçÏ¸É¬£¬Éñ¹âË¥Î¢ËùÖÂ¡£ÑÛÍâ¹Û¶ËºÃ£¬ÊÇÒÔÒ¹Ã¤ºÍÊÓÒ°ËõĞ¡ÎªÖ÷ÒªÖ¢×´µÄÑÛ²¡¡£Ïàµ±ÓÚÔ­·¢ĞÔÊÓÍøÄ¤É«ËØ±äĞÔ¡£', '2008/04/10 08:34:50', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '34e4a6b8-ab92-455b-acbf-c8dcf7cfe183', '0943', 'ÄÜ½üÇÓÔ¶', '09', 2, 1, '', 'ÄÜ½üÇÓÔ¶ÊÇÓÉÉñ¹â²»×ã£¬±íÏÖÎªÊÓ½üÎïÇåÎú£¬ÊÓÔ¶ÎïÄ£ºıµÄÑÛ²¡¡£¼´Çü¹â²»ÕıµÄ½üÊÓÑÛ¡£', '2008/04/10 08:34:50', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( 'ce016986-f424-4405-a064-9716811fb397', '0944', 'Ä¿Æ«ÊÓ', '09', 2, 1, '', 'Ä¿Æ«ÊÓÏµĞ°ÖĞ¾­Âç£¬ÆøÑª²»ºÍ£¬½îÂöÊ§Ñø£¬³ÚÕÅ²»ÊÕ£¬ÔÚË«ÑÛ×¢ÊÓÄ¿±êÊ±£¬³ÊÏÖÒ»ÑÛÑÛÎ»Æ«Ğ±µÄÑÛ²¡¡£Ïàµ±ÓÚÏÔĞ±£¬Ö÷ÒªÖ¸Âé±ÔĞÔĞ±ÊÓ¡£', '2008/04/10 08:34:50', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '17ab75e2-a57b-47b2-a1b7-fccc2cd26041', '0945', 'ê¤éñ×ª¹Ø', '09', 2, 1, '', 'ê¤éñ×ª¹ØÊÇÓÉÏÈÌìÙ÷¸³²»×ã»ò·çĞ°ÈÅ¶¯£¬ÖÂ½îÂöÕñÌè£¬³öÏÖÁ½ÑÛ²»×ÔÖ÷µØ²ü¶¯µÄÑÛ²¡¡£¼´ÑÛÇòÕğ²ü¡£', '2008/04/10 08:34:50', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( 'b0d299c7-3050-4456-a5a4-7272afd4d490', '0946', 'Ã¼Àâ¹ÇÍ´', '09', 2, 1, '', 'Ã¼Àâ¹ÇÍ´ÊÇÒò¾­Æø²»Í¨ÖÂÃ¼Àâ¹Ç²¿»ò¼æÑÛ¿ôÉî²¿ÕÍÍ´µÄÑÛ²¡¡£Ïàµ±ÓÚ¿ôÉÏÉñ¾­Í´¡£', '2008/04/10 08:34:50', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '2b1ce67c-586e-44ae-a5e0-02f9632a6d1b', '0947', '÷½ÑÛÄıÀß', '09', 2, 1, '', '÷½ÑÛÄı¾¦ÊÇÓÉÌµÊªÄıÖÍ£¬ÆøÑªğö×è£¬»òÈÈ¶¾ÄÚ¹¥£¬Ë«ÑÛÍ»³ö£¬ÄıÊÓ£¬°×¾¦ğöÖÍºì³àµÄÑÛ²¡¡£Ö÷Òª¼ûÓÚÑªË¨ĞÔº£Ãàñ¼Ñ×ºÍÖØÖ¢ÄÚ·ÖÃÚÍ»ÑÛ¡£', '2008/04/10 08:34:50', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '901b0967-208f-4639-aeb0-c3c8aae2fc83', '0948', 'Í»Æğ¾¦¸ß', '09', 2, 1, '', 'Í»Æğ¾¦¸ßÊÇÓÉ·çÈÈ»ğ¶¾¹¥Ä¿£¬·¢²¡½Ï¼±£¬ÒÔµ¥²à»¼ÑÛÍ»Æğ¡¢ÌÛÍ´£¬°×¾¦ºì³à¡¢Ö×ÕÍµÄ¼±ĞÔÑÛ²¡¡£Ïàµ±ÓÚ¼±ĞÔ¿ôÄÚÑ×Ö¢ÈçÑÛ¿ô·äÎÑÖ¯Ñ×¡¢¿ô¹ÇÄ¤Ñ×ºÍÑÛ½îÄ¤Ñ×»òÈ«ÑÛÇòÑ×µÈ¡£', '2008/04/10 08:34:50', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( '8b804aa1-ab5c-4db9-88db-cb340d8aa1ff', '0949', 'Õñ°ûğöÍ´', '09', 2, 1, '', 'Õñ°ûğöÍ´ÊÇÖ¸ÑÛ²¿ÊÜ¶ÛÆ÷×²ÉËºó£¬°ûíúÖ×ÕÍ£¬ğöÑªÄÚÍ££¬É«³ÊÇà×Ï£¬ÌÛÓ¿ÄÑÕöµÄÑÛ²¡¡£Ïàµ±ÓÚÑÛíú´ìÉË¡£', '2008/04/10 08:34:50', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( 'c9b13ec6-3163-4ec4-8730-3f5504791d1b', '0950', 'ÎïËğÕæ¾¦', '09', 2, 1, '', 'ÎïËğÕæ¾¦ÊÇÖ¸ÍâÎïÉËÄ¿£¬¶øÖÂÑÛÖéÆÆËğ£¬ÊÓÁ¦¼õÍË£¬ÉõÖÁÊ§Ã÷µÄÑÛ²¡¡£Ïàµ±ÓÚ´©¿×ĞÔÑÛÍâÉË¡£', '2008/04/10 08:34:50', '', 3 ) ;
+ 
+INSERT INTO chinese_disease ( CDISid, code, name, parentcode, level, isClassical, SPETid, illustration, createDay, optrid, state )  VALUES ( 'e673e22c-e917-4177-95c0-999365147bc8', '00', 'Ïø´­', '-1', 1, 0, '24bff094-fe02-4f6d-b8b1-e3bc636c3cc4', '', '2008/06/28 02:07:15', '46e3d3e3-c822-4047-91db-b0cf580e2734', 1 ) ;
