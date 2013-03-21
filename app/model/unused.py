@@ -1,4 +1,4 @@
-
+#classes not used yet
 class diagExam(db.Model):
     DIEXid = db.Column(db.String(36), nullable=False, primary_key=True)
     DIAGid = db.Column(db.String(36), db.ForeignKey('diagnose.DIAGid'))

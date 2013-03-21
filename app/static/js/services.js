@@ -7,7 +7,7 @@ var myAppService = angular.module('myApp.services', ['ngResource']);
 myAppService.factory('SizhenInfo', function($resource){
     return $resource(
         //'static/mockdata/sizheninfo-:patientID.json',
-        '/api/sizheninfo',
+        '/api/drug',
         {},
         {
             query: {

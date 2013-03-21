@@ -16,10 +16,7 @@
             </tr>
         </thead>
         <tbody>
-            <tr ng-repeat="sizheninfo_item in sizheninfo_list">
-                <td>{{sizheninfo_item.DRUGid}}</td>
-                <td>{{sizheninfo_item.code}}</td>
-                <td>{{sizheninfo_item.state | bool2cn}}</td>
+                <td>{{sizheninfo_list['objects']}}</td>
                 <td><a class="btn btn-info" href="#/sizheninfo-connect-view/{{sizheninfo_item.patientID}}/{{sizheninfo_item.connectedAddinfoID}}">关联</a></td>
                 <td><a class="btn btn-info" href="#/sizheninfo-detail-view/{{sizheninfo_item.patientID}}">查看</a></td>
                 <td><a class="btn btn-info" href="">删除</a></td>

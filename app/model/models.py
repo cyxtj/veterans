@@ -3,6 +3,7 @@
 import json
 from flask import Flask
 from flask.ext.sqlalchemy import SQLAlchemy
+import flask.ext.restless
 
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://root:levis822@localhost:3306/dbo'
@@ -40,7 +41,6 @@ class ChineseDisease(db.Model):
 
     @classmethod
     def get_by_id(self, CDISid=None):
-        print '_________________________'
         temp = ChineseDisease.query.filter_by(CDISid=CDISid).first()
         tempList = []
         tempList.append({})
@@ -60,7 +60,6 @@ class ChineseDisease(db.Model):
     def get_all(self):
         data = ChineseDisease.query.all()
         tempList = []
-        print '_________________________'
         for (i, temp) in enumerate(data):
             tempList.append({})
             tempList[i]["CDISid"]=temp.CDISid
@@ -153,7 +152,6 @@ class dCase(db.Model):
 
     @classmethod 
     def get_by_id(selt, CASEid):
-        print '_________________________'
         temp = dCase.query.filter_by(CASEid=CASEid).first()
         tempList = []
         tempList.append({})
@@ -196,7 +194,6 @@ class dCase(db.Model):
     def get_all(self):
         data = dCase.query.all()
         tempList = []
-        print '_________________________'
         for (i, temp) in enumerate(data):
             tempList.append({})
             tempList[i]["CASEid"]=temp.CASEid
@@ -266,7 +263,6 @@ class dMethod(db.Model):
 
     @classmethod
     def get_by_id(self, DMETid):
-        print '_________________________'
         temp = dMethod.query.filter_by(DMETid=DMETid)
         tempList = []
         tempList.append({})
@@ -286,7 +282,6 @@ class dMethod(db.Model):
     def get_all(self):
         data = dMethod.query.all()
         tempList = []
-        print '_________________________'
         for (i, temp) in enumerate(data):
             tempList.append({})
             tempList[i]["DMETid"] = temp.DMETid
@@ -340,7 +335,6 @@ class dTemplate(db.Model):
                 
     @classmethod
     def get_by_id(self,DTMPid):
-        print '_________________________'
         temp = dTemplate.query.filter_by(DTMPid=DTMPid)
         tempList = []
         tempList.append({})
@@ -365,7 +359,6 @@ class dTemplate(db.Model):
     def get_all(self):
         data = dTemplate.query.all()
         tempList = []
-        print '_________________________'
         for (i, temp) in enumerate(data):
             tempList.append({})
             tempList[i]["DTMPid"] = temp.DTMPid
@@ -418,8 +411,27 @@ class drug(db.Model):
         self.state = state
                 
     @classmethod
+    def d_get_all(self, data):
+        tempList = []
+        for (i, temp) in enumerate(data['objects']):
+            tempList.append({})
+            tempList[i]['code'] = temp['code']
+            tempList[i]["state"] = temp['state']
+        data['objects'] = tempList
+        return data
+
+    @classmethod
+    def d_get_by_id(data):
+        tempList = {}
+        print data
+        tempList['code'] = data['code']
+        tempList['name'] = data['name']
+        tempList["state"] = data['state']
+        data = tempList
+        return data
+
+    @classmethod
     def get_by_id(self, DRUGid):
-        print '_________________________'
         temp = drug.query.filter_by(DRUGid=DRUGid).first()
         tempList = []
         tempList.append({})
@@ -438,7 +450,6 @@ class drug(db.Model):
     def get_all(self):
         data = drug.query.all()
         tempList = []
-        print '____________________________________'
         for (i, temp) in enumerate(data):
             tempList.append({})
             tempList[i]["code"] = temp.code
@@ -485,7 +496,6 @@ class fixedrecipe(db.Model):
                 
     @classmethod
     def get_by_id(self, FREPid):
-        print '____________________________________'
         temp = fixedrecipe.query.filter_by(FREPid=FREPid).first()
         tempList = []
         tempList.append({})
@@ -503,7 +513,6 @@ class fixedrecipe(db.Model):
     def get_all(self):
         data = fixedrecipe.query.all()
         tempList = []
-        print '____________________________________'
         for (i, temp) in enumerate(data):
             tempList.append({})
             tempList[i]["code"] = temp.code
@@ -520,7 +529,7 @@ class fixedrecipe(db.Model):
 
 class semiotic(db.Model):
     SEMCid = db.Column(db.String(36), nullable=False, primary_key=True)
-    CDISid = db.Column(db.String(36), db.ForeignKey('chinese_disease.CDISid'))
+    CDISid = db.Column(db.String(36), db.ForeignKey('chinese_disease.CDISid', ondelete='CASCADE'))
     code = db.Column(db.String(20), nullable=False)
     groupCode = db.Column(db.String(20), nullable=False, default=' ')
     name = db.Column(db.String(100), nullable=False)
@@ -546,7 +555,6 @@ class semiotic(db.Model):
                 
     @classmethod
     def get_by_id(self, FREPid):
-        print '____________________________________'
         temp = semiotic.query.filter_by(FREPid=FREPid).first()
         tempList = []
         tempList.append({})
@@ -567,7 +575,6 @@ class semiotic(db.Model):
         data = semiotic.query.all()
         tempList = []
         for (i, temp) in enumerate(data):
-            print '____________________________________'
             tempList.append({})
             tempList[i]["SEMCid"] = temp.SEMCid
             tempList[i]["CDISid"] = temp.CDISid
@@ -618,7 +625,6 @@ class symptom(db.Model):
                 
     @classmethod
     def get_by_id(self,SYPMid):
-        print '____________________________________'
         temp = symptom.query.filter_by(SYPMid=SYPMid)
         tempList = []
         tempList.append({})
@@ -642,7 +648,6 @@ class symptom(db.Model):
     def get_all(self):
         data = temp.symptom.query.all()
         tempList = []
-        print '____________________________________'
         for (i, temp) in enumerate(data):
             tempList.append({})
             tempList[i]["SYPMid"] = temp.SYPMid
@@ -709,7 +714,6 @@ class WesternDisease(db.Model):
     def get_all(self):
         data = WesternDisease.query.all()
         tempList = []
-        print '____________________________________'
         for (i, temp) in enumerate(data):
             tempList.append({})
             tempList[i]["WDISid"] = temp.WDISid
@@ -723,3 +727,4 @@ class WesternDisease(db.Model):
             tempList[i]["optrid"] = temp.optrid
             tempList[i]["state"] = temp.state
         return json.dumps(tempList)
+
