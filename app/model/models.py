@@ -36,9 +36,6 @@ class ChineseDisease(db.Model):
         self.optrid = optrid
         self.state = state
                 
-    def __repr__(self):
-        return self.name
-
     @classmethod
     def get_by_id(self, CDISid=None):
         temp = ChineseDisease.query.filter_by(CDISid=CDISid).first()
@@ -147,9 +144,6 @@ class dCase(db.Model):
         self.hasFile = hasFile
         self.preState = preState
                 
-    def __repr__(self):
-        return self.name
-
     @classmethod 
     def get_by_id(selt, CASEid):
         temp = dCase.query.filter_by(CASEid=CASEid).first()
@@ -258,9 +252,6 @@ class dMethod(db.Model):
         self.optrid = optrid
         self.state = state
                 
-    def __repr__(self):
-        return self.name
-
     @classmethod
     def get_by_id(self, DMETid):
         temp = dMethod.query.filter_by(DMETid=DMETid)

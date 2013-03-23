@@ -1,0 +1,17 @@
+a:
+    写出def __init__(self):
+            abc = db.column(asdfa)
+
+b: 
+    把上面的abc = db.column()拷到temp里加工成一行再放到
+        def __init__(self, abc):
+
+c:
+    把def __init__(self, abc):
+            abc = db.column(asdfa)
+    变成
+    def __init__(self, abc):
+            self.abc = abc
+
+
+
